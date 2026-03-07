@@ -5,7 +5,7 @@
  */
 const fs = require('fs');
 const AD = 'ca-pub-3112605892426625';
-const URL = 'https://smartcalc-free.surge.sh';
+const URL = 'https://alexchalu.github.io/smartcalc';
 
 function page(slug, title, desc, keywords, calcHTML, calcJS, faqHTML = '') {
     return `<!DOCTYPE html>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url><loc>https://smartcalc-free.surge.sh/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-    <url><loc>https://smartcalc-free.surge.sh/mortgage-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://smartcalc-free.surge.sh/compound-interest.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://smartcalc-free.surge.sh/loan-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://smartcalc-free.surge.sh/retirement-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://smartcalc-free.surge.sh/salary-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://smartcalc-free.surge.sh/investment-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://smartcalc-free.surge.sh/auto-loan-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://smartcalc-free.surge.sh/debt-payoff-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://smartcalc-free.surge.sh/inflation-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://smartcalc-free.surge.sh/savings-goal-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://smartcalc-free.surge.sh/tip-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://smartcalc-free.surge.sh/break-even-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://alexchalu.github.io/smartcalc/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+    <url><loc>https://alexchalu.github.io/smartcalc/mortgage-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://alexchalu.github.io/smartcalc/compound-interest.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://alexchalu.github.io/smartcalc/loan-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://alexchalu.github.io/smartcalc/retirement-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://alexchalu.github.io/smartcalc/salary-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://alexchalu.github.io/smartcalc/investment-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://alexchalu.github.io/smartcalc/auto-loan-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://alexchalu.github.io/smartcalc/debt-payoff-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://alexchalu.github.io/smartcalc/inflation-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://alexchalu.github.io/smartcalc/savings-goal-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://alexchalu.github.io/smartcalc/tip-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://alexchalu.github.io/smartcalc/break-even-calculator.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
 </urlset>
