@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Payoff Calculator — Free Online | SmartCalc</title>
+    <meta name="description" content="Calculate how long to pay off credit card debt and how much interest you'll pay. See the impact of extra payments.">
+    <meta name="keywords" content="credit card payoff calculator, credit card calculator, credit card interest calculator, credit card debt calculator, how long to pay off credit card">
+    <link rel="canonical" href="https://alexchalu.github.io/smartcalc/credit-card-payoff.html">
+    <meta property="og:title" content="Credit Card Payoff Calculator — SmartCalc">
+    <meta property="og:description" content="Calculate how long to pay off credit card debt and how much interest you'll pay. See the impact of extra payments.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💰</text></svg>">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3112605892426625" crossorigin="anonymous"></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebApplication","name":"Credit Card Payoff Calculator","description":"Calculate how long to pay off credit card debt and how much interest you'll pay. See the impact of extra payments.","url":"https://alexchalu.github.io/smartcalc/credit-card-payoff.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+    </script>
+    <style>
+        :root{--bg:#0a0e1a;--surface:#111827;--surface2:#1f2937;--border:#374151;--text:#f3f4f6;--muted:#9ca3af;--accent:#10b981;--accent2:#059669;--glow:rgba(16,185,129,0.12);--radius:12px}
+        [data-theme="light"]{--bg:#f9fafb;--surface:#fff;--surface2:#f3f4f6;--border:#e5e7eb;--text:#1f2937;--muted:#6b7280}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+        header{background:var(--surface);border-bottom:1px solid var(--border);padding:1rem 1.5rem;position:sticky;top:0;z-index:100}
+        .hi{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:1rem}
+        .logo{font-size:1.4rem;font-weight:800;color:var(--accent);text-decoration:none}
+        .tag{color:var(--muted);font-size:.85rem;flex:1}
+        .tb{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:.4rem .7rem;font-size:1rem;cursor:pointer}
+        main{max-width:900px;margin:0 auto;padding:2rem 1.5rem}
+        h1{font-size:1.75rem;margin-bottom:.5rem}
+        .sub{color:var(--muted);margin-bottom:2rem}
+        .calc{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:2rem}
+        .field{margin-bottom:1.25rem}
+        .label{display:block;font-weight:600;margin-bottom:.5rem;font-size:.9rem}
+        input[type="number"],select{width:100%;padding:.8rem 1rem;background:var(--surface2);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:.95rem;outline:none}
+        input:focus,select:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--glow)}
+        .row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+        .btn{display:inline-flex;padding:.75rem 1.5rem;background:var(--accent);color:#fff;border:none;border-radius:8px;font-size:.95rem;font-weight:600;cursor:pointer}
+        .btn:hover{background:var(--accent2)}
+        .results{margin-top:2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem}
+        .stat{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:1rem;text-align:center}
+        .stat .val{font-size:1.5rem;font-weight:800;color:var(--accent)}
+        .stat .lbl{font-size:.8rem;color:var(--muted)}
+        .ad{max-width:900px;margin:1.5rem auto;padding:0 1.5rem}
+        .faq{margin-top:3rem;padding:2rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)}
+        .faq h2{font-size:1.2rem;margin-bottom:1rem}
+        .faq h3{font-size:1rem;margin:1rem 0 .5rem;color:var(--accent)}
+        .faq p{color:var(--muted);font-size:.9rem;line-height:1.7}
+        footer{text-align:center;padding:2rem;color:var(--muted);font-size:.85rem;border-top:1px solid var(--border);margin-top:3rem}
+        footer a{color:var(--accent);text-decoration:none}
+        .more{margin-top:3rem}
+        .more h2{font-size:1.2rem;margin-bottom:1rem}
+        .mgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.75rem}
+        .mcard{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:1rem;text-decoration:none;color:var(--text);transition:.2s}
+        .mcard:hover{border-color:var(--accent)}
+        .mcard h4{font-size:.9rem}
+        .mcard p{font-size:.75rem;color:var(--muted)}
+        @media(max-width:600px){.row{grid-template-columns:1fr}.tag{display:none}.results{grid-template-columns:1fr 1fr}}
+    </style>
+</head>
+<body>
+    <header><div class="hi"><a href="index.html" class="logo">💰 SmartCalc</a><p class="tag">Free financial calculators</p><button class="tb" id="tb">🌙</button></div></header>
+    <div class="ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+    <main>
+        <nav style="margin-bottom:1rem"><a href="index.html" style="color:var(--accent);font-weight:600;text-decoration:none">← All Calculators</a></nav>
+        <h1>Credit Card Payoff Calculator</h1>
+        <p class="sub">Calculate how long to pay off credit card debt and how much interest you'll pay. See the impact of extra payments.</p>
+        <div class="calc"><div class="row">
+            <div class="field"><label class="label">Credit Card Balance ($)</label><input type="number" id="balance" value="8500"></div>
+            <div class="field"><label class="label">APR (%)</label><input type="number" id="apr" value="22.99" step="0.01"></div>
+        </div>
+        <div class="row">
+            <div class="field"><label class="label">Monthly Payment ($)</label><input type="number" id="payment" value="250"></div>
+            <div class="field"><label class="label">Extra Payment ($)</label><input type="number" id="extra" value="0"></div>
+        </div>
+        <button class="btn" onclick="calc()">Calculate Payoff</button>
+        <div class="results" id="out">
+            <div class="stat"><div class="val" id="months">—</div><div class="lbl">Months to Pay Off</div></div>
+            <div class="stat"><div class="val" id="totalInt">—</div><div class="lbl">Total Interest</div></div>
+            <div class="stat"><div class="val" id="totalPaid">—</div><div class="lbl">Total Paid</div></div>
+            <div class="stat"><div class="val" id="payoff">—</div><div class="lbl">Payoff Date</div></div>
+        </div>
+        <div id="schedule" style="margin-top:2rem;max-height:300px;overflow-y:auto"></div></div>
+        <div class="ad" style="padding:0"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+        <div class="faq"><h2>Credit Card Payoff FAQ</h2>
+            <h3>How long will it take to pay off my credit card?</h3><p>It depends on your balance, APR, and monthly payment. Making only minimum payments on a $5,000 balance at 22% APR could take over 20 years and cost $8,000+ in interest.</p>
+            <h3>How can I pay off credit cards faster?</h3><p>Use the avalanche method (pay highest APR first) or snowball method (pay smallest balance first). Even $50-100 extra per month dramatically reduces payoff time.</p>
+            <h3>Should I do a balance transfer?</h3><p>A 0% APR balance transfer can save significant interest, but watch for transfer fees (typically 3-5%) and have a plan to pay off before the promotional period ends.</p></div>
+        <div class="more"><h2>More Calculators</h2><div class="mgrid">
+            <a class="mcard" href="mortgage-calculator.html"><h4>🏠 Mortgage</h4><p>Monthly payments & interest</p></a>
+            <a class="mcard" href="life-insurance-calculator.html"><h4>🛡️ Life Insurance</h4><p>Coverage you need</p></a>
+            <a class="mcard" href="credit-card-payoff.html"><h4>💳 Credit Card Payoff</h4><p>Debt-free timeline</p></a>
+            <a class="mcard" href="home-insurance-calculator.html"><h4>🏠 Home Insurance</h4><p>Estimate coverage costs</p></a>
+            <a class="mcard" href="tax-calculator.html"><h4>📋 Income Tax</h4><p>Federal tax estimate</p></a>
+        </div></div>
+    </main>
+    <div class="ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+    <footer><p>SmartCalc — All calculations happen in your browser. Not financial advice.</p><p><a href="index.html">Home</a> · <a href="https://alexchalu.github.io/toolpulse/">Free Online Tools</a></p></footer>
+    <script>
+        const b=document.getElementById('tb');const s=localStorage.getItem('sc-theme');
+        if(s==='light'){document.documentElement.setAttribute('data-theme','light');b.textContent='☀️'}
+        b.addEventListener('click',()=>{const l=document.documentElement.getAttribute('data-theme')==='light';document.documentElement.setAttribute('data-theme',l?'dark':'light');b.textContent=l?'🌙':'☀️';localStorage.setItem('sc-theme',l?'dark':'light')});
+        const fmt=n=>'$'+n.toLocaleString('en-US',{maximumFractionDigits:0});
+        function calc(){
+            let bal=+document.getElementById('balance').value;
+            const apr=+document.getElementById('apr').value/100/12;
+            const pay=+document.getElementById('payment').value+document.getElementById('extra').value;
+            let months=0,totalInt=0;
+            let rows='<table style="width:100%;font-size:0.8rem"><tr><th>Month</th><th>Payment</th><th>Interest</th><th>Principal</th><th>Balance</th></tr>';
+            while(bal>0&&months<600){
+                months++;const interest=bal*apr;totalInt+=interest;
+                const principal=Math.min(pay-interest,bal);bal=Math.max(0,bal-principal);
+                if(months<=24||bal===0)rows+='<tr><td>'+months+'</td><td>'+fmt(pay)+'</td><td>'+fmt(interest)+'</td><td>'+fmt(principal)+'</td><td>'+fmt(bal)+'</td></tr>';
+                else if(months===25)rows+='<tr><td colspan="5" style="text-align:center;color:var(--muted)">...</td></tr>';
+            }
+            rows+='</table>';
+            document.getElementById('months').textContent=months;
+            document.getElementById('totalInt').textContent=fmt(totalInt);
+            document.getElementById('totalPaid').textContent=fmt(totalInt++document.getElementById('balance').value);
+            const d=new Date();d.setMonth(d.getMonth()+months);
+            document.getElementById('payoff').textContent=d.toLocaleDateString('en-US',{month:'short',year:'numeric'});
+            document.getElementById('schedule').innerHTML=rows;
+        }
+    </script>
+</body>
+</html>
