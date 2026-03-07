@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://smartcalc-free.surge.sh/sitemap.xml
