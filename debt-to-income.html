@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debt-to-Income Ratio Calculator - DTI for Mortgage Approval</title>
+    <meta name="description" content="Calculate your debt-to-income ratio for mortgage and loan approval. Free DTI calculator shows if you qualify.">
+    <meta name="keywords" content="debt to income calculator, dti calculator, debt to income ratio, mortgage dti calculator">
+    <link rel="stylesheet" href="/style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3112605892426625" crossorigin="anonymous"></script>
+    <style>
+      .debt-container { max-width: 900px; margin: 2rem auto; padding: 0 2rem; }
+      .calc-card { background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin: 2rem 0; }
+      .input-group { margin: 1.5rem 0; }
+      .input-group label { display: block; font-weight: 600; margin-bottom: 0.5rem; color: #34495e; }
+      .input-group input { width: 100%; padding: 0.75rem; border: 2px solid #e0e0e0; border-radius: 6px; font-size: 1rem; }
+      .calc-button { background: #e74c3c; color: white; border: none; padding: 1rem 2rem; border-radius: 6px; font-size: 1.1rem; font-weight: 600; cursor: pointer; width: 100%; margin-top: 1rem; }
+      .calc-button:hover { background: #c0392b; }
+      .result-box { background: #e8f5e9; border-left: 4px solid #27ae60; padding: 2rem; margin: 2rem 0; border-radius: 6px; display: none; }
+      .result-value { font-size: 2.5rem; font-weight: bold; color: #27ae60; margin: 1rem 0; }
+      .savings { background: #fff3e0; padding: 1rem; border-radius: 6px; margin: 1rem 0; }
+      .savings .value { font-size: 1.8rem; font-weight: bold; color: #f57c00; }
+      .breakdown { margin: 1.5rem 0; }
+      .breakdown-item { display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid #e0e0e0; }
+      .ad-container { margin: 2rem 0; text-align: center; min-height: 90px; }
+      .info-box { background: #e3f2fd; border-left: 4px solid #2196f3; padding: 1.5rem; margin: 2rem 0; border-radius: 6px; }
+    </style>
+</head>
+<body>
+    <div class="debt-container">
+        <h1>📊 Debt-to-Income Ratio Calculator</h1>
+        <p>Calculate your debt-to-income ratio for mortgage and loan approval. Free DTI calculator shows if you qualify.</p>
+
+        <div class="ad-container">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+
+        <div class="calc-card">
+            <h2>Calculate Your Debt</h2>
+            <div id="calculator-inputs"></div>
+            <button class="calc-button" onclick="calculate()">Calculate</button>
+            
+            <div id="results" class="result-box">
+                <h3>Results</h3>
+                <div class="result-value" id="mainResult"></div>
+                <div id="savingsBox" class="savings" style="display:none;">
+                    <div>Total Savings:</div>
+                    <div class="value" id="totalSavings"></div>
+                </div>
+                <div class="breakdown" id="breakdown"></div>
+            </div>
+        </div>
+
+        <div class="ad-container">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+
+        <div class="info-box" id="info-content"></div>
+
+        <div class="ad-container">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+
+        <h2>Related Calculators</h2>
+        <ul>
+            <li><a href="/debt-payoff.html">Debt Payoff Calculator</a></li>
+            <li><a href="/credit-card-payoff.html">Credit Card Payoff Calculator</a></li>
+            <li><a href="/loan.html">Loan Calculator</a></li>
+            <li><a href="/">All Calculators</a></li>
+        </ul>
+
+        <p><a href="/">← Back to SmartCalc</a></p>
+    </div>
+
+    <script src="/calc-debt-to-income.js"></script>
+</body>
+</html>

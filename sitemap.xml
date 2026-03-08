@@ -11,7 +11,17 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://alexchalu.github.io/smartcalc/apr-calculator.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://alexchalu.github.io/smartcalc/auto-loan-calculator.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://alexchalu.github.io/smartcalc/balance-transfer.html</loc>
     <lastmod>2026-03-08</lastmod>
     <priority>0.9</priority>
   </url>
@@ -36,12 +46,37 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://alexchalu.github.io/smartcalc/credit-card-minimum.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://alexchalu.github.io/smartcalc/credit-card-payoff-calculator.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://alexchalu.github.io/smartcalc/credit-card-payoff.html</loc>
     <lastmod>2026-03-08</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://alexchalu.github.io/smartcalc/debt-consolidation-calculator.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://alexchalu.github.io/smartcalc/debt-consolidation.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://alexchalu.github.io/smartcalc/debt-payoff-calculator.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://alexchalu.github.io/smartcalc/debt-to-income.html</loc>
     <lastmod>2026-03-08</lastmod>
     <priority>0.9</priority>
   </url>
@@ -52,6 +87,11 @@
   </url>
   <url>
     <loc>https://alexchalu.github.io/smartcalc/estate-tax.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://alexchalu.github.io/smartcalc/home-equity-calculator.html</loc>
     <lastmod>2026-03-08</lastmod>
     <priority>0.9</priority>
   </url>
@@ -156,6 +196,11 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://alexchalu.github.io/smartcalc/student-loan-calculator.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://alexchalu.github.io/smartcalc/tax-calculator.html</loc>
     <lastmod>2026-03-08</lastmod>
     <priority>0.9</priority>
@@ -164,29 +209,5 @@
     <loc>https://alexchalu.github.io/smartcalc/tip-calculator.html</loc>
     <lastmod>2026-03-08</lastmod>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://alexchalu.github.io/smartcalc/credit-card-payoff-calculator.html</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-<priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://alexchalu.github.io/smartcalc/debt-consolidation-calculator.html</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-<priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://alexchalu.github.io/smartcalc/student-loan-calculator.html</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-<priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://alexchalu.github.io/smartcalc/home-equity-calculator.html</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-<priority>0.9</priority>
   </url>
 </urlset>
