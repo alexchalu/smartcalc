@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Net Worth Calculator — Free Online | SmartCalc</title>
-    <meta name="description" content="Calculate your total net worth by entering your assets and liabilities. Track your financial health and set wealth-building goals.">
-    <meta name="keywords" content="net worth calculator, calculate net worth, total assets minus liabilities, financial health calculator, wealth calculator, personal balance sheet">
-    <link rel="canonical" href="https://alexchalu.github.io/smartcalc/net-worth-calculator.html">
-    <meta property="og:title" content="Net Worth Calculator — SmartCalc">
-    <meta property="og:description" content="Calculate your total net worth by entering your assets and liabilities. Track your financial health and set wealth-building goals.">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+    <title>Debt Consolidation Calculator — Free Online | SmartCalc</title>
+    <meta name="description" content="Compare your current debts against a single consolidation loan. See how much you could save on interest and lower your monthly payments.">
+    <meta name="keywords" content="debt consolidation calculator, consolidate debt, debt consolidation loan, combine debts, debt relief calculator">
+    <link rel="canonical" href="https://alexchalu.github.io/smartcalc/debt-consolidation-calculator.html">
+    <meta property="og:title" content="Debt Consolidation Calculator — SmartCalc">
+    <meta property="og:description" content="Compare your current debts against a single consolidation loan. See how much you could save on interest and lower your monthly payments.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔗</text></svg>">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3112605892426625" crossorigin="anonymous"></script>
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"WebApplication","name":"Net Worth Calculator","description":"Calculate your total net worth by entering your assets and liabilities. Track your financial health and set wealth-building goals.","url":"https://alexchalu.github.io/smartcalc/net-worth-calculator.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+    {"@context":"https://schema.org","@type":"WebApplication","name":"Debt Consolidation Calculator","description":"Compare your current debts against a single consolidation loan. See how much you could save on interest and lower your monthly payments.","url":"https://alexchalu.github.io/smartcalc/debt-consolidation-calculator.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
     </script>
     <style>
         :root{--bg:#0a0e1a;--surface:#111827;--surface2:#1f2937;--border:#374151;--text:#f3f4f6;--muted:#9ca3af;--accent:#10b981;--accent2:#059669;--glow:rgba(16,185,129,0.12);--radius:12px}
@@ -61,38 +61,38 @@
     <div class="ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
     <main>
         <nav style="margin-bottom:1rem"><a href="index.html" style="color:var(--accent);font-weight:600;text-decoration:none">← All Calculators</a></nav>
-        <h1>Net Worth Calculator</h1>
-        <p class="sub">Calculate your total net worth by entering your assets and liabilities. Track your financial health and set wealth-building goals.</p>
+        <h1>Debt Consolidation Calculator</h1>
+        <p class="sub">Compare your current debts against a single consolidation loan. See how much you could save on interest and lower your monthly payments.</p>
         <div class="calc">
-        <div class="row"><div class="field"><label class="label">Cash & Savings ($)</label><input type="number" id="cash" value="25000"></div><div class="field"><label class="label">Investments & Retirement ($)</label><input type="number" id="investments" value="150000"></div></div>
-<div class="row"><div class="field"><label class="label">Real Estate Value ($)</label><input type="number" id="realEstate" value="450000"></div><div class="field"><label class="label">Vehicles & Other Assets ($)</label><input type="number" id="vehicles" value="35000"></div></div>
-<div class="row"><div class="field"><label class="label">Mortgage Balance ($)</label><input type="number" id="mortgage" value="280000"></div><div class="field"><label class="label">Student Loans ($)</label><input type="number" id="studentLoans" value="20000"></div></div>
-<div class="row"><div class="field"><label class="label">Car Loans ($)</label><input type="number" id="carLoans" value="15000"></div><div class="field"><label class="label">Credit Card Debt ($)</label><input type="number" id="creditCards" value="5000"></div></div>
-<div class="field"><label class="label">Other Debt ($)</label><input type="number" id="otherDebt" value="0"></div>
+        <div class="row"><div class="field"><label class="label">Debt 1 — Balance ($)</label><input type="number" id="debt1bal" value="5000"></div><div class="field"><label class="label">Debt 1 — APR (%)</label><input type="number" id="debt1apr" value="24.99" step="0.01"></div></div>
+<div class="row"><div class="field"><label class="label">Debt 1 — Monthly Payment ($)</label><input type="number" id="debt1pay" value="150"></div><div class="field"><label class="label">Debt 2 — Balance ($)</label><input type="number" id="debt2bal" value="8000"></div></div>
+<div class="row"><div class="field"><label class="label">Debt 2 — APR (%)</label><input type="number" id="debt2apr" value="19.99" step="0.01"></div><div class="field"><label class="label">Debt 2 — Monthly Payment ($)</label><input type="number" id="debt2pay" value="200"></div></div>
+<div class="row"><div class="field"><label class="label">Consolidation Loan APR (%)</label><input type="number" id="consApr" value="9.99" step="0.01"></div><div class="field"><label class="label">Consolidation Loan Term (months)</label><input type="number" id="consTerm" value="48"></div></div>
 
         <button class="btn" onclick="calc()">Calculate</button>
         <div class="results" id="out">
-            <div class="stat"><div class="val" id="totalAssets">—</div><div class="lbl">Total Assets</div></div>
-            <div class="stat"><div class="val" id="totalLiabilities">—</div><div class="lbl">Total Liabilities</div></div>
-            <div class="stat"><div class="val" id="netWorth">—</div><div class="lbl">Net Worth</div></div>
-            <div class="stat"><div class="val" id="ratio">—</div><div class="lbl">Asset/Liability Ratio</div></div>
-            <div class="stat"><div class="val" id="status">—</div><div class="lbl">Financial Status</div></div>
+            <div class="stat"><div class="val" id="totalDebt">—</div><div class="lbl">Total Debt</div></div>
+            <div class="stat"><div class="val" id="curMonthly">—</div><div class="lbl">Current Monthly</div></div>
+            <div class="stat"><div class="val" id="consMonthly">—</div><div class="lbl">Consolidated Monthly</div></div>
+            <div class="stat"><div class="val" id="curInterest">—</div><div class="lbl">Current Total Interest</div></div>
+            <div class="stat"><div class="val" id="consInterest">—</div><div class="lbl">Consolidated Interest</div></div>
+            <div class="stat"><div class="val" id="saved">—</div><div class="lbl">Total Savings</div></div>
         </div></div>
         <div class="ad" style="margin-top:2rem;padding:0"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
         <div class="faq">
         <h2>Frequently Asked Questions</h2>
-        <h3>What is a good net worth by age?</h3>
-        <p>A common rule of thumb: by age 30, aim to have 1x your annual salary saved; by 40, 3x; by 50, 6x; by 60, 8x; by retirement, 10-12x. The median net worth for Americans aged 35-44 is about $135,000, while the average is much higher due to wealth concentration at the top.</p>
-        <h3>Should I include my primary home in net worth?</h3>
-        <p>Yes, but understand it's an illiquid asset. Many financial advisors calculate both "total net worth" (including home) and "investable net worth" (excluding home equity). Your home's value should be a realistic market estimate, not what you hope to sell for.</p>
-        <h3>How can I increase my net worth?</h3>
-        <p>Three levers: (1) Increase income through career growth, side businesses, or investments. (2) Decrease spending and redirect to savings/investments. (3) Pay down high-interest debt aggressively. The biggest impact usually comes from increasing income while keeping lifestyle inflation in check.</p>
+        <h3>What is debt consolidation?</h3>
+        <p>Debt consolidation combines multiple debts into a single loan with one monthly payment, typically at a lower interest rate. This can simplify payments and reduce total interest paid over time.</p>
+        <h3>Is debt consolidation a good idea?</h3>
+        <p>It can be beneficial if you qualify for a lower interest rate than your current debts. However, extending the repayment term may mean paying more total interest even with a lower rate. Also avoid running up new debt on cleared credit cards.</p>
+        <h3>What credit score do I need for a consolidation loan?</h3>
+        <p>Most lenders prefer a credit score of 670+ for the best rates. Some lenders offer consolidation loans for scores as low as 580, but at higher rates. Check multiple lenders to compare offers without affecting your score (soft pull).</p>
         </div>
         <div class="more"><h2>More Calculators</h2><div class="mgrid">
             <a href="credit-card-payoff-calculator.html" class="mcard"><h4>💳 Credit Card Payoff Calculator</h4><p>Free online calculator</p></a>
-            <a href="debt-consolidation-calculator.html" class="mcard"><h4>🔗 Debt Consolidation Calculator</h4><p>Free online calculator</p></a>
             <a href="student-loan-calculator.html" class="mcard"><h4>🎓 Student Loan Repayment Calculator</h4><p>Free online calculator</p></a>
             <a href="home-equity-calculator.html" class="mcard"><h4>🏠 Home Equity Loan Calculator (HELOC)</h4><p>Free online calculator</p></a>
+            <a href="net-worth-calculator.html" class="mcard"><h4>📊 Net Worth Calculator</h4><p>Free online calculator</p></a>
             <a href="index.html" class="mcard"><h4>💰 All Calculators</h4><p>Browse all SmartCalc tools</p></a>
         </div></div>
     </main>
@@ -103,15 +103,24 @@
     function F(n){return'$'+n.toLocaleString('en-US',{minimumFractionDigits:0,maximumFractionDigits:0})}
     function S(id,v){document.getElementById(id).textContent=v}
     function calc(){
-      const assets=N('cash')+N('investments')+N('realEstate')+N('vehicles');
-      const liabilities=N('mortgage')+N('studentLoans')+N('carLoans')+N('creditCards')+N('otherDebt');
-      const nw=assets-liabilities;
-      const ratio=liabilities>0?(assets/liabilities):Infinity;
-      S('totalAssets',F(assets));
-      S('totalLiabilities',F(liabilities));
-      S('netWorth',F(nw));
-      S('ratio',ratio===Infinity?'∞':ratio.toFixed(2)+'x');
-      S('status',nw>0?'Positive ✅':'Negative ⚠️');
+      const d1b=N('debt1bal'),d1r=N('debt1apr')/100/12,d1p=N('debt1pay');
+      const d2b=N('debt2bal'),d2r=N('debt2apr')/100/12,d2p=N('debt2pay');
+      const cr=N('consApr')/100/12,ct=N('consTerm');
+      // Current debts total interest
+      function totalInt(bal,mr,pmt){let t=0,b=bal;for(let i=0;i<600&&b>0;i++){const int=b*mr;const p=Math.min(pmt,b+int);t+=int;b=b+int-p;}return t;}
+      const curInt=totalInt(d1b,d1r,d1p)+totalInt(d2b,d2r,d2p);
+      const curPay=d1p+d2p;
+      // Consolidation
+      const total=d1b+d2b;
+      const consPay=total*cr*Math.pow(1+cr,ct)/(Math.pow(1+cr,ct)-1);
+      const consTotal=consPay*ct;
+      const consInt=consTotal-total;
+      S('totalDebt',F(total));
+      S('curMonthly',F(curPay));
+      S('consMonthly',F(consPay));
+      S('curInterest',F(curInt));
+      S('consInterest',F(consInt));
+      S('saved',F(curInt-consInt));
     }
     calc();
     const tb=document.getElementById('tb');

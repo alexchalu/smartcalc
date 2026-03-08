@@ -165,4 +165,28 @@
     <lastmod>2026-03-08</lastmod>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://alexchalu.github.io/smartcalc/credit-card-payoff-calculator.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+<priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://alexchalu.github.io/smartcalc/debt-consolidation-calculator.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+<priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://alexchalu.github.io/smartcalc/student-loan-calculator.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+<priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://alexchalu.github.io/smartcalc/home-equity-calculator.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+<priority>0.9</priority>
+  </url>
 </urlset>

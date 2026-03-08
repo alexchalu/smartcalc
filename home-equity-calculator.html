@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Net Worth Calculator — Free Online | SmartCalc</title>
-    <meta name="description" content="Calculate your total net worth by entering your assets and liabilities. Track your financial health and set wealth-building goals.">
-    <meta name="keywords" content="net worth calculator, calculate net worth, total assets minus liabilities, financial health calculator, wealth calculator, personal balance sheet">
-    <link rel="canonical" href="https://alexchalu.github.io/smartcalc/net-worth-calculator.html">
-    <meta property="og:title" content="Net Worth Calculator — SmartCalc">
-    <meta property="og:description" content="Calculate your total net worth by entering your assets and liabilities. Track your financial health and set wealth-building goals.">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+    <title>Home Equity Loan Calculator (HELOC) — Free Online | SmartCalc</title>
+    <meta name="description" content="Calculate your home equity, potential HELOC borrowing power, and monthly payments. Compare home equity loan vs HELOC options.">
+    <meta name="keywords" content="home equity calculator, HELOC calculator, home equity loan calculator, home equity line of credit, how much equity do I have, second mortgage calculator">
+    <link rel="canonical" href="https://alexchalu.github.io/smartcalc/home-equity-calculator.html">
+    <meta property="og:title" content="Home Equity Loan Calculator (HELOC) — SmartCalc">
+    <meta property="og:description" content="Calculate your home equity, potential HELOC borrowing power, and monthly payments. Compare home equity loan vs HELOC options.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3112605892426625" crossorigin="anonymous"></script>
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"WebApplication","name":"Net Worth Calculator","description":"Calculate your total net worth by entering your assets and liabilities. Track your financial health and set wealth-building goals.","url":"https://alexchalu.github.io/smartcalc/net-worth-calculator.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+    {"@context":"https://schema.org","@type":"WebApplication","name":"Home Equity Loan Calculator (HELOC)","description":"Calculate your home equity, potential HELOC borrowing power, and monthly payments. Compare home equity loan vs HELOC options.","url":"https://alexchalu.github.io/smartcalc/home-equity-calculator.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
     </script>
     <style>
         :root{--bg:#0a0e1a;--surface:#111827;--surface2:#1f2937;--border:#374151;--text:#f3f4f6;--muted:#9ca3af;--accent:#10b981;--accent2:#059669;--glow:rgba(16,185,129,0.12);--radius:12px}
@@ -61,38 +61,37 @@
     <div class="ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
     <main>
         <nav style="margin-bottom:1rem"><a href="index.html" style="color:var(--accent);font-weight:600;text-decoration:none">← All Calculators</a></nav>
-        <h1>Net Worth Calculator</h1>
-        <p class="sub">Calculate your total net worth by entering your assets and liabilities. Track your financial health and set wealth-building goals.</p>
+        <h1>Home Equity Loan Calculator (HELOC)</h1>
+        <p class="sub">Calculate your home equity, potential HELOC borrowing power, and monthly payments. Compare home equity loan vs HELOC options.</p>
         <div class="calc">
-        <div class="row"><div class="field"><label class="label">Cash & Savings ($)</label><input type="number" id="cash" value="25000"></div><div class="field"><label class="label">Investments & Retirement ($)</label><input type="number" id="investments" value="150000"></div></div>
-<div class="row"><div class="field"><label class="label">Real Estate Value ($)</label><input type="number" id="realEstate" value="450000"></div><div class="field"><label class="label">Vehicles & Other Assets ($)</label><input type="number" id="vehicles" value="35000"></div></div>
-<div class="row"><div class="field"><label class="label">Mortgage Balance ($)</label><input type="number" id="mortgage" value="280000"></div><div class="field"><label class="label">Student Loans ($)</label><input type="number" id="studentLoans" value="20000"></div></div>
-<div class="row"><div class="field"><label class="label">Car Loans ($)</label><input type="number" id="carLoans" value="15000"></div><div class="field"><label class="label">Credit Card Debt ($)</label><input type="number" id="creditCards" value="5000"></div></div>
-<div class="field"><label class="label">Other Debt ($)</label><input type="number" id="otherDebt" value="0"></div>
+        <div class="row"><div class="field"><label class="label">Current Home Value ($)</label><input type="number" id="homeVal" value="450000"></div><div class="field"><label class="label">Remaining Mortgage ($)</label><input type="number" id="mortgage" value="280000"></div></div>
+<div class="row"><div class="field"><label class="label">Max LTV Allowed (%)</label><input type="number" id="ltv" value="85"></div><div class="field"><label class="label">HELOC Interest Rate (%)</label><input type="number" id="helocRate" value="8.5" step="0.01"></div></div>
+<div class="row"><div class="field"><label class="label">Repayment Term (years)</label><input type="number" id="helocTerm" value="15"></div><div class="field"><label class="label">Amount to Borrow ($)</label><input type="number" id="drawAmt" value="50000"></div></div>
 
         <button class="btn" onclick="calc()">Calculate</button>
         <div class="results" id="out">
-            <div class="stat"><div class="val" id="totalAssets">—</div><div class="lbl">Total Assets</div></div>
-            <div class="stat"><div class="val" id="totalLiabilities">—</div><div class="lbl">Total Liabilities</div></div>
-            <div class="stat"><div class="val" id="netWorth">—</div><div class="lbl">Net Worth</div></div>
-            <div class="stat"><div class="val" id="ratio">—</div><div class="lbl">Asset/Liability Ratio</div></div>
-            <div class="stat"><div class="val" id="status">—</div><div class="lbl">Financial Status</div></div>
+            <div class="stat"><div class="val" id="equity">—</div><div class="lbl">Your Home Equity</div></div>
+            <div class="stat"><div class="val" id="equityPct">—</div><div class="lbl">Equity Percentage</div></div>
+            <div class="stat"><div class="val" id="maxBorrow">—</div><div class="lbl">Max Borrowable</div></div>
+            <div class="stat"><div class="val" id="monthly">—</div><div class="lbl">Monthly Payment</div></div>
+            <div class="stat"><div class="val" id="intOnlyPmt">—</div><div class="lbl">Interest-Only Payment</div></div>
+            <div class="stat"><div class="val" id="totalInterest">—</div><div class="lbl">Total Interest</div></div>
         </div></div>
         <div class="ad" style="margin-top:2rem;padding:0"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
         <div class="faq">
         <h2>Frequently Asked Questions</h2>
-        <h3>What is a good net worth by age?</h3>
-        <p>A common rule of thumb: by age 30, aim to have 1x your annual salary saved; by 40, 3x; by 50, 6x; by 60, 8x; by retirement, 10-12x. The median net worth for Americans aged 35-44 is about $135,000, while the average is much higher due to wealth concentration at the top.</p>
-        <h3>Should I include my primary home in net worth?</h3>
-        <p>Yes, but understand it's an illiquid asset. Many financial advisors calculate both "total net worth" (including home) and "investable net worth" (excluding home equity). Your home's value should be a realistic market estimate, not what you hope to sell for.</p>
-        <h3>How can I increase my net worth?</h3>
-        <p>Three levers: (1) Increase income through career growth, side businesses, or investments. (2) Decrease spending and redirect to savings/investments. (3) Pay down high-interest debt aggressively. The biggest impact usually comes from increasing income while keeping lifestyle inflation in check.</p>
+        <h3>What is the difference between a HELOC and a home equity loan?</h3>
+        <p>A home equity loan gives you a lump sum with a fixed rate and fixed payments. A HELOC is a revolving line of credit with a variable rate — you draw what you need during the draw period (typically 10 years), then repay during the repayment period (10-20 years). HELOCs offer more flexibility but less payment predictability.</p>
+        <h3>How much home equity can I borrow?</h3>
+        <p>Most lenders allow you to borrow up to 80-85% of your home's value minus your existing mortgage balance. Some lenders go up to 90% LTV for borrowers with excellent credit. Your credit score, income, and debt-to-income ratio also affect approval.</p>
+        <h3>Is HELOC interest tax deductible?</h3>
+        <p>HELOC interest is tax deductible only if the funds are used to buy, build, or substantially improve the home that secures the loan (per the Tax Cuts and Jobs Act). Interest on HELOC funds used for other purposes (debt consolidation, vacation) is not deductible.</p>
         </div>
         <div class="more"><h2>More Calculators</h2><div class="mgrid">
             <a href="credit-card-payoff-calculator.html" class="mcard"><h4>💳 Credit Card Payoff Calculator</h4><p>Free online calculator</p></a>
             <a href="debt-consolidation-calculator.html" class="mcard"><h4>🔗 Debt Consolidation Calculator</h4><p>Free online calculator</p></a>
             <a href="student-loan-calculator.html" class="mcard"><h4>🎓 Student Loan Repayment Calculator</h4><p>Free online calculator</p></a>
-            <a href="home-equity-calculator.html" class="mcard"><h4>🏠 Home Equity Loan Calculator (HELOC)</h4><p>Free online calculator</p></a>
+            <a href="net-worth-calculator.html" class="mcard"><h4>📊 Net Worth Calculator</h4><p>Free online calculator</p></a>
             <a href="index.html" class="mcard"><h4>💰 All Calculators</h4><p>Browse all SmartCalc tools</p></a>
         </div></div>
     </main>
@@ -103,15 +102,19 @@
     function F(n){return'$'+n.toLocaleString('en-US',{minimumFractionDigits:0,maximumFractionDigits:0})}
     function S(id,v){document.getElementById(id).textContent=v}
     function calc(){
-      const assets=N('cash')+N('investments')+N('realEstate')+N('vehicles');
-      const liabilities=N('mortgage')+N('studentLoans')+N('carLoans')+N('creditCards')+N('otherDebt');
-      const nw=assets-liabilities;
-      const ratio=liabilities>0?(assets/liabilities):Infinity;
-      S('totalAssets',F(assets));
-      S('totalLiabilities',F(liabilities));
-      S('netWorth',F(nw));
-      S('ratio',ratio===Infinity?'∞':ratio.toFixed(2)+'x');
-      S('status',nw>0?'Positive ✅':'Negative ⚠️');
+      const hv=N('homeVal'),mort=N('mortgage'),maxLtv=N('ltv')/100;
+      const rate=N('helocRate')/100/12,term=N('helocTerm')*12,draw=N('drawAmt');
+      const equity=hv-mort;
+      const maxBorrow=hv*maxLtv-mort;
+      const pmt=draw*rate*Math.pow(1+rate,term)/(Math.pow(1+rate,term)-1);
+      const totalPaid=pmt*term;
+      const intOnly=draw*rate;
+      S('equity',F(equity));
+      S('equityPct',(equity/hv*100).toFixed(1)+'%');
+      S('maxBorrow',F(Math.max(0,maxBorrow)));
+      S('monthly',F(pmt));
+      S('intOnlyPmt',F(intOnly));
+      S('totalInterest',F(totalPaid-draw));
     }
     calc();
     const tb=document.getElementById('tb');

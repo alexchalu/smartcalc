@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Net Worth Calculator — Free Online | SmartCalc</title>
-    <meta name="description" content="Calculate your total net worth by entering your assets and liabilities. Track your financial health and set wealth-building goals.">
-    <meta name="keywords" content="net worth calculator, calculate net worth, total assets minus liabilities, financial health calculator, wealth calculator, personal balance sheet">
-    <link rel="canonical" href="https://alexchalu.github.io/smartcalc/net-worth-calculator.html">
-    <meta property="og:title" content="Net Worth Calculator — SmartCalc">
-    <meta property="og:description" content="Calculate your total net worth by entering your assets and liabilities. Track your financial health and set wealth-building goals.">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+    <title>Credit Card Payoff Calculator — Free Online | SmartCalc</title>
+    <meta name="description" content="Calculate how long it will take to pay off your credit card debt and how much interest you'll pay. Compare minimum payments vs fixed payments.">
+    <meta name="keywords" content="credit card payoff calculator, credit card debt calculator, pay off credit card, credit card interest calculator, debt payoff calculator">
+    <link rel="canonical" href="https://alexchalu.github.io/smartcalc/credit-card-payoff-calculator.html">
+    <meta property="og:title" content="Credit Card Payoff Calculator — SmartCalc">
+    <meta property="og:description" content="Calculate how long it will take to pay off your credit card debt and how much interest you'll pay. Compare minimum payments vs fixed payments.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💳</text></svg>">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3112605892426625" crossorigin="anonymous"></script>
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"WebApplication","name":"Net Worth Calculator","description":"Calculate your total net worth by entering your assets and liabilities. Track your financial health and set wealth-building goals.","url":"https://alexchalu.github.io/smartcalc/net-worth-calculator.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+    {"@context":"https://schema.org","@type":"WebApplication","name":"Credit Card Payoff Calculator","description":"Calculate how long it will take to pay off your credit card debt and how much interest you'll pay. Compare minimum payments vs fixed payments.","url":"https://alexchalu.github.io/smartcalc/credit-card-payoff-calculator.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
     </script>
     <style>
         :root{--bg:#0a0e1a;--surface:#111827;--surface2:#1f2937;--border:#374151;--text:#f3f4f6;--muted:#9ca3af;--accent:#10b981;--accent2:#059669;--glow:rgba(16,185,129,0.12);--radius:12px}
@@ -61,38 +61,35 @@
     <div class="ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
     <main>
         <nav style="margin-bottom:1rem"><a href="index.html" style="color:var(--accent);font-weight:600;text-decoration:none">← All Calculators</a></nav>
-        <h1>Net Worth Calculator</h1>
-        <p class="sub">Calculate your total net worth by entering your assets and liabilities. Track your financial health and set wealth-building goals.</p>
+        <h1>Credit Card Payoff Calculator</h1>
+        <p class="sub">Calculate how long it will take to pay off your credit card debt and how much interest you'll pay. Compare minimum payments vs fixed payments.</p>
         <div class="calc">
-        <div class="row"><div class="field"><label class="label">Cash & Savings ($)</label><input type="number" id="cash" value="25000"></div><div class="field"><label class="label">Investments & Retirement ($)</label><input type="number" id="investments" value="150000"></div></div>
-<div class="row"><div class="field"><label class="label">Real Estate Value ($)</label><input type="number" id="realEstate" value="450000"></div><div class="field"><label class="label">Vehicles & Other Assets ($)</label><input type="number" id="vehicles" value="35000"></div></div>
-<div class="row"><div class="field"><label class="label">Mortgage Balance ($)</label><input type="number" id="mortgage" value="280000"></div><div class="field"><label class="label">Student Loans ($)</label><input type="number" id="studentLoans" value="20000"></div></div>
-<div class="row"><div class="field"><label class="label">Car Loans ($)</label><input type="number" id="carLoans" value="15000"></div><div class="field"><label class="label">Credit Card Debt ($)</label><input type="number" id="creditCards" value="5000"></div></div>
-<div class="field"><label class="label">Other Debt ($)</label><input type="number" id="otherDebt" value="0"></div>
+        <div class="row"><div class="field"><label class="label">Current Balance ($)</label><input type="number" id="balance" value="5000"></div><div class="field"><label class="label">Annual Interest Rate (APR %)</label><input type="number" id="apr" value="22.99" step="0.01"></div></div>
+<div class="row"><div class="field"><label class="label">Minimum Payment (%)</label><input type="number" id="minPct" value="2" step="0.1"></div><div class="field"><label class="label">Fixed Monthly Payment ($)</label><input type="number" id="fixedPay" value="200"></div></div>
 
         <button class="btn" onclick="calc()">Calculate</button>
         <div class="results" id="out">
-            <div class="stat"><div class="val" id="totalAssets">—</div><div class="lbl">Total Assets</div></div>
-            <div class="stat"><div class="val" id="totalLiabilities">—</div><div class="lbl">Total Liabilities</div></div>
-            <div class="stat"><div class="val" id="netWorth">—</div><div class="lbl">Net Worth</div></div>
-            <div class="stat"><div class="val" id="ratio">—</div><div class="lbl">Asset/Liability Ratio</div></div>
-            <div class="stat"><div class="val" id="status">—</div><div class="lbl">Financial Status</div></div>
+            <div class="stat"><div class="val" id="minTime">—</div><div class="lbl">Min Payment Payoff</div></div>
+            <div class="stat"><div class="val" id="minInterest">—</div><div class="lbl">Min Payment Interest</div></div>
+            <div class="stat"><div class="val" id="fixedTime">—</div><div class="lbl">Fixed Payment Payoff</div></div>
+            <div class="stat"><div class="val" id="fixedInterest">—</div><div class="lbl">Fixed Payment Interest</div></div>
+            <div class="stat"><div class="val" id="savings">—</div><div class="lbl">Interest Saved</div></div>
         </div></div>
         <div class="ad" style="margin-top:2rem;padding:0"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
         <div class="faq">
         <h2>Frequently Asked Questions</h2>
-        <h3>What is a good net worth by age?</h3>
-        <p>A common rule of thumb: by age 30, aim to have 1x your annual salary saved; by 40, 3x; by 50, 6x; by 60, 8x; by retirement, 10-12x. The median net worth for Americans aged 35-44 is about $135,000, while the average is much higher due to wealth concentration at the top.</p>
-        <h3>Should I include my primary home in net worth?</h3>
-        <p>Yes, but understand it's an illiquid asset. Many financial advisors calculate both "total net worth" (including home) and "investable net worth" (excluding home equity). Your home's value should be a realistic market estimate, not what you hope to sell for.</p>
-        <h3>How can I increase my net worth?</h3>
-        <p>Three levers: (1) Increase income through career growth, side businesses, or investments. (2) Decrease spending and redirect to savings/investments. (3) Pay down high-interest debt aggressively. The biggest impact usually comes from increasing income while keeping lifestyle inflation in check.</p>
+        <h3>How is minimum payment calculated?</h3>
+        <p>Most credit card companies set the minimum payment as a percentage of your balance (typically 1-3%) or a flat minimum (usually $25), whichever is greater. Making only minimum payments can result in decades of debt and thousands in interest.</p>
+        <h3>What is a good strategy to pay off credit card debt?</h3>
+        <p>Pay more than the minimum whenever possible. Consider the avalanche method (pay highest APR first) or snowball method (pay smallest balance first). Balance transfer cards with 0% intro APR can also help, but watch for transfer fees.</p>
+        <h3>How does credit card interest work?</h3>
+        <p>Credit cards use daily compounding. Your APR is divided by 365 to get a daily rate, which is applied to your balance each day. This means interest compounds on interest, making debt grow faster than simple interest loans.</p>
         </div>
         <div class="more"><h2>More Calculators</h2><div class="mgrid">
-            <a href="credit-card-payoff-calculator.html" class="mcard"><h4>💳 Credit Card Payoff Calculator</h4><p>Free online calculator</p></a>
             <a href="debt-consolidation-calculator.html" class="mcard"><h4>🔗 Debt Consolidation Calculator</h4><p>Free online calculator</p></a>
             <a href="student-loan-calculator.html" class="mcard"><h4>🎓 Student Loan Repayment Calculator</h4><p>Free online calculator</p></a>
             <a href="home-equity-calculator.html" class="mcard"><h4>🏠 Home Equity Loan Calculator (HELOC)</h4><p>Free online calculator</p></a>
+            <a href="net-worth-calculator.html" class="mcard"><h4>📊 Net Worth Calculator</h4><p>Free online calculator</p></a>
             <a href="index.html" class="mcard"><h4>💰 All Calculators</h4><p>Browse all SmartCalc tools</p></a>
         </div></div>
     </main>
@@ -103,15 +100,34 @@
     function F(n){return'$'+n.toLocaleString('en-US',{minimumFractionDigits:0,maximumFractionDigits:0})}
     function S(id,v){document.getElementById(id).textContent=v}
     function calc(){
-      const assets=N('cash')+N('investments')+N('realEstate')+N('vehicles');
-      const liabilities=N('mortgage')+N('studentLoans')+N('carLoans')+N('creditCards')+N('otherDebt');
-      const nw=assets-liabilities;
-      const ratio=liabilities>0?(assets/liabilities):Infinity;
-      S('totalAssets',F(assets));
-      S('totalLiabilities',F(liabilities));
-      S('netWorth',F(nw));
-      S('ratio',ratio===Infinity?'∞':ratio.toFixed(2)+'x');
-      S('status',nw>0?'Positive ✅':'Negative ⚠️');
+      const b=N('balance'),apr=N('apr')/100,minPct=N('minPct')/100,fixed=N('fixedPay');
+      const mr=apr/12;
+      // Min payment scenario
+      let bal1=b,months1=0,totalPaid1=0;
+      while(bal1>0&&months1<600){
+        const interest=bal1*mr;
+        const minPay=Math.max(bal1*minPct,25);
+        const pay=Math.min(minPay,bal1+interest);
+        bal1=bal1+interest-pay;
+        totalPaid1+=pay;months1++;
+        if(bal1<0.01)bal1=0;
+      }
+      // Fixed payment scenario
+      let bal2=b,months2=0,totalPaid2=0;
+      while(bal2>0&&months2<600){
+        const interest=bal2*mr;
+        const pay=Math.min(fixed,bal2+interest);
+        bal2=bal2+interest-pay;
+        totalPaid2+=pay;months2++;
+        if(bal2<0.01)bal2=0;
+      }
+      const y1=Math.floor(months1/12),m1=months1%12;
+      const y2=Math.floor(months2/12),m2=months2%12;
+      S('minTime',y1+'y '+m1+'m');
+      S('minInterest',F(totalPaid1-b));
+      S('fixedTime',y2+'y '+m2+'m');
+      S('fixedInterest',F(totalPaid2-b));
+      S('savings',F((totalPaid1-b)-(totalPaid2-b)));
     }
     calc();
     const tb=document.getElementById('tb');
