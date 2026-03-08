@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://alexchalu.github.io/smartcalc/401k-calculator.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://alexchalu.github.io/smartcalc/404.html</loc>
     <lastmod>2026-03-08</lastmod>
     <priority>0.9</priority>
@@ -37,6 +42,11 @@
   </url>
   <url>
     <loc>https://alexchalu.github.io/smartcalc/debt-payoff-calculator.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://alexchalu.github.io/smartcalc/early-retirement-calculator.html</loc>
     <lastmod>2026-03-08</lastmod>
     <priority>0.9</priority>
   </url>
@@ -101,12 +111,27 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://alexchalu.github.io/smartcalc/pension-calculator.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://alexchalu.github.io/smartcalc/property-tax.html</loc>
     <lastmod>2026-03-08</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://alexchalu.github.io/smartcalc/retirement-calculator.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://alexchalu.github.io/smartcalc/retirement-withdrawal-calculator.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://alexchalu.github.io/smartcalc/roth-ira-calculator.html</loc>
     <lastmod>2026-03-08</lastmod>
     <priority>0.9</priority>
   </url>

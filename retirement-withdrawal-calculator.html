@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retirement Withdrawal Calculator - 4% Rule & Safe Withdrawal Rate</title>
+    <meta name="description" content="Calculate safe retirement withdrawal rates. Free calculator uses the 4% rule to determine sustainable income from retirement savings.">
+    <meta name="keywords" content="retirement withdrawal calculator, 4% rule calculator, safe withdrawal rate, retirement income calculator">
+    <link rel="stylesheet" href="/style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3112605892426625" crossorigin="anonymous"></script>
+    <style>
+      .retire-container { max-width: 900px; margin: 2rem auto; padding: 0 2rem; }
+      .calc-card { background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin: 2rem 0; }
+      .input-group { margin: 1.5rem 0; }
+      .input-group label { display: block; font-weight: 600; margin-bottom: 0.5rem; color: #34495e; }
+      .input-group input, .input-group select { width: 100%; padding: 0.75rem; border: 2px solid #e0e0e0; border-radius: 6px; font-size: 1rem; }
+      .calc-button { background: #27ae60; color: white; border: none; padding: 1rem 2rem; border-radius: 6px; font-size: 1.1rem; font-weight: 600; cursor: pointer; width: 100%; margin-top: 1rem; }
+      .calc-button:hover { background: #229954; }
+      .result-box { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; margin: 2rem 0; border-radius: 12px; display: none; }
+      .result-value { font-size: 3rem; font-weight: bold; margin: 1rem 0; }
+      .result-detail { font-size: 1.1rem; opacity: 0.9; margin: 0.5rem 0; }
+      .breakdown { background: white; color: #2c3e50; padding: 1.5rem; border-radius: 8px; margin-top: 1rem; }
+      .breakdown-item { display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid #e0e0e0; }
+      .breakdown-item:last-child { border-bottom: none; font-weight: bold; font-size: 1.1rem; }
+      .ad-container { margin: 2rem 0; text-align: center; min-height: 90px; }
+      .info-box { background: #e8f5e9; border-left: 4px solid #27ae60; padding: 1.5rem; margin: 2rem 0; border-radius: 6px; }
+      .chart-placeholder { background: #f8f9fa; height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #999; margin: 1rem 0; }
+    </style>
+</head>
+<body>
+    <div class="retire-container">
+        <h1>📉 Retirement Withdrawal Calculator</h1>
+        <p>Calculate safe retirement withdrawal rates. Free calculator uses the 4% rule to determine sustainable income from retirement savings.</p>
+
+        <div class="ad-container">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+
+        <div class="calc-card">
+            <h2>Calculate Your Retirement</h2>
+            <div id="calculator-inputs"></div>
+            <button class="calc-button" onclick="calculate()">Calculate Retirement Savings</button>
+            
+            <div id="results" class="result-box">
+                <h3 style="margin-top: 0;">Your Retirement Projection</h3>
+                <div class="result-value" id="totalSavings"></div>
+                <div class="result-detail" id="monthlyIncome"></div>
+                <div class="breakdown" id="breakdown"></div>
+            </div>
+        </div>
+
+        <div class="ad-container">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+
+        <div class="info-box" id="info-content"></div>
+
+        <div class="ad-container">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+
+        <h2>Related Retirement Calculators</h2>
+        <ul>
+            <li><a href="/retirement.html">Retirement Calculator</a></li>
+            <li><a href="/compound-interest.html">Compound Interest Calculator</a></li>
+            <li><a href="/savings-goal.html">Savings Goal Calculator</a></li>
+            <li><a href="/">All Calculators</a></li>
+        </ul>
+
+        <p><a href="/">← Back to SmartCalc</a></p>
+    </div>
+
+    <script src="/calc-retirement-withdrawal-calculator.js"></script>
+</body>
+</html>
