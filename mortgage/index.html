@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator by State 2026 — Property Tax Rates & Home Prices | SmartCalc</title>
+    <meta name="description" content="Compare mortgage costs across all 50 states. Property tax rates, average home prices, insurance costs, and monthly payment calculators for every state.">
+    <link rel="canonical" href="https://alexchalu.github.io/smartcalc/mortgage/">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3112605892426625" crossorigin="anonymous"></script>
+    <style>
+        :root{--bg:#0a0e1a;--surface:#111827;--surface2:#1f2937;--border:#374151;--text:#f3f4f6;--muted:#9ca3af;--accent:#10b981;--accent2:#059669;--radius:12px}
+        [data-theme="light"]{--bg:#f9fafb;--surface:#fff;--surface2:#f3f4f6;--border:#e5e7eb;--text:#1f2937;--muted:#6b7280}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+        header{background:var(--surface);border-bottom:1px solid var(--border);padding:1rem 1.5rem;position:sticky;top:0;z-index:100}
+        .hi{max-width:1000px;margin:0 auto;display:flex;align-items:center;gap:1rem}
+        .logo{font-size:1.4rem;font-weight:800;color:var(--accent);text-decoration:none}
+        .tag{color:var(--muted);font-size:.85rem;flex:1}
+        .tb{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:.4rem .7rem;font-size:1rem;cursor:pointer}
+        main{max-width:1000px;margin:0 auto;padding:2rem 1.5rem}
+        h1{font-size:1.75rem;margin-bottom:.5rem}
+        .sub{color:var(--muted);margin-bottom:2rem;font-size:1rem}
+        .highlights{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2.5rem}
+        .highlight{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem}
+        .highlight h3{font-size:1rem;margin-bottom:.75rem;color:var(--accent)}
+        .highlight ol{padding-left:1.25rem;color:var(--muted);font-size:.9rem}
+        .highlight li{margin-bottom:.35rem}
+        .highlight li strong{color:var(--text)}
+        .ad{max-width:1000px;margin:1.5rem auto;padding:0 1.5rem}
+        .state-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.5rem;margin-top:1.5rem}
+        .state-grid a{display:flex;justify-content:space-between;align-items:center;padding:.6rem .85rem;background:var(--surface);border:1px solid var(--border);border-radius:6px;text-decoration:none;color:var(--text);font-size:.9rem;transition:.2s}
+        .state-grid a:hover{border-color:var(--accent);background:var(--surface2)}
+        .state-grid .rate{color:var(--accent);font-weight:600;font-size:.85rem}
+        .state-grid .price{color:var(--muted);font-size:.8rem}
+        .search{margin-bottom:1.5rem}
+        .search input{width:100%;padding:.8rem 1rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:1rem;outline:none}
+        .search input:focus{border-color:var(--accent)}
+        footer{text-align:center;padding:2rem;color:var(--muted);font-size:.85rem;border-top:1px solid var(--border);margin-top:3rem}
+        footer a{color:var(--accent);text-decoration:none}
+        @media(max-width:600px){.highlights{grid-template-columns:1fr}.state-grid{grid-template-columns:1fr}}
+    </style>
+</head>
+<body>
+    <header><div class="hi">
+        <a href="../" class="logo">🏠 SmartCalc</a>
+        <p class="tag">Mortgage Calculators by State</p>
+        <button class="tb" id="themeBtn" aria-label="Toggle theme">🌙</button>
+    </div></header>
+
+    <div class="ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
+    <main>
+        <h1>🏠 Mortgage Calculator by State — 2026</h1>
+        <p class="sub">Compare mortgage costs across all 50 states. Each calculator includes state-specific property tax rates, average home prices, insurance costs, PMI estimates, and full amortization schedules.</p>
+
+        <div class="highlights">
+            <div class="highlight">
+                <h3>📈 Highest Property Tax States</h3>
+                <ol><li><strong>New Jersey</strong> — 2.49%</li><li><strong>Illinois</strong> — 2.27%</li><li><strong>New Hampshire</strong> — 2.18%</li><li><strong>Connecticut</strong> — 2.15%</li><li><strong>Vermont</strong> — 1.9%</li></ol>
+            </div>
+            <div class="highlight">
+                <h3>📉 Lowest Property Tax States</h3>
+                <ol><li><strong>Hawaii</strong> — 0.28%</li><li><strong>Alabama</strong> — 0.41%</li><li><strong>Colorado</strong> — 0.51%</li><li><strong>Louisiana</strong> — 0.55%</li><li><strong>Delaware</strong> — 0.57%</li></ol>
+            </div>
+            <div class="highlight">
+                <h3>💰 Most Expensive Markets</h3>
+                <ol><li><strong>Hawaii</strong> — $835,000</li><li><strong>California</strong> — $785,000</li><li><strong>Massachusetts</strong> — $595,000</li><li><strong>Washington</strong> — $585,000</li><li><strong>Colorado</strong> — $545,000</li></ol>
+            </div>
+            <div class="highlight">
+                <h3>🏡 Most Affordable Markets</h3>
+                <ol><li><strong>West Virginia</strong> — $145,000</li><li><strong>Mississippi</strong> — $175,000</li><li><strong>Kentucky</strong> — $198,000</li><li><strong>Oklahoma</strong> — $200,000</li><li><strong>Arkansas</strong> — $202,000</li></ol>
+            </div>
+        </div>
+
+        <h2>All 50 States</h2>
+        <div class="search"><input type="text" id="searchInput" placeholder="Search states..." oninput="filterStates()"></div>
+        <div class="state-grid" id="stateGrid">
+                <a href="alabama.html">Alabama <span class="rate">0.41%</span> <span class="price">$232,000</span></a>
+                <a href="alaska.html">Alaska <span class="rate">1.19%</span> <span class="price">$340,000</span></a>
+                <a href="arizona.html">Arizona <span class="rate">0.62%</span> <span class="price">$410,000</span></a>
+                <a href="arkansas.html">Arkansas <span class="rate">0.62%</span> <span class="price">$202,000</span></a>
+                <a href="california.html">California <span class="rate">0.74%</span> <span class="price">$785,000</span></a>
+                <a href="colorado.html">Colorado <span class="rate">0.51%</span> <span class="price">$545,000</span></a>
+                <a href="connecticut.html">Connecticut <span class="rate">2.15%</span> <span class="price">$385,000</span></a>
+                <a href="delaware.html">Delaware <span class="rate">0.57%</span> <span class="price">$350,000</span></a>
+                <a href="florida.html">Florida <span class="rate">0.89%</span> <span class="price">$405,000</span></a>
+                <a href="georgia.html">Georgia <span class="rate">0.92%</span> <span class="price">$355,000</span></a>
+                <a href="hawaii.html">Hawaii <span class="rate">0.28%</span> <span class="price">$835,000</span></a>
+                <a href="idaho.html">Idaho <span class="rate">0.69%</span> <span class="price">$445,000</span></a>
+                <a href="illinois.html">Illinois <span class="rate">2.27%</span> <span class="price">$255,000</span></a>
+                <a href="indiana.html">Indiana <span class="rate">0.85%</span> <span class="price">$240,000</span></a>
+                <a href="iowa.html">Iowa <span class="rate">1.57%</span> <span class="price">$210,000</span></a>
+                <a href="kansas.html">Kansas <span class="rate">1.41%</span> <span class="price">$225,000</span></a>
+                <a href="kentucky.html">Kentucky <span class="rate">0.86%</span> <span class="price">$198,000</span></a>
+                <a href="louisiana.html">Louisiana <span class="rate">0.55%</span> <span class="price">$210,000</span></a>
+                <a href="maine.html">Maine <span class="rate">1.36%</span> <span class="price">$365,000</span></a>
+                <a href="maryland.html">Maryland <span class="rate">1.09%</span> <span class="price">$420,000</span></a>
+                <a href="massachusetts.html">Massachusetts <span class="rate">1.23%</span> <span class="price">$595,000</span></a>
+                <a href="michigan.html">Michigan <span class="rate">1.54%</span> <span class="price">$245,000</span></a>
+                <a href="minnesota.html">Minnesota <span class="rate">1.12%</span> <span class="price">$340,000</span></a>
+                <a href="mississippi.html">Mississippi <span class="rate">0.81%</span> <span class="price">$175,000</span></a>
+                <a href="missouri.html">Missouri <span class="rate">0.97%</span> <span class="price">$240,000</span></a>
+                <a href="montana.html">Montana <span class="rate">0.84%</span> <span class="price">$450,000</span></a>
+                <a href="nebraska.html">Nebraska <span class="rate">1.73%</span> <span class="price">$260,000</span></a>
+                <a href="nevada.html">Nevada <span class="rate">0.6%</span> <span class="price">$425,000</span></a>
+                <a href="new-hampshire.html">New Hampshire <span class="rate">2.18%</span> <span class="price">$450,000</span></a>
+                <a href="new-jersey.html">New Jersey <span class="rate">2.49%</span> <span class="price">$505,000</span></a>
+                <a href="new-mexico.html">New Mexico <span class="rate">0.8%</span> <span class="price">$310,000</span></a>
+                <a href="new-york.html">New York <span class="rate">1.72%</span> <span class="price">$420,000</span></a>
+                <a href="north-carolina.html">North Carolina <span class="rate">0.84%</span> <span class="price">$350,000</span></a>
+                <a href="north-dakota.html">North Dakota <span class="rate">0.98%</span> <span class="price">$260,000</span></a>
+                <a href="ohio.html">Ohio <span class="rate">1.56%</span> <span class="price">$215,000</span></a>
+                <a href="oklahoma.html">Oklahoma <span class="rate">0.9%</span> <span class="price">$200,000</span></a>
+                <a href="oregon.html">Oregon <span class="rate">0.97%</span> <span class="price">$500,000</span></a>
+                <a href="pennsylvania.html">Pennsylvania <span class="rate">1.58%</span> <span class="price">$280,000</span></a>
+                <a href="rhode-island.html">Rhode Island <span class="rate">1.63%</span> <span class="price">$420,000</span></a>
+                <a href="south-carolina.html">South Carolina <span class="rate">0.57%</span> <span class="price">$315,000</span></a>
+                <a href="south-dakota.html">South Dakota <span class="rate">1.22%</span> <span class="price">$300,000</span></a>
+                <a href="tennessee.html">Tennessee <span class="rate">0.71%</span> <span class="price">$340,000</span></a>
+                <a href="texas.html">Texas <span class="rate">1.8%</span> <span class="price">$345,000</span></a>
+                <a href="utah.html">Utah <span class="rate">0.63%</span> <span class="price">$510,000</span></a>
+                <a href="vermont.html">Vermont <span class="rate">1.9%</span> <span class="price">$380,000</span></a>
+                <a href="virginia.html">Virginia <span class="rate">0.82%</span> <span class="price">$400,000</span></a>
+                <a href="washington.html">Washington <span class="rate">0.98%</span> <span class="price">$585,000</span></a>
+                <a href="west-virginia.html">West Virginia <span class="rate">0.58%</span> <span class="price">$145,000</span></a>
+                <a href="wisconsin.html">Wisconsin <span class="rate">1.76%</span> <span class="price">$280,000</span></a>
+                <a href="wyoming.html">Wyoming <span class="rate">0.61%</span> <span class="price">$340,000</span></a>
+        </div>
+
+        <div style="margin-top:2rem;text-align:center">
+            <a href="../mortgage-calculator.html" style="color:var(--accent);text-decoration:none;font-weight:600">← Mortgage Calculator</a> &nbsp;|&nbsp;
+            <a href="../paycheck/" style="color:var(--accent);text-decoration:none;font-weight:600">Paycheck Calculators →</a> &nbsp;|&nbsp;
+            <a href="../" style="color:var(--accent);text-decoration:none;font-weight:600">SmartCalc Home →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 <a href="../">SmartCalc</a> — Free financial calculators. For informational purposes only.</p>
+    </footer>
+
+    <script>
+    document.getElementById('themeBtn').onclick = () => {
+        const t = document.body.getAttribute('data-theme') === 'light' ? '' : 'light';
+        document.body.setAttribute('data-theme', t);
+        document.getElementById('themeBtn').textContent = t === 'light' ? '☀️' : '🌙';
+    };
+    function filterStates() {
+        const q = document.getElementById('searchInput').value.toLowerCase();
+        document.querySelectorAll('.state-grid a').forEach(a => {
+            a.style.display = a.textContent.toLowerCase().includes(q) ? '' : 'none';
+        });
+    }
+    </script>
+</body>
+</html>

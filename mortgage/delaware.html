@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delaware Mortgage Calculator 2026 — Monthly Payment Estimator | SmartCalc</title>
+    <meta name="description" content="Calculate your monthly mortgage payment in Delaware. Includes property tax (0.57%), homeowner's insurance, PMI, and amortization schedule. Average home price: $350,000.">
+    <meta name="keywords" content="Delaware mortgage calculator, Delaware home loan calculator, Delaware monthly mortgage payment, Delaware property tax rate, Delaware home buying calculator, mortgage rates Delaware">
+    <link rel="canonical" href="https://alexchalu.github.io/smartcalc/mortgage/delaware.html">
+    <meta property="og:title" content="Delaware Mortgage Calculator 2026 — SmartCalc">
+    <meta property="og:description" content="Calculate your monthly mortgage payment in Delaware. Property tax: 0.57%. Average home: $350,000.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3112605892426625" crossorigin="anonymous"></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebApplication","name":"Delaware Mortgage Calculator 2026","description":"Calculate your monthly mortgage payment in Delaware with property tax, insurance, and PMI.","url":"https://alexchalu.github.io/smartcalc/mortgage/delaware.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+    </script>
+    <style>
+        :root{--bg:#0a0e1a;--surface:#111827;--surface2:#1f2937;--border:#374151;--text:#f3f4f6;--muted:#9ca3af;--accent:#10b981;--accent2:#059669;--glow:rgba(16,185,129,0.12);--radius:12px}
+        [data-theme="light"]{--bg:#f9fafb;--surface:#fff;--surface2:#f3f4f6;--border:#e5e7eb;--text:#1f2937;--muted:#6b7280}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+        header{background:var(--surface);border-bottom:1px solid var(--border);padding:1rem 1.5rem;position:sticky;top:0;z-index:100}
+        .hi{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:1rem}
+        .logo{font-size:1.4rem;font-weight:800;color:var(--accent);text-decoration:none}
+        .tag{color:var(--muted);font-size:.85rem;flex:1}
+        .tb{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:.4rem .7rem;font-size:1rem;cursor:pointer}
+        main{max-width:900px;margin:0 auto;padding:2rem 1.5rem}
+        h1{font-size:1.75rem;margin-bottom:.5rem}
+        .sub{color:var(--muted);margin-bottom:2rem}
+        .calc{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:2rem}
+        .field{margin-bottom:1.25rem}
+        .label{display:block;font-weight:600;margin-bottom:.5rem;font-size:.9rem}
+        input[type="number"],select{width:100%;padding:.8rem 1rem;background:var(--surface2);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:.95rem;outline:none}
+        input:focus,select:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--glow)}
+        .row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+        .row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem}
+        .btn{display:inline-flex;padding:.75rem 1.5rem;background:var(--accent);color:#fff;border:none;border-radius:8px;font-size:.95rem;font-weight:600;cursor:pointer;width:100%;justify-content:center}
+        .btn:hover{background:var(--accent2)}
+        .results{margin-top:2rem;display:none}
+        .results.show{display:block}
+        .result-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;margin-bottom:1.5rem}
+        .stat{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:1rem;text-align:center}
+        .stat .val{font-size:1.4rem;font-weight:800;color:var(--accent)}
+        .stat .lbl{font-size:.75rem;color:var(--muted);margin-top:.25rem}
+        .breakdown{background:var(--surface2);border:1px solid var(--border);border-radius:8px;overflow:hidden}
+        .breakdown table{width:100%;border-collapse:collapse}
+        .breakdown th,.breakdown td{padding:.75rem 1rem;text-align:left;font-size:.9rem}
+        .breakdown th{background:var(--surface);font-weight:600;font-size:.8rem;text-transform:uppercase;color:var(--muted)}
+        .breakdown td{border-top:1px solid var(--border)}
+        .breakdown .total td{font-weight:700;background:var(--surface);color:var(--accent)}
+        .amort{margin-top:1.5rem}
+        .amort summary{cursor:pointer;font-weight:600;color:var(--accent);padding:.75rem;background:var(--surface2);border:1px solid var(--border);border-radius:8px}
+        .amort-table{max-height:400px;overflow-y:auto;margin-top:.5rem}
+        .ad{max-width:900px;margin:1.5rem auto;padding:0 1.5rem}
+        .info{margin-top:2.5rem;padding:2rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)}
+        .info h2{font-size:1.2rem;margin-bottom:1rem}
+        .info p,.info li{color:var(--muted);font-size:.9rem;line-height:1.7;margin-bottom:.75rem}
+        .info ul{padding-left:1.5rem}
+        .faq{margin-top:2.5rem;padding:2rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)}
+        .faq h2{font-size:1.2rem;margin-bottom:1rem}
+        .faq h3{font-size:1rem;margin:1.25rem 0 .5rem;color:var(--accent)}
+        .faq p{color:var(--muted);font-size:.9rem;line-height:1.7}
+        .states{margin-top:2.5rem}
+        .states h2{font-size:1.2rem;margin-bottom:1rem;text-align:center}
+        .state-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:.5rem}
+        .state-grid a{display:block;padding:.5rem .75rem;background:var(--surface);border:1px solid var(--border);border-radius:6px;text-decoration:none;color:var(--text);font-size:.85rem;transition:.2s}
+        .state-grid a:hover{border-color:var(--accent);background:var(--surface2)}
+        .state-grid a .rate{color:var(--accent);font-weight:600;float:right}
+        footer{text-align:center;padding:2rem;color:var(--muted);font-size:.85rem;border-top:1px solid var(--border);margin-top:3rem}
+        footer a{color:var(--accent);text-decoration:none}
+        @media(max-width:600px){.row,.row3{grid-template-columns:1fr}}
+    </style>
+</head>
+<body>
+    <header><div class="hi">
+        <a href="../" class="logo">🏠 SmartCalc</a>
+        <p class="tag">Delaware Mortgage Calculator</p>
+        <button class="tb" id="themeBtn" aria-label="Toggle theme">🌙</button>
+    </div></header>
+
+    <div class="ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
+    <main>
+        <h1>🏠 Delaware Mortgage Calculator 2026</h1>
+        <p class="sub">Estimate your monthly mortgage payment in Delaware. Includes principal & interest, property tax (0.57%), homeowner's insurance, and PMI.</p>
+
+        <div class="calc">
+            <div class="field">
+                <span class="label">Home Price ($)</span>
+                <input type="number" id="price" value="350000" step="1000">
+            </div>
+            <div class="row">
+                <div class="field">
+                    <span class="label">Down Payment ($)</span>
+                    <input type="number" id="down" value="70000" step="1000">
+                </div>
+                <div class="field">
+                    <span class="label">Down Payment (%)</span>
+                    <input type="number" id="downPct" value="20" step="1" min="0" max="100">
+                </div>
+            </div>
+            <div class="row3">
+                <div class="field">
+                    <span class="label">Interest Rate (%)</span>
+                    <input type="number" id="rate" value="6.75" step="0.125" min="0" max="20">
+                </div>
+                <div class="field">
+                    <span class="label">Loan Term</span>
+                    <select id="term">
+                        <option value="30" selected>30 years</option>
+                        <option value="20">20 years</option>
+                        <option value="15">15 years</option>
+                        <option value="10">10 years</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <span class="label">Loan Type</span>
+                    <select id="loanType">
+                        <option value="conventional">Conventional</option>
+                        <option value="fha">FHA</option>
+                        <option value="va">VA</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="field">
+                    <span class="label">Property Tax Rate (%)</span>
+                    <input type="number" id="taxRate" value="0.57" step="0.01">
+                </div>
+                <div class="field">
+                    <span class="label">Annual Insurance ($)</span>
+                    <input type="number" id="insurance" value="1200" step="100">
+                </div>
+            </div>
+            <div class="row">
+                <div class="field">
+                    <span class="label">HOA / Month ($)</span>
+                    <input type="number" id="hoa" value="0" step="25">
+                </div>
+                <div class="field">
+                    <span class="label">Extra Payment / Month ($)</span>
+                    <input type="number" id="extra" value="0" step="50">
+                </div>
+            </div>
+            <button class="btn" onclick="calc()">Calculate Mortgage Payment</button>
+
+            <div class="results" id="results">
+                <div class="result-grid">
+                    <div class="stat"><div class="val" id="rTotal">—</div><div class="lbl">Total Monthly</div></div>
+                    <div class="stat"><div class="val" id="rPI">—</div><div class="lbl">Principal & Interest</div></div>
+                    <div class="stat"><div class="val" id="rTax">—</div><div class="lbl">Property Tax</div></div>
+                    <div class="stat"><div class="val" id="rIns">—</div><div class="lbl">Insurance</div></div>
+                    <div class="stat"><div class="val" id="rPMI">—</div><div class="lbl">PMI</div></div>
+                    <div class="stat"><div class="val" id="rTotalCost">—</div><div class="lbl">Total Loan Cost</div></div>
+                </div>
+                <div class="breakdown">
+                    <table>
+                        <thead><tr><th>Item</th><th>Monthly</th><th>Annual</th><th>Over Loan</th></tr></thead>
+                        <tbody id="breakdownBody"></tbody>
+                    </table>
+                </div>
+                <details class="amort">
+                    <summary>📊 View Amortization Schedule (Year by Year)</summary>
+                    <div class="amort-table">
+                        <div class="breakdown">
+                            <table>
+                                <thead><tr><th>Year</th><th>Principal</th><th>Interest</th><th>Balance</th></tr></thead>
+                                <tbody id="amortBody"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <div class="ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
+        <div class="info">
+            <h2>Buying a Home in Delaware — What You Need to Know</h2>
+            <p>Delaware's average home price is approximately <strong>$350,000</strong>, with a property tax rate of <strong>0.57%</strong> (effective rate). That translates to roughly <strong>$166/month</strong> in property taxes on the average home.</p>
+            <p>Homeowner's insurance in Delaware averages about <strong>$1,200/year</strong> ($100/month). This is below the national average, making it one of the more affordable states for homeowner's insurance.</p>
+            <h3>Key Delaware Mortgage Facts</h3>
+            <ul>
+                <li><strong>Property Tax Rate:</strong> 0.57% effective rate</li>
+                <li><strong>Average Home Price:</strong> $350,000</li>
+                <li><strong>Average Insurance:</strong> $1,200/year</li>
+                <li><strong>20% Down Payment:</strong> $70,000</li>
+                <li><strong>PMI:</strong> Required if down payment is less than 20%</li>
+            </ul>
+            <p><strong>Tip:</strong> If you put less than 20% down on a conventional loan, you'll pay Private Mortgage Insurance (PMI), typically 0.5-1% of the loan amount annually. FHA loans require mortgage insurance for the life of the loan. VA loans have no PMI requirement.</p>
+        </div>
+
+        <div class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <h3>What is a good mortgage rate in Delaware in 2026?</h3>
+            <p>Mortgage rates vary by lender, credit score, and loan type. As of 2026, average 30-year fixed rates hover around 6.5-7%. Shopping multiple lenders can save you thousands over the life of your loan.</p>
+            <h3>How much house can I afford in Delaware?</h3>
+            <p>A common guideline is the 28/36 rule: your mortgage payment shouldn't exceed 28% of gross monthly income, and total debt payments shouldn't exceed 36%. With Delaware's average home price of $350,000, you'd typically need a household income of $437,500+ per year.</p>
+            <h3>Should I get a 15-year or 30-year mortgage in Delaware?</h3>
+            <p>A 15-year mortgage has higher monthly payments but saves significantly on interest. For a $350,000 home with 20% down, you could save over $100,000 in interest with a 15-year vs 30-year loan.</p>
+            <h3>What are closing costs in Delaware?</h3>
+            <p>Closing costs in Delaware typically range from 2-5% of the home price. On a $350,000 home, expect to pay approximately $10,500 in closing costs.</p>
+        </div>
+
+        <div class="states">
+            <h2>Mortgage Calculators by State</h2>
+            <div class="state-grid" id="stateGrid"></div>
+        </div>
+
+        <div style="margin-top:2rem;text-align:center">
+            <a href="../mortgage-calculator.html" style="color:var(--accent);text-decoration:none;font-weight:600">← Back to Mortgage Calculator</a> &nbsp;|&nbsp;
+            <a href="../" style="color:var(--accent);text-decoration:none;font-weight:600">SmartCalc Home →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 <a href="../">SmartCalc</a> — Free financial calculators. For informational purposes only.</p>
+        <p style="margin-top:.5rem"><a href="../paycheck/">Paycheck Calculators</a> · <a href="./">Mortgage by State</a></p>
+    </footer>
+
+    <script>
+    const stateData = [{"name":"Alabama","slug":"alabama","propTax":0.41},{"name":"Alaska","slug":"alaska","propTax":1.19},{"name":"Arizona","slug":"arizona","propTax":0.62},{"name":"Arkansas","slug":"arkansas","propTax":0.62},{"name":"California","slug":"california","propTax":0.74},{"name":"Colorado","slug":"colorado","propTax":0.51},{"name":"Connecticut","slug":"connecticut","propTax":2.15},{"name":"Delaware","slug":"delaware","propTax":0.57},{"name":"Florida","slug":"florida","propTax":0.89},{"name":"Georgia","slug":"georgia","propTax":0.92},{"name":"Hawaii","slug":"hawaii","propTax":0.28},{"name":"Idaho","slug":"idaho","propTax":0.69},{"name":"Illinois","slug":"illinois","propTax":2.27},{"name":"Indiana","slug":"indiana","propTax":0.85},{"name":"Iowa","slug":"iowa","propTax":1.57},{"name":"Kansas","slug":"kansas","propTax":1.41},{"name":"Kentucky","slug":"kentucky","propTax":0.86},{"name":"Louisiana","slug":"louisiana","propTax":0.55},{"name":"Maine","slug":"maine","propTax":1.36},{"name":"Maryland","slug":"maryland","propTax":1.09},{"name":"Massachusetts","slug":"massachusetts","propTax":1.23},{"name":"Michigan","slug":"michigan","propTax":1.54},{"name":"Minnesota","slug":"minnesota","propTax":1.12},{"name":"Mississippi","slug":"mississippi","propTax":0.81},{"name":"Missouri","slug":"missouri","propTax":0.97},{"name":"Montana","slug":"montana","propTax":0.84},{"name":"Nebraska","slug":"nebraska","propTax":1.73},{"name":"Nevada","slug":"nevada","propTax":0.6},{"name":"New Hampshire","slug":"new-hampshire","propTax":2.18},{"name":"New Jersey","slug":"new-jersey","propTax":2.49},{"name":"New Mexico","slug":"new-mexico","propTax":0.8},{"name":"New York","slug":"new-york","propTax":1.72},{"name":"North Carolina","slug":"north-carolina","propTax":0.84},{"name":"North Dakota","slug":"north-dakota","propTax":0.98},{"name":"Ohio","slug":"ohio","propTax":1.56},{"name":"Oklahoma","slug":"oklahoma","propTax":0.9},{"name":"Oregon","slug":"oregon","propTax":0.97},{"name":"Pennsylvania","slug":"pennsylvania","propTax":1.58},{"name":"Rhode Island","slug":"rhode-island","propTax":1.63},{"name":"South Carolina","slug":"south-carolina","propTax":0.57},{"name":"South Dakota","slug":"south-dakota","propTax":1.22},{"name":"Tennessee","slug":"tennessee","propTax":0.71},{"name":"Texas","slug":"texas","propTax":1.8},{"name":"Utah","slug":"utah","propTax":0.63},{"name":"Vermont","slug":"vermont","propTax":1.9},{"name":"Virginia","slug":"virginia","propTax":0.82},{"name":"Washington","slug":"washington","propTax":0.98},{"name":"West Virginia","slug":"west-virginia","propTax":0.58},{"name":"Wisconsin","slug":"wisconsin","propTax":1.76},{"name":"Wyoming","slug":"wyoming","propTax":0.61}];
+    const grid = document.getElementById('stateGrid');
+    stateData.forEach(st => {
+        const a = document.createElement('a');
+        a.href = st.slug + '.html';
+        a.innerHTML = st.name + ' <span class="rate">' + st.propTax + '%</span>';
+        if (st.slug === 'delaware') { a.style.borderColor = 'var(--accent)'; a.style.fontWeight = '700'; }
+        grid.appendChild(a);
+    });
+
+    const $ = id => document.getElementById(id);
+    const f = n => '$' + n.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+
+    // Sync down payment fields
+    $('down').addEventListener('input', function() {
+        const price = +$('price').value;
+        if (price > 0) $('downPct').value = ((+this.value / price) * 100).toFixed(1);
+    });
+    $('downPct').addEventListener('input', function() {
+        $('down').value = Math.round(+$('price').value * +this.value / 100);
+    });
+    $('price').addEventListener('input', function() {
+        $('down').value = Math.round(+this.value * +$('downPct').value / 100);
+    });
+
+    function calc() {
+        const price = +$('price').value;
+        const down = +$('down').value;
+        const loan = price - down;
+        const r = +$('rate').value / 100 / 12;
+        const n = +$('term').value * 12;
+        const taxRate = +$('taxRate').value / 100;
+        const ins = +$('insurance').value;
+        const hoa = +$('hoa').value;
+        const extra = +$('extra').value;
+        const loanType = $('loanType').value;
+
+        // P&I
+        const pi = r > 0 ? loan * (r * Math.pow(1+r, n)) / (Math.pow(1+r, n) - 1) : loan / n;
+        const tax = (price * taxRate) / 12;
+        const insM = ins / 12;
+
+        // PMI
+        let pmi = 0;
+        const ltv = loan / price;
+        if (loanType === 'conventional' && ltv > 0.8) {
+            pmi = (loan * 0.007) / 12; // ~0.7% annual
+        } else if (loanType === 'fha') {
+            pmi = (loan * 0.0085) / 12; // FHA MIP ~0.85%
+        }
+
+        const total = pi + tax + insM + pmi + hoa;
+        const years = +$('term').value;
+        const totalCost = pi * n;
+
+        $('rTotal').textContent = f(Math.round(total));
+        $('rPI').textContent = f(Math.round(pi));
+        $('rTax').textContent = f(Math.round(tax));
+        $('rIns').textContent = f(Math.round(insM));
+        $('rPMI').textContent = pmi > 0 ? f(Math.round(pmi)) : '$0';
+        $('rTotalCost').textContent = f(Math.round(totalCost));
+
+        // Breakdown table
+        const items = [
+            ['Principal & Interest', pi, pi*12, pi*n],
+            ['Property Tax', tax, tax*12, tax*n],
+            ['Homeowner\'s Insurance', insM, ins, ins*years],
+            ['PMI', pmi, pmi*12, pmi*n],
+            ['HOA', hoa, hoa*12, hoa*n*12/n],
+        ];
+        let html = '';
+        items.forEach(([label, m, a, t]) => {
+            html += '<tr><td>'+label+'</td><td>'+f(Math.round(m))+'</td><td>'+f(Math.round(a))+'</td><td>'+f(Math.round(t))+'</td></tr>';
+        });
+        const totalM = items.reduce((s,i) => s+i[1], 0);
+        const totalA = items.reduce((s,i) => s+i[2], 0);
+        const totalT = items.reduce((s,i) => s+i[3], 0);
+        html += '<tr class="total"><td>Total</td><td>'+f(Math.round(totalM))+'</td><td>'+f(Math.round(totalA))+'</td><td>'+f(Math.round(totalT))+'</td></tr>';
+        $('breakdownBody').innerHTML = html;
+
+        // Amortization
+        let bal = loan;
+        let amortHtml = '';
+        for (let y = 1; y <= years; y++) {
+            let yPrinc = 0, yInt = 0;
+            for (let m = 0; m < 12; m++) {
+                const intPmt = bal * r;
+                const princPmt = Math.min(pi - intPmt + extra, bal);
+                yPrinc += princPmt;
+                yInt += intPmt;
+                bal = Math.max(0, bal - princPmt);
+            }
+            amortHtml += '<tr><td>'+y+'</td><td>'+f(Math.round(yPrinc))+'</td><td>'+f(Math.round(yInt))+'</td><td>'+f(Math.round(bal))+'</td></tr>';
+            if (bal <= 0) break;
+        }
+        $('amortBody').innerHTML = amortHtml;
+
+        $('results').classList.add('show');
+    }
+
+    // Theme toggle
+    $('themeBtn').onclick = () => {
+        const t = document.body.getAttribute('data-theme') === 'light' ? '' : 'light';
+        document.body.setAttribute('data-theme', t);
+        $('themeBtn').textContent = t === 'light' ? '☀️' : '🌙';
+    };
+
+    // Auto-calculate on load
+    calc();
+    </script>
+</body>
+</html>
