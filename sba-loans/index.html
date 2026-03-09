@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBA Business Loan Calculator by State 2026 — Compare Rates & Programs | SmartCalc</title>
+    <meta name="description" content="Compare SBA business loan rates across all 50 states. Calculate 7(a), 504, Microloan, and Express payments. Find the best SBA programs in your state.">
+    <meta name="keywords" content="SBA loan calculator, SBA loan by state, small business loan calculator, SBA 7a loan, SBA 504 loan, business loan rates by state, SBA loan comparison">
+    <link rel="canonical" href="https://alexchalu.github.io/smartcalc/sba-loans/">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3112605892426625" crossorigin="anonymous"></script>
+    <style>
+        :root{--bg:#0a0e1a;--surface:#111827;--surface2:#1f2937;--border:#374151;--text:#f3f4f6;--muted:#9ca3af;--accent:#3b82f6;--accent2:#2563eb;--radius:12px}
+        [data-theme="light"]{--bg:#f9fafb;--surface:#fff;--surface2:#f3f4f6;--border:#e5e7eb;--text:#1f2937;--muted:#6b7280}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+        header{background:var(--surface);border-bottom:1px solid var(--border);padding:1rem 1.5rem;position:sticky;top:0;z-index:100}
+        .hi{max-width:1000px;margin:0 auto;display:flex;align-items:center;gap:1rem}
+        .logo{font-size:1.4rem;font-weight:800;color:var(--accent);text-decoration:none}
+        .tag{color:var(--muted);font-size:.85rem;flex:1}
+        .tb{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:.4rem .7rem;font-size:1rem;cursor:pointer}
+        main{max-width:1000px;margin:0 auto;padding:2rem 1.5rem}
+        h1{font-size:1.75rem;margin-bottom:.5rem}
+        .sub{color:var(--muted);margin-bottom:2rem}
+        .highlights{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2.5rem}
+        .hl-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem}
+        .hl-card h3{font-size:1rem;margin-bottom:1rem;color:var(--accent)}
+        .hl-item{display:flex;justify-content:space-between;padding:.5rem 0;border-bottom:1px solid var(--border)}
+        .hl-item:last-child{border-bottom:none}
+        .hl-item a{color:var(--text);text-decoration:none}
+        .hl-item a:hover{color:var(--accent)}
+        .hl-item .val{color:var(--accent);font-weight:700}
+        .search{margin-bottom:1.5rem}
+        .search input{width:100%;padding:.8rem 1rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:1rem;outline:none}
+        .search input:focus{border-color:var(--accent)}
+        .state-table{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+        .state-table table{width:100%;border-collapse:collapse}
+        .state-table th,.state-table td{padding:.75rem 1rem;text-align:left;font-size:.9rem}
+        .state-table th{background:var(--surface2);font-weight:600;font-size:.8rem;text-transform:uppercase;color:var(--muted);cursor:pointer;user-select:none}
+        .state-table th:hover{color:var(--accent)}
+        .state-table td{border-top:1px solid var(--border)}
+        .state-table a{color:var(--accent);text-decoration:none;font-weight:600}
+        .state-table a:hover{text-decoration:underline}
+        .state-table tr:hover td{background:var(--surface2)}
+        .programs{margin-top:2.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
+        .prog{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem}
+        .prog h3{color:var(--accent);margin-bottom:.75rem}
+        .prog p{color:var(--muted);font-size:.85rem;margin-bottom:.5rem}
+        .prog .amount{font-size:1.1rem;font-weight:700;color:var(--text)}
+        footer{text-align:center;padding:2rem;color:var(--muted);font-size:.85rem;border-top:1px solid var(--border);margin-top:3rem}
+        footer a{color:var(--accent);text-decoration:none}
+        .ad{max-width:1000px;margin:1.5rem auto;padding:0 1.5rem}
+        @media(max-width:600px){.highlights{grid-template-columns:1fr}.programs{grid-template-columns:1fr}}
+    </style>
+</head>
+<body>
+    <header><div class="hi">
+        <a href="../" class="logo">💼 SmartCalc</a>
+        <p class="tag">SBA Loan Calculator by State</p>
+        <button class="tb" id="themeBtn" aria-label="Toggle theme">🌙</button>
+    </div></header>
+
+    <main>
+        <h1>💼 SBA Business Loan Calculator by State</h1>
+        <p class="sub">Compare SBA loan programs across all 50 states. Calculate monthly payments for 7(a), 504, Microloan, and Express programs.</p>
+
+        <div class="highlights">
+            <div class="hl-card">
+                <h3>📈 Highest Average SBA Loans</h3>
+                <div class="hl-item"><a href="california.html">California</a><span class="val">$585,000</span></div>
+                <div class="hl-item"><a href="new-york.html">New York</a><span class="val">$525,000</span></div>
+                <div class="hl-item"><a href="massachusetts.html">Massachusetts</a><span class="val">$490,000</span></div>
+                <div class="hl-item"><a href="texas.html">Texas</a><span class="val">$480,000</span></div>
+                <div class="hl-item"><a href="new-jersey.html">New Jersey</a><span class="val">$475,000</span></div>
+            </div>
+            <div class="hl-card">
+                <h3>💰 Most Affordable Markets</h3>
+                <div class="hl-item"><a href="west-virginia.html">West Virginia</a><span class="val">$275,000</span></div>
+                <div class="hl-item"><a href="wyoming.html">Wyoming</a><span class="val">$280,000</span></div>
+                <div class="hl-item"><a href="south-dakota.html">South Dakota</a><span class="val">$285,000</span></div>
+                <div class="hl-item"><a href="north-dakota.html">North Dakota</a><span class="val">$290,000</span></div>
+                <div class="hl-item"><a href="vermont.html">Vermont</a><span class="val">$295,000</span></div>
+            </div>
+        </div>
+
+        <div class="ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+
+        <div class="programs">
+            
+            <div class="prog">
+                <h3>SBA 7(a)</h3>
+                <p class="amount">Up to $5,000,000</p>
+                <p>Max term: 25 years | Guaranty: 85%</p>
+                <p>Most common SBA loan. Working capital, equipment, real estate.</p>
+            </div>
+            <div class="prog">
+                <h3>SBA 504</h3>
+                <p class="amount">Up to $5,500,000</p>
+                <p>Max term: 25 years | Guaranty: 40%</p>
+                <p>Fixed assets: real estate, equipment. Fixed rate from CDC.</p>
+            </div>
+            <div class="prog">
+                <h3>SBA Microloan</h3>
+                <p class="amount">Up to $50,000</p>
+                <p>Max term: 6 years | Guaranty: 0%</p>
+                <p>Small loans up to $50K through intermediaries. Startups & small.</p>
+            </div>
+            <div class="prog">
+                <h3>SBA Express</h3>
+                <p class="amount">Up to $500,000</p>
+                <p>Max term: 10 years | Guaranty: 50%</p>
+                <p>Fast turnaround (36 hrs). Revolving lines of credit available.</p>
+            </div>
+            <div class="prog">
+                <h3>SBA Disaster</h3>
+                <p class="amount">Up to $2,000,000</p>
+                <p>Max term: 30 years | Guaranty: 0%</p>
+                <p>Low-interest loans for declared disaster recovery.</p>
+            </div>
+        </div>
+
+        <div class="search" style="margin-top:2rem">
+            <input type="text" id="searchInput" placeholder="🔍 Search states...">
+        </div>
+
+        <div class="state-table">
+            <table>
+                <thead><tr>
+                    <th onclick="sortTable(0)">State ↕</th>
+                    <th onclick="sortTable(1)">Avg Loan ↕</th>
+                    <th onclick="sortTable(2)">Rate ↕</th>
+                    <th onclick="sortTable(3)">Top Industry</th>
+                    <th onclick="sortTable(4)">Small Businesses</th>
+                </tr></thead>
+                <tbody id="stateBody">
+                    <tr>
+                        <td><a href="alabama.html">Alabama</a></td>
+                        <td>$371,000</td>
+                        <td>10.5%</td>
+                        <td>Manufacturing</td>
+                        <td>395K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="alaska.html">Alaska</a></td>
+                        <td>$298,000</td>
+                        <td>11%</td>
+                        <td>Oil & Gas</td>
+                        <td>72K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="arizona.html">Arizona</a></td>
+                        <td>$412,000</td>
+                        <td>10.25%</td>
+                        <td>Real Estate</td>
+                        <td>560K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="arkansas.html">Arkansas</a></td>
+                        <td>$325,000</td>
+                        <td>10.5%</td>
+                        <td>Agriculture</td>
+                        <td>258K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="california.html">California</a></td>
+                        <td>$585,000</td>
+                        <td>10%</td>
+                        <td>Technology</td>
+                        <td>4.1M</td>
+                    </tr>
+                    <tr>
+                        <td><a href="colorado.html">Colorado</a></td>
+                        <td>$465,000</td>
+                        <td>10.25%</td>
+                        <td>Technology</td>
+                        <td>640K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="connecticut.html">Connecticut</a></td>
+                        <td>$420,000</td>
+                        <td>10.25%</td>
+                        <td>Finance</td>
+                        <td>350K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="delaware.html">Delaware</a></td>
+                        <td>$380,000</td>
+                        <td>10.5%</td>
+                        <td>Finance</td>
+                        <td>85K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="florida.html">Florida</a></td>
+                        <td>$445,000</td>
+                        <td>10.25%</td>
+                        <td>Tourism</td>
+                        <td>2.8M</td>
+                    </tr>
+                    <tr>
+                        <td><a href="georgia.html">Georgia</a></td>
+                        <td>$415,000</td>
+                        <td>10.5%</td>
+                        <td>Logistics</td>
+                        <td>1.1M</td>
+                    </tr>
+                    <tr>
+                        <td><a href="hawaii.html">Hawaii</a></td>
+                        <td>$395,000</td>
+                        <td>10.75%</td>
+                        <td>Tourism</td>
+                        <td>130K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="idaho.html">Idaho</a></td>
+                        <td>$340,000</td>
+                        <td>10.5%</td>
+                        <td>Agriculture</td>
+                        <td>185K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="illinois.html">Illinois</a></td>
+                        <td>$450,000</td>
+                        <td>10.25%</td>
+                        <td>Manufacturing</td>
+                        <td>1.2M</td>
+                    </tr>
+                    <tr>
+                        <td><a href="indiana.html">Indiana</a></td>
+                        <td>$365,000</td>
+                        <td>10.5%</td>
+                        <td>Manufacturing</td>
+                        <td>530K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="iowa.html">Iowa</a></td>
+                        <td>$330,000</td>
+                        <td>10.5%</td>
+                        <td>Agriculture</td>
+                        <td>268K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="kansas.html">Kansas</a></td>
+                        <td>$340,000</td>
+                        <td>10.5%</td>
+                        <td>Agriculture</td>
+                        <td>252K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="kentucky.html">Kentucky</a></td>
+                        <td>$345,000</td>
+                        <td>10.5%</td>
+                        <td>Manufacturing</td>
+                        <td>350K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="louisiana.html">Louisiana</a></td>
+                        <td>$360,000</td>
+                        <td>10.75%</td>
+                        <td>Energy</td>
+                        <td>410K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="maine.html">Maine</a></td>
+                        <td>$320,000</td>
+                        <td>10.5%</td>
+                        <td>Tourism</td>
+                        <td>145K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="maryland.html">Maryland</a></td>
+                        <td>$430,000</td>
+                        <td>10.25%</td>
+                        <td>Government</td>
+                        <td>580K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="massachusetts.html">Massachusetts</a></td>
+                        <td>$490,000</td>
+                        <td>10%</td>
+                        <td>Biotech</td>
+                        <td>680K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="michigan.html">Michigan</a></td>
+                        <td>$385,000</td>
+                        <td>10.5%</td>
+                        <td>Automotive</td>
+                        <td>890K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="minnesota.html">Minnesota</a></td>
+                        <td>$410,000</td>
+                        <td>10.25%</td>
+                        <td>Healthcare</td>
+                        <td>530K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="mississippi.html">Mississippi</a></td>
+                        <td>$295,000</td>
+                        <td>11%</td>
+                        <td>Agriculture</td>
+                        <td>248K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="missouri.html">Missouri</a></td>
+                        <td>$375,000</td>
+                        <td>10.5%</td>
+                        <td>Agriculture</td>
+                        <td>530K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="montana.html">Montana</a></td>
+                        <td>$310,000</td>
+                        <td>10.75%</td>
+                        <td>Agriculture</td>
+                        <td>120K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="nebraska.html">Nebraska</a></td>
+                        <td>$335,000</td>
+                        <td>10.5%</td>
+                        <td>Agriculture</td>
+                        <td>185K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="nevada.html">Nevada</a></td>
+                        <td>$405,000</td>
+                        <td>10.5%</td>
+                        <td>Hospitality</td>
+                        <td>290K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="new-hampshire.html">New Hampshire</a></td>
+                        <td>$370,000</td>
+                        <td>10.25%</td>
+                        <td>Manufacturing</td>
+                        <td>140K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="new-jersey.html">New Jersey</a></td>
+                        <td>$475,000</td>
+                        <td>10.25%</td>
+                        <td>Pharmaceuticals</td>
+                        <td>870K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="new-mexico.html">New Mexico</a></td>
+                        <td>$310,000</td>
+                        <td>10.75%</td>
+                        <td>Energy</td>
+                        <td>170K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="new-york.html">New York</a></td>
+                        <td>$525,000</td>
+                        <td>10%</td>
+                        <td>Finance</td>
+                        <td>2.2M</td>
+                    </tr>
+                    <tr>
+                        <td><a href="north-carolina.html">North Carolina</a></td>
+                        <td>$400,000</td>
+                        <td>10.25%</td>
+                        <td>Technology</td>
+                        <td>920K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="north-dakota.html">North Dakota</a></td>
+                        <td>$290,000</td>
+                        <td>10.75%</td>
+                        <td>Energy</td>
+                        <td>78K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="ohio.html">Ohio</a></td>
+                        <td>$380,000</td>
+                        <td>10.5%</td>
+                        <td>Manufacturing</td>
+                        <td>960K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="oklahoma.html">Oklahoma</a></td>
+                        <td>$335,000</td>
+                        <td>10.5%</td>
+                        <td>Energy</td>
+                        <td>350K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="oregon.html">Oregon</a></td>
+                        <td>$410,000</td>
+                        <td>10.25%</td>
+                        <td>Technology</td>
+                        <td>400K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="pennsylvania.html">Pennsylvania</a></td>
+                        <td>$420,000</td>
+                        <td>10.25%</td>
+                        <td>Healthcare</td>
+                        <td>1.1M</td>
+                    </tr>
+                    <tr>
+                        <td><a href="rhode-island.html">Rhode Island</a></td>
+                        <td>$355,000</td>
+                        <td>10.5%</td>
+                        <td>Healthcare</td>
+                        <td>100K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="south-carolina.html">South Carolina</a></td>
+                        <td>$370,000</td>
+                        <td>10.5%</td>
+                        <td>Manufacturing</td>
+                        <td>430K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="south-dakota.html">South Dakota</a></td>
+                        <td>$285,000</td>
+                        <td>10.75%</td>
+                        <td>Agriculture</td>
+                        <td>92K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="tennessee.html">Tennessee</a></td>
+                        <td>$395,000</td>
+                        <td>10.5%</td>
+                        <td>Healthcare</td>
+                        <td>600K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="texas.html">Texas</a></td>
+                        <td>$480,000</td>
+                        <td>10%</td>
+                        <td>Energy</td>
+                        <td>2.9M</td>
+                    </tr>
+                    <tr>
+                        <td><a href="utah.html">Utah</a></td>
+                        <td>$425,000</td>
+                        <td>10.25%</td>
+                        <td>Technology</td>
+                        <td>320K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="vermont.html">Vermont</a></td>
+                        <td>$295,000</td>
+                        <td>10.5%</td>
+                        <td>Tourism</td>
+                        <td>78K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="virginia.html">Virginia</a></td>
+                        <td>$445,000</td>
+                        <td>10.25%</td>
+                        <td>Government</td>
+                        <td>740K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="washington.html">Washington</a></td>
+                        <td>$475,000</td>
+                        <td>10%</td>
+                        <td>Technology</td>
+                        <td>640K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="west-virginia.html">West Virginia</a></td>
+                        <td>$275,000</td>
+                        <td>11%</td>
+                        <td>Energy</td>
+                        <td>130K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="wisconsin.html">Wisconsin</a></td>
+                        <td>$370,000</td>
+                        <td>10.5%</td>
+                        <td>Manufacturing</td>
+                        <td>480K</td>
+                    </tr>
+                    <tr>
+                        <td><a href="wyoming.html">Wyoming</a></td>
+                        <td>$280,000</td>
+                        <td>10.75%</td>
+                        <td>Energy</td>
+                        <td>68K</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>💼 <a href="../">SmartCalc</a> — Free Financial Calculators</p>
+        <p style="margin-top:.5rem">Also try: <a href="../mortgage/">Mortgage Calculators</a> · <a href="../paycheck/">Paycheck Calculators</a> · <a href="../solar/">Solar ROI Calculators</a> · <a href="../student-loans/">Student Loan Calculators</a></p>
+    </footer>
+
+    <script>
+    document.getElementById('themeBtn').addEventListener('click',()=>{const t=document.body.dataset.theme==='light'?'':'light';document.body.dataset.theme=t;document.getElementById('themeBtn').textContent=t==='light'?'🌙':'☀️'});
+    document.getElementById('searchInput').addEventListener('input',function(){const q=this.value.toLowerCase();document.querySelectorAll('#stateBody tr').forEach(r=>{r.style.display=r.textContent.toLowerCase().includes(q)?'':'none'})});
+    let sortDir={};
+    function sortTable(col){const tb=document.getElementById('stateBody');const rows=[...tb.querySelectorAll('tr')];sortDir[col]=!sortDir[col];rows.sort((a,b)=>{let av=a.cells[col].textContent,bv=b.cells[col].textContent;const an=parseFloat(av.replace(/[$,%K,M]/g,'')),bn=parseFloat(bv.replace(/[$,%K,M]/g,''));if(!isNaN(an)&&!isNaN(bn))return sortDir[col]?an-bn:bn-an;return sortDir[col]?av.localeCompare(bv):bv.localeCompare(av)});rows.forEach(r=>tb.appendChild(r))}
+    </script>
+</body>
+</html>
