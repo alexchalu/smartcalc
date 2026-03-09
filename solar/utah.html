@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Utah Solar Panel Calculator 2026 — ROI, Savings & Payback | SmartCalc</title>
+<meta name="description" content="Calculate solar panel savings in Utah. 5.5 peak sun hours, $0.115/kWh electricity. Estimate ROI, payback period, and 25-year savings with federal + state incentives.">
+<meta name="keywords" content="Utah solar panels, Utah solar calculator, UT solar ROI, solar panel cost Utah, solar savings Utah, Utah solar incentives">
+<link rel="canonical" href="https://alexchalu.github.io/smartcalc/solar/utah.html">
+<meta property="og:title" content="Utah Solar Panel Calculator 2026">
+<meta property="og:description" content="Calculate solar ROI in Utah. 5.5h sun, $0.115/kWh. Free calculator.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☀️</text></svg>">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3112605892426625" crossorigin="anonymous"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Utah Solar Panel Calculator","description":"Calculate solar panel ROI and savings in Utah","url":"https://alexchalu.github.io/smartcalc/solar/utah.html","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<style>
+:root{--bg:#0a0e1a;--surface:#111827;--surface2:#1f2937;--border:#374151;--text:#f3f4f6;--muted:#9ca3af;--accent:#f59e0b;--accent2:#d97706;--green:#10b981;--red:#ef4444;--glow:rgba(245,158,11,0.12);--radius:12px;--shadow:0 4px 24px rgba(0,0,0,0.4)}
+[data-theme="light"]{--bg:#f9fafb;--surface:#fff;--surface2:#f3f4f6;--border:#e5e7eb;--text:#1f2937;--muted:#6b7280;--shadow:0 4px 24px rgba(0,0,0,0.06)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+header{background:var(--surface);border-bottom:1px solid var(--border);padding:1rem 1.5rem;position:sticky;top:0;z-index:100}
+.header-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:1rem}
+.logo{font-size:1.3rem;font-weight:800;color:var(--accent);text-decoration:none}
+.nav{color:var(--muted);font-size:.85rem;flex:1}
+.nav a{color:var(--accent);text-decoration:none}
+.theme-btn{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:.4rem .6rem;font-size:1rem;cursor:pointer}
+main{max-width:900px;margin:0 auto;padding:2rem 1.5rem}
+h1{font-size:1.8rem;margin-bottom:.5rem}
+.subtitle{color:var(--muted);margin-bottom:2rem;font-size:1rem}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin-bottom:2rem}
+.stat{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;text-align:center}
+.stat .label{color:var(--muted);font-size:.8rem;text-transform:uppercase;letter-spacing:.05em}
+.stat .value{font-size:1.6rem;font-weight:800;color:var(--accent);margin-top:.25rem}
+.stat .detail{color:var(--muted);font-size:.75rem;margin-top:.25rem}
+.calc-section{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;margin-bottom:2rem}
+.calc-section h2{font-size:1.2rem;margin-bottom:1.25rem;display:flex;align-items:center;gap:.5rem}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-group{display:flex;flex-direction:column;gap:.35rem}
+.form-group label{font-size:.85rem;font-weight:600;color:var(--muted)}
+.form-group input,.form-group select{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;color:var(--text);font-size:1rem;outline:none}
+.form-group input:focus,.form-group select:focus{border-color:var(--accent)}
+.btn{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#000;border:none;border-radius:8px;padding:.85rem 1.5rem;font-size:1rem;font-weight:700;cursor:pointer;width:100%;margin-top:1rem;transition:.2s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 4px 20px rgba(245,158,11,0.3)}
+.results{margin-top:1.5rem;display:none}
+.results.show{display:block}
+.result-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:1.5rem}
+.r-card{background:var(--surface2);border-radius:var(--radius);padding:1.25rem;text-align:center}
+.r-card .r-label{font-size:.8rem;color:var(--muted);text-transform:uppercase}
+.r-card .r-value{font-size:1.5rem;font-weight:800;margin-top:.25rem}
+.r-card .r-value.green{color:var(--green)}
+.r-card .r-value.accent{color:var(--accent)}
+.breakdown{width:100%;border-collapse:collapse;margin-top:1rem}
+.breakdown th,.breakdown td{padding:.65rem .85rem;text-align:left;border-bottom:1px solid var(--border);font-size:.9rem}
+.breakdown th{color:var(--muted);font-size:.8rem;text-transform:uppercase}
+.breakdown tr:hover{background:var(--surface2)}
+.info-section{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;margin-bottom:2rem}
+.info-section h2{font-size:1.2rem;margin-bottom:1rem}
+.info-section h3{font-size:1rem;margin:1.25rem 0 .5rem;color:var(--accent)}
+.info-section p,.info-section li{color:var(--muted);font-size:.9rem;margin-bottom:.5rem}
+.info-section ul{padding-left:1.25rem}
+.cta-box{background:linear-gradient(135deg,rgba(245,158,11,0.1),rgba(16,185,129,0.1));border:1px solid var(--accent);border-radius:var(--radius);padding:1.5rem;text-align:center;margin:2rem 0}
+.cta-box h3{color:var(--accent);margin-bottom:.5rem}
+.ad-slot{max-width:900px;margin:1rem auto;padding:0 1.5rem}
+footer{text-align:center;padding:2rem;color:var(--muted);font-size:.85rem;border-top:1px solid var(--border);margin-top:3rem}
+footer a{color:var(--accent);text-decoration:none}
+.state-links{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+.state-links a{color:var(--accent);text-decoration:none;font-size:.8rem;padding:.2rem .5rem;background:var(--surface2);border-radius:4px}
+.state-links a:hover{background:var(--accent);color:#000}
+@media(max-width:600px){.form-grid{grid-template-columns:1fr}.stats-grid{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<header><div class="header-inner">
+<a href="../" class="logo">☀️ SmartCalc</a>
+<p class="nav"><a href="./">Solar Calculators</a> › Utah</p>
+<button class="theme-btn" id="themeBtn">🌙</button>
+</div></header>
+
+<div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
+<main>
+<h1>🏔️ Utah Solar Panel Calculator 2026</h1>
+<p class="subtitle">Calculate your solar panel ROI, payback period, and 25-year savings in Utah. Includes federal ITC + available incentives.</p>
+
+<div class="stats-grid">
+<div class="stat"><div class="label">Peak Sun Hours</div><div class="value">5.5h</div><div class="detail">daily average</div></div>
+<div class="stat"><div class="label">Electricity Rate</div><div class="value">$0.115</div><div class="detail">per kWh</div></div>
+<div class="stat"><div class="label">Avg System Cost</div><div class="value">$21K</div><div class="detail">before incentives</div></div>
+<div class="stat"><div class="label">Est. Payback</div><div class="value">13.3yr</div><div class="detail">after incentives</div></div>
+</div>
+
+<div class="calc-section">
+<h2>☀️ Your Solar ROI Calculator</h2>
+<div class="form-grid">
+<div class="form-group"><label>Monthly Electric Bill ($)</label><input type="number" id="monthlyBill" value="95" min="0" step="5"></div>
+<div class="form-group"><label>Electricity Rate ($/kWh)</label><input type="number" id="elecRate" value="0.115" min="0" step="0.001"></div>
+<div class="form-group"><label>System Size (kW)</label><input type="number" id="systemSize" value="6" min="1" max="25" step="0.5"></div>
+<div class="form-group"><label>Cost per Watt ($)</label><input type="number" id="costPerWatt" value="3.50" min="0" step="0.10"></div>
+<div class="form-group"><label>Peak Sun Hours/Day</label><input type="number" id="sunHours" value="5.5" min="0" step="0.1"></div>
+<div class="form-group"><label>System Degradation (%/yr)</label><input type="number" id="degradation" value="0.5" min="0" max="2" step="0.1"></div>
+<div class="form-group"><label>Electricity Price Increase (%/yr)</label><input type="number" id="priceIncrease" value="3" min="0" max="10" step="0.5"></div>
+<div class="form-group"><label>Federal Tax Credit (%)</label><input type="number" id="fedCredit" value="30" min="0" max="100" step="1"></div>
+<div class="form-group"><label>State/Local Rebate ($)</label><input type="number" id="stateRebate" value="0" min="0" step="100"></div>
+<div class="form-group"><label>Loan? (years, 0=cash)</label><input type="number" id="loanYears" value="0" min="0" max="30" step="1"></div>
+</div>
+<button class="btn" onclick="calculate()">⚡ Calculate Solar Savings</button>
+
+<div class="results" id="results">
+<div class="result-cards">
+<div class="r-card"><div class="r-label">Total System Cost</div><div class="r-value accent" id="rCost">—</div></div>
+<div class="r-card"><div class="r-label">After Incentives</div><div class="r-value green" id="rNet">—</div></div>
+<div class="r-card"><div class="r-label">Payback Period</div><div class="r-value accent" id="rPayback">—</div></div>
+<div class="r-card"><div class="r-label">25-Year Savings</div><div class="r-value green" id="rSavings">—</div></div>
+<div class="r-card"><div class="r-label">25-Year ROI</div><div class="r-value green" id="rROI">—</div></div>
+<div class="r-card"><div class="r-label">Year 1 Production</div><div class="r-value accent" id="rProd">—</div></div>
+</div>
+
+<h3 style="margin:1rem 0 .5rem">📊 Year-by-Year Breakdown</h3>
+<div style="overflow-x:auto"><table class="breakdown">
+<thead><tr><th>Year</th><th>Production (kWh)</th><th>Elec Rate</th><th>Annual Savings</th><th>Cumulative Savings</th><th>Net Position</th></tr></thead>
+<tbody id="yearlyTable"></tbody>
+</table></div>
+</div>
+</div>
+
+<div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
+<div class="info-section">
+<h2>☀️ Solar Energy in Utah — What You Need to Know</h2>
+
+<h3>Solar Potential</h3>
+<p>Utah averages <strong>5.5 peak sun hours per day</strong>, making it one of the best states for solar energy in the US. A typical 6kW residential system in Utah produces approximately <strong>9,636 kWh per year</strong>.</p>
+
+<h3>Electricity Costs</h3>
+<p>The average electricity rate in Utah is <strong>$0.115/kWh</strong>, below the national average, which extends payback periods but solar still provides long-term savings. With electricity prices rising 3-5% annually, locking in solar savings now protects against future rate increases.</p>
+
+<h3>Incentives & Credits</h3>
+<ul>
+<li><strong>Federal Investment Tax Credit (ITC):</strong> 30% of system cost through 2032, stepping down to 26% in 2033 and 22% in 2034</li>
+<li><strong>State Incentives:</strong> Check with your local utility and state energy office for current rebates and incentives</li>
+<li><strong>Net Metering (Yes):</strong> Full retail rate credit for excess energy sent to the grid</li>
+<li><strong>Property Tax Exemption:</strong> Many Utah counties exempt solar installations from property tax increases</li>
+</ul>
+
+<h3>ROI Analysis</h3>
+<p>Based on current rates and incentives, a typical solar installation in Utah pays for itself in approximately <strong>13.3 years</strong>. Over a 25-year panel warranty period, homeowners can expect a <strong>88% return on investment</strong>, with total savings of approximately <strong>$13,004</strong> after accounting for system costs and incentives.</p>
+
+<h3>Installation Tips for Utah</h3>
+<ul>
+<li>Get at least 3 quotes from local installers — prices vary significantly</li>
+<li>Check if your roof faces south or southwest for optimal production</li>
+<li>Consider tree shading — even partial shade reduces output significantly</li>
+<li>Ask about panel-level monitoring (microinverters or optimizers)</li>
+<li>Verify your installer is NABCEP certified</li>
+<li>Review your utility's interconnection process before signing</li>
+</ul>
+</div>
+
+<div class="cta-box">
+<h3>🔋 Ready to Go Solar in Utah?</h3>
+<p style="color:var(--muted)">Use the calculator above with your actual electric bill for personalized savings. Compare quotes from at least 3 local installers.</p>
+</div>
+
+<div class="info-section">
+<h2>🗺️ Solar Calculators for All 50 States</h2>
+<div class="state-links" id="stateLinks"></div>
+</div>
+</main>
+
+<footer>
+<p>SmartCalc Solar Calculator — Utah. All calculations run in your browser.</p>
+<p><a href="../">💰 SmartCalc</a> · <a href="./">All Solar Calculators</a> · <a href="https://alexchalu.github.io/toolpulse/">🔧 ToolPulse</a> · <a href="https://alexchalu.github.io/healthcalcs/">🏥 HealthCalcs</a></p>
+</footer>
+
+<script>
+const allStates=[{"n":"Alabama","s":"alabama"},{"n":"Alaska","s":"alaska"},{"n":"Arizona","s":"arizona"},{"n":"Arkansas","s":"arkansas"},{"n":"California","s":"california"},{"n":"Colorado","s":"colorado"},{"n":"Connecticut","s":"connecticut"},{"n":"Delaware","s":"delaware"},{"n":"Florida","s":"florida"},{"n":"Georgia","s":"georgia"},{"n":"Hawaii","s":"hawaii"},{"n":"Idaho","s":"idaho"},{"n":"Illinois","s":"illinois"},{"n":"Indiana","s":"indiana"},{"n":"Iowa","s":"iowa"},{"n":"Kansas","s":"kansas"},{"n":"Kentucky","s":"kentucky"},{"n":"Louisiana","s":"louisiana"},{"n":"Maine","s":"maine"},{"n":"Maryland","s":"maryland"},{"n":"Massachusetts","s":"massachusetts"},{"n":"Michigan","s":"michigan"},{"n":"Minnesota","s":"minnesota"},{"n":"Mississippi","s":"mississippi"},{"n":"Missouri","s":"missouri"},{"n":"Montana","s":"montana"},{"n":"Nebraska","s":"nebraska"},{"n":"Nevada","s":"nevada"},{"n":"New Hampshire","s":"new-hampshire"},{"n":"New Jersey","s":"new-jersey"},{"n":"New Mexico","s":"new-mexico"},{"n":"New York","s":"new-york"},{"n":"North Carolina","s":"north-carolina"},{"n":"North Dakota","s":"north-dakota"},{"n":"Ohio","s":"ohio"},{"n":"Oklahoma","s":"oklahoma"},{"n":"Oregon","s":"oregon"},{"n":"Pennsylvania","s":"pennsylvania"},{"n":"Rhode Island","s":"rhode-island"},{"n":"South Carolina","s":"south-carolina"},{"n":"South Dakota","s":"south-dakota"},{"n":"Tennessee","s":"tennessee"},{"n":"Texas","s":"texas"},{"n":"Utah","s":"utah"},{"n":"Vermont","s":"vermont"},{"n":"Virginia","s":"virginia"},{"n":"Washington","s":"washington"},{"n":"West Virginia","s":"west-virginia"},{"n":"Wisconsin","s":"wisconsin"},{"n":"Wyoming","s":"wyoming"}];
+document.getElementById('stateLinks').innerHTML=allStates.map(s=>`<a href="${s.s}.html">${s.n}</a>`).join('');
+
+function calculate(){
+const bill=+document.getElementById('monthlyBill').value;
+const rate=+document.getElementById('elecRate').value;
+const size=+document.getElementById('systemSize').value;
+const cpw=+document.getElementById('costPerWatt').value;
+const sun=+document.getElementById('sunHours').value;
+const deg=+document.getElementById('degradation').value/100;
+const inc=+document.getElementById('priceIncrease').value/100;
+const fed=+document.getElementById('fedCredit').value/100;
+const stEl=document.getElementById('stateCredit')||document.getElementById('stateRebate');
+const isCredit=false;
+const stVal=+stEl.value;
+const loanYrs=+document.getElementById('loanYears').value;
+
+const totalCost=size*1000*cpw;
+const afterFed=totalCost*(1-fed);
+const netCost=isCredit?afterFed*(1-(stVal/100)):afterFed-stVal;
+
+let cumSavings=0,rows='',paybackYr=0;
+for(let y=1;y<=25;y++){
+  const prod=Math.round(size*sun*365*0.8*(1-deg)**( y-1));
+  const r=(rate*(1+inc)**(y-1)).toFixed(4);
+  const sav=Math.round(prod*r);
+  cumSavings+=sav;
+  const net=cumSavings-netCost;
+  if(paybackYr===0&&net>=0)paybackYr=y;
+  rows+=`<tr><td>${y}</td><td>${prod.toLocaleString()}</td><td>$${r}</td><td>$${sav.toLocaleString()}</td><td>$${Math.round(cumSavings).toLocaleString()}</td><td style="color:${net>=0?'var(--green)':'var(--red)'}">$${Math.round(net).toLocaleString()}</td></tr>`;
+}
+
+document.getElementById('rCost').textContent='$'+Math.round(totalCost).toLocaleString();
+document.getElementById('rNet').textContent='$'+Math.round(netCost).toLocaleString();
+document.getElementById('rPayback').textContent=paybackYr>0?paybackYr+' years':'>25 years';
+document.getElementById('rSavings').textContent='$'+Math.round(cumSavings-netCost).toLocaleString();
+document.getElementById('rROI').textContent=Math.round((cumSavings-netCost)/netCost*100)+'%';
+document.getElementById('rProd').textContent=Math.round(size*sun*365*0.8).toLocaleString()+' kWh';
+document.getElementById('yearlyTable').innerHTML=rows;
+document.getElementById('results').classList.add('show');
+}
+
+calculate();
+
+const b=document.getElementById('themeBtn');const s=localStorage.getItem('sc-theme');
+if(s==='light'){document.documentElement.setAttribute('data-theme','light');b.textContent='☀️'}
+b.addEventListener('click',()=>{const l=document.documentElement.getAttribute('data-theme')==='light';document.documentElement.setAttribute('data-theme',l?'dark':'light');b.textContent=l?'🌙':'☀️';localStorage.setItem('sc-theme',l?'dark':'light')});
+</script>
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solar Panel Calculator by State 2026 — ROI, Savings & Payback for All 50 States | SmartCalc</title>
+<meta name="description" content="Compare solar panel ROI across all 50 states. Calculate savings, payback period, and incentives. Find the best states for solar in 2026.">
+<meta name="keywords" content="solar panel calculator, solar ROI by state, best states for solar, solar panel savings, solar payback period, solar incentives by state">
+<link rel="canonical" href="https://alexchalu.github.io/smartcalc/solar/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☀️</text></svg>">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3112605892426625" crossorigin="anonymous"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Solar Panel Calculator by State","description":"Compare solar panel ROI across all 50 US states","url":"https://alexchalu.github.io/smartcalc/solar/","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<style>
+:root{--bg:#0a0e1a;--surface:#111827;--surface2:#1f2937;--border:#374151;--text:#f3f4f6;--muted:#9ca3af;--accent:#f59e0b;--accent2:#d97706;--green:#10b981;--red:#ef4444;--glow:rgba(245,158,11,0.12);--radius:12px;--shadow:0 4px 24px rgba(0,0,0,0.4)}
+[data-theme="light"]{--bg:#f9fafb;--surface:#fff;--surface2:#f3f4f6;--border:#e5e7eb;--text:#1f2937;--muted:#6b7280;--shadow:0 4px 24px rgba(0,0,0,0.06)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+header{background:var(--surface);border-bottom:1px solid var(--border);padding:1rem 1.5rem;position:sticky;top:0;z-index:100}
+.header-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:1rem}
+.logo{font-size:1.3rem;font-weight:800;color:var(--accent);text-decoration:none}
+.nav{color:var(--muted);font-size:.85rem;flex:1}
+.nav a{color:var(--accent);text-decoration:none}
+.theme-btn{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:.4rem .6rem;font-size:1rem;cursor:pointer}
+main{max-width:1100px;margin:0 auto;padding:2rem 1.5rem}
+h1{font-size:1.8rem;margin-bottom:.5rem}
+.subtitle{color:var(--muted);margin-bottom:2rem}
+.search{width:100%;padding:.75rem 1rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);color:var(--text);font-size:1rem;margin-bottom:1.5rem}
+.search:focus{outline:none;border-color:var(--accent)}
+.highlights{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2rem}
+.highlight-box{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem}
+.highlight-box h3{font-size:1rem;margin-bottom:.75rem;color:var(--accent)}
+.highlight-box ul{list-style:none;padding:0}
+.highlight-box li{padding:.35rem 0;display:flex;justify-content:space-between;font-size:.9rem;border-bottom:1px solid var(--border)}
+.highlight-box li:last-child{border:none}
+.highlight-box .st-name{font-weight:600}
+.highlight-box .st-val{color:var(--green);font-weight:700}
+.state-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.75rem}
+.state-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;text-decoration:none;color:var(--text);transition:.2s;display:flex;flex-direction:column;gap:.25rem}
+.state-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow)}
+.state-card .s-name{font-weight:700;font-size:1rem}
+.state-card .s-detail{color:var(--muted);font-size:.8rem}
+.state-card .s-payback{color:var(--green);font-weight:700;font-size:.85rem}
+.ad-slot{max-width:1100px;margin:1rem auto;padding:0 1.5rem}
+footer{text-align:center;padding:2rem;color:var(--muted);font-size:.85rem;border-top:1px solid var(--border);margin-top:3rem}
+footer a{color:var(--accent);text-decoration:none}
+@media(max-width:768px){.highlights{grid-template-columns:1fr}.state-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.state-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="header-inner">
+<a href="../" class="logo">☀️ SmartCalc</a>
+<p class="nav"><a href="../">Home</a> › Solar Calculators</p>
+<button class="theme-btn" id="themeBtn">🌙</button>
+</div></header>
+
+<div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
+<main>
+<h1>☀️ Solar Panel Calculator by State — 2026</h1>
+<p class="subtitle">Compare solar panel ROI, savings, and payback periods across all 50 US states. Click any state for a detailed calculator with year-by-year projections.</p>
+
+<input type="text" class="search" id="search" placeholder="🔍 Search states..." oninput="filterStates()">
+
+<div class="highlights">
+<div class="highlight-box">
+<h3>🏆 Best States for Solar ROI</h3>
+<ul>
+<li><span class="st-name">🌺 Hawaii</span><span class="st-val">2.8 yr payback</span></li>
+<li><span class="st-name">🌴 California</span><span class="st-val">5.3 yr payback</span></li>
+<li><span class="st-name">🏠 Massachusetts</span><span class="st-val">7.7 yr payback</span></li>
+<li><span class="st-name">🌵 Arizona</span><span class="st-val">8.1 yr payback</span></li>
+<li><span class="st-name">🌵 New Mexico</span><span class="st-val">8.3 yr payback</span></li>
+<li><span class="st-name">🗽 New York</span><span class="st-val">8.7 yr payback</span></li>
+<li><span class="st-name">🌴 South Carolina</span><span class="st-val">8.9 yr payback</span></li>
+<li><span class="st-name">🏠 Connecticut</span><span class="st-val">9.2 yr payback</span></li>
+<li><span class="st-name">🏠 Rhode Island</span><span class="st-val">9.3 yr payback</span></li>
+<li><span class="st-name">🌊 Florida</span><span class="st-val">9.8 yr payback</span></li>
+</ul>
+</div>
+<div class="highlight-box">
+<h3>⚡ Highest Electricity Rates</h3>
+<ul>
+<li><span class="st-name">🌺 Hawaii</span><span class="st-val">$0.430/kWh</span></li>
+<li><span class="st-name">🌴 California</span><span class="st-val">$0.285/kWh</span></li>
+<li><span class="st-name">🏠 Massachusetts</span><span class="st-val">$0.285/kWh</span></li>
+<li><span class="st-name">🏠 Connecticut</span><span class="st-val">$0.268/kWh</span></li>
+<li><span class="st-name">🏠 Rhode Island</span><span class="st-val">$0.265/kWh</span></li>
+<li><span class="st-name">🏔️ Alaska</span><span class="st-val">$0.237/kWh</span></li>
+<li><span class="st-name">🏔️ New Hampshire</span><span class="st-val">$0.235/kWh</span></li>
+<li><span class="st-name">🦞 Maine</span><span class="st-val">$0.225/kWh</span></li>
+<li><span class="st-name">🗽 New York</span><span class="st-val">$0.225/kWh</span></li>
+<li><span class="st-name">🍁 Vermont</span><span class="st-val">$0.205/kWh</span></li>
+</ul>
+</div>
+</div>
+
+<h2 style="font-size:1.2rem;margin-bottom:1rem">All 50 States</h2>
+<div class="state-grid" id="stateGrid">
+<a class="state-card" href="hawaii.html" data-name="hawaii">
+<span class="s-name">🌺 Hawaii</span>
+<span class="s-detail">5.4h sun · $0.430/kWh · State credit</span>
+<span class="s-payback">⚡ 2.8 year payback</span>
+</a>
+<a class="state-card" href="california.html" data-name="california">
+<span class="s-name">🌴 California</span>
+<span class="s-detail">5.8h sun · $0.285/kWh</span>
+<span class="s-payback">⚡ 5.3 year payback</span>
+</a>
+<a class="state-card" href="massachusetts.html" data-name="massachusetts">
+<span class="s-name">🏠 Massachusetts</span>
+<span class="s-detail">4.2h sun · $0.285/kWh · State credit</span>
+<span class="s-payback">⚡ 7.7 year payback</span>
+</a>
+<a class="state-card" href="arizona.html" data-name="arizona">
+<span class="s-name">🌵 Arizona</span>
+<span class="s-detail">6.5h sun · $0.136/kWh · State credit</span>
+<span class="s-payback">⚡ 8.1 year payback</span>
+</a>
+<a class="state-card" href="new-mexico.html" data-name="new mexico">
+<span class="s-name">🌵 New Mexico</span>
+<span class="s-detail">6.3h sun · $0.138/kWh · State credit</span>
+<span class="s-payback">⚡ 8.3 year payback</span>
+</a>
+<a class="state-card" href="new-york.html" data-name="new york">
+<span class="s-name">🗽 New York</span>
+<span class="s-detail">4h sun · $0.225/kWh · State credit</span>
+<span class="s-payback">⚡ 8.7 year payback</span>
+</a>
+<a class="state-card" href="south-carolina.html" data-name="south carolina">
+<span class="s-name">🌴 South Carolina</span>
+<span class="s-detail">5.1h sun · $0.138/kWh · State credit</span>
+<span class="s-payback">⚡ 8.9 year payback</span>
+</a>
+<a class="state-card" href="connecticut.html" data-name="connecticut">
+<span class="s-name">🏠 Connecticut</span>
+<span class="s-detail">4.2h sun · $0.268/kWh</span>
+<span class="s-payback">⚡ 9.2 year payback</span>
+</a>
+<a class="state-card" href="rhode-island.html" data-name="rhode island">
+<span class="s-name">🏠 Rhode Island</span>
+<span class="s-detail">4.2h sun · $0.265/kWh</span>
+<span class="s-payback">⚡ 9.3 year payback</span>
+</a>
+<a class="state-card" href="florida.html" data-name="florida">
+<span class="s-name">🌊 Florida</span>
+<span class="s-detail">5.6h sun · $0.145/kWh</span>
+<span class="s-payback">⚡ 9.8 year payback</span>
+</a>
+<a class="state-card" href="idaho.html" data-name="idaho">
+<span class="s-name">🥔 Idaho</span>
+<span class="s-detail">4.8h sun · $0.105/kWh · State credit</span>
+<span class="s-payback">⚡ 10.0 year payback</span>
+</a>
+<a class="state-card" href="nevada.html" data-name="nevada">
+<span class="s-name">🎰 Nevada</span>
+<span class="s-detail">6.2h sun · $0.128/kWh</span>
+<span class="s-payback">⚡ 10.1 year payback</span>
+</a>
+<a class="state-card" href="colorado.html" data-name="colorado">
+<span class="s-name">⛰️ Colorado</span>
+<span class="s-detail">5.5h sun · $0.145/kWh</span>
+<span class="s-payback">⚡ 10.5 year payback</span>
+</a>
+<a class="state-card" href="texas.html" data-name="texas">
+<span class="s-name">🤠 Texas</span>
+<span class="s-detail">5.5h sun · $0.138/kWh</span>
+<span class="s-payback">⚡ 10.5 year payback</span>
+</a>
+<a class="state-card" href="new-hampshire.html" data-name="new hampshire">
+<span class="s-name">🏔️ New Hampshire</span>
+<span class="s-detail">4.1h sun · $0.235/kWh</span>
+<span class="s-payback">⚡ 10.8 year payback</span>
+</a>
+<a class="state-card" href="maine.html" data-name="maine">
+<span class="s-name">🦞 Maine</span>
+<span class="s-detail">4.1h sun · $0.225/kWh</span>
+<span class="s-payback">⚡ 10.8 year payback</span>
+</a>
+<a class="state-card" href="kansas.html" data-name="kansas">
+<span class="s-name">🌻 Kansas</span>
+<span class="s-detail">5.1h sun · $0.138/kWh</span>
+<span class="s-payback">⚡ 11.9 year payback</span>
+</a>
+<a class="state-card" href="georgia.html" data-name="georgia">
+<span class="s-name">🍑 Georgia</span>
+<span class="s-detail">5h sun · $0.135/kWh</span>
+<span class="s-payback">⚡ 12.4 year payback</span>
+</a>
+<a class="state-card" href="new-jersey.html" data-name="new jersey">
+<span class="s-name">🏖️ New Jersey</span>
+<span class="s-detail">4.4h sun · $0.175/kWh</span>
+<span class="s-payback">⚡ 12.5 year payback</span>
+</a>
+<a class="state-card" href="vermont.html" data-name="vermont">
+<span class="s-name">🍁 Vermont</span>
+<span class="s-detail">3.9h sun · $0.205/kWh</span>
+<span class="s-payback">⚡ 12.5 year payback</span>
+</a>
+<a class="state-card" href="iowa.html" data-name="iowa">
+<span class="s-name">🌾 Iowa</span>
+<span class="s-detail">4.4h sun · $0.135/kWh · State credit</span>
+<span class="s-payback">⚡ 12.6 year payback</span>
+</a>
+<a class="state-card" href="alaska.html" data-name="alaska">
+<span class="s-name">🏔️ Alaska</span>
+<span class="s-detail">3.2h sun · $0.237/kWh</span>
+<span class="s-payback">⚡ 12.6 year payback</span>
+</a>
+<a class="state-card" href="north-carolina.html" data-name="north carolina">
+<span class="s-name">🏠 North Carolina</span>
+<span class="s-detail">5h sun · $0.128/kWh</span>
+<span class="s-payback">⚡ 13.1 year payback</span>
+</a>
+<a class="state-card" href="maryland.html" data-name="maryland">
+<span class="s-name">🦀 Maryland</span>
+<span class="s-detail">4.5h sun · $0.155/kWh</span>
+<span class="s-payback">⚡ 13.2 year payback</span>
+</a>
+<a class="state-card" href="utah.html" data-name="utah">
+<span class="s-name">🏔️ Utah</span>
+<span class="s-detail">5.5h sun · $0.115/kWh</span>
+<span class="s-payback">⚡ 13.3 year payback</span>
+</a>
+<a class="state-card" href="alabama.html" data-name="alabama">
+<span class="s-name">🏠 Alabama</span>
+<span class="s-detail">4.8h sun · $0.138/kWh</span>
+<span class="s-payback">⚡ 13.3 year payback</span>
+</a>
+<a class="state-card" href="mississippi.html" data-name="mississippi">
+<span class="s-name">🏠 Mississippi</span>
+<span class="s-detail">4.9h sun · $0.128/kWh</span>
+<span class="s-payback">⚡ 13.4 year payback</span>
+</a>
+<a class="state-card" href="oklahoma.html" data-name="oklahoma">
+<span class="s-name">🏠 Oklahoma</span>
+<span class="s-detail">5.2h sun · $0.118/kWh</span>
+<span class="s-payback">⚡ 13.7 year payback</span>
+</a>
+<a class="state-card" href="illinois.html" data-name="illinois">
+<span class="s-name">🌽 Illinois</span>
+<span class="s-detail">4.3h sun · $0.155/kWh</span>
+<span class="s-payback">⚡ 13.8 year payback</span>
+</a>
+<a class="state-card" href="michigan.html" data-name="michigan">
+<span class="s-name">🏠 Michigan</span>
+<span class="s-detail">3.8h sun · $0.175/kWh</span>
+<span class="s-payback">⚡ 13.8 year payback</span>
+</a>
+<a class="state-card" href="virginia.html" data-name="virginia">
+<span class="s-name">🏠 Virginia</span>
+<span class="s-detail">4.6h sun · $0.138/kWh</span>
+<span class="s-payback">⚡ 13.8 year payback</span>
+</a>
+<a class="state-card" href="delaware.html" data-name="delaware">
+<span class="s-name">🏖️ Delaware</span>
+<span class="s-detail">4.5h sun · $0.145/kWh</span>
+<span class="s-payback">⚡ 14.1 year payback</span>
+</a>
+<a class="state-card" href="louisiana.html" data-name="louisiana">
+<span class="s-name">⚜️ Louisiana</span>
+<span class="s-detail">5h sun · $0.118/kWh</span>
+<span class="s-payback">⚡ 14.2 year payback</span>
+</a>
+<a class="state-card" href="wyoming.html" data-name="wyoming">
+<span class="s-name">🏔️ Wyoming</span>
+<span class="s-detail">5.2h sun · $0.118/kWh</span>
+<span class="s-payback">⚡ 14.3 year payback</span>
+</a>
+<a class="state-card" href="pennsylvania.html" data-name="pennsylvania">
+<span class="s-name">🔔 Pennsylvania</span>
+<span class="s-detail">4.1h sun · $0.155/kWh</span>
+<span class="s-payback">⚡ 14.5 year payback</span>
+</a>
+<a class="state-card" href="arkansas.html" data-name="arkansas">
+<span class="s-name">🏠 Arkansas</span>
+<span class="s-detail">4.9h sun · $0.118/kWh</span>
+<span class="s-payback">⚡ 14.5 year payback</span>
+</a>
+<a class="state-card" href="missouri.html" data-name="missouri">
+<span class="s-name">🏠 Missouri</span>
+<span class="s-detail">4.6h sun · $0.125/kWh</span>
+<span class="s-payback">⚡ 14.6 year payback</span>
+</a>
+<a class="state-card" href="south-dakota.html" data-name="south dakota">
+<span class="s-name">🏔️ South Dakota</span>
+<span class="s-detail">4.8h sun · $0.125/kWh</span>
+<span class="s-payback">⚡ 14.6 year payback</span>
+</a>
+<a class="state-card" href="indiana.html" data-name="indiana">
+<span class="s-name">🏠 Indiana</span>
+<span class="s-detail">4.2h sun · $0.142/kWh</span>
+<span class="s-payback">⚡ 14.7 year payback</span>
+</a>
+<a class="state-card" href="nebraska.html" data-name="nebraska">
+<span class="s-name">🌽 Nebraska</span>
+<span class="s-detail">4.8h sun · $0.118/kWh</span>
+<span class="s-payback">⚡ 14.8 year payback</span>
+</a>
+<a class="state-card" href="wisconsin.html" data-name="wisconsin">
+<span class="s-name">🧀 Wisconsin</span>
+<span class="s-detail">4h sun · $0.155/kWh</span>
+<span class="s-payback">⚡ 14.8 year payback</span>
+</a>
+<a class="state-card" href="minnesota.html" data-name="minnesota">
+<span class="s-name">❄️ Minnesota</span>
+<span class="s-detail">4.2h sun · $0.145/kWh</span>
+<span class="s-payback">⚡ 15.1 year payback</span>
+</a>
+<a class="state-card" href="tennessee.html" data-name="tennessee">
+<span class="s-name">🎸 Tennessee</span>
+<span class="s-detail">4.6h sun · $0.118/kWh</span>
+<span class="s-payback">⚡ 15.5 year payback</span>
+</a>
+<a class="state-card" href="ohio.html" data-name="ohio">
+<span class="s-name">🏠 Ohio</span>
+<span class="s-detail">3.9h sun · $0.145/kWh</span>
+<span class="s-payback">⚡ 15.5 year payback</span>
+</a>
+<a class="state-card" href="montana.html" data-name="montana">
+<span class="s-name">🏔️ Montana</span>
+<span class="s-detail">4.6h sun · $0.118/kWh</span>
+<span class="s-payback">⚡ 16.2 year payback</span>
+</a>
+<a class="state-card" href="north-dakota.html" data-name="north dakota">
+<span class="s-name">🌾 North Dakota</span>
+<span class="s-detail">4.5h sun · $0.118/kWh</span>
+<span class="s-payback">⚡ 16.6 year payback</span>
+</a>
+<a class="state-card" href="kentucky.html" data-name="kentucky">
+<span class="s-name">🐎 Kentucky</span>
+<span class="s-detail">4.3h sun · $0.122/kWh</span>
+<span class="s-payback">⚡ 16.8 year payback</span>
+</a>
+<a class="state-card" href="west-virginia.html" data-name="west virginia">
+<span class="s-name">⛰️ West Virginia</span>
+<span class="s-detail">4.1h sun · $0.125/kWh</span>
+<span class="s-payback">⚡ 17.2 year payback</span>
+</a>
+<a class="state-card" href="oregon.html" data-name="oregon">
+<span class="s-name">🌲 Oregon</span>
+<span class="s-detail">4h sun · $0.125/kWh</span>
+<span class="s-payback">⚡ 18.4 year payback</span>
+</a>
+<a class="state-card" href="washington.html" data-name="washington">
+<span class="s-name">🌲 Washington</span>
+<span class="s-detail">3.6h sun · $0.115/kWh</span>
+<span class="s-payback">⚡ 22.2 year payback</span>
+</a>
+</div>
+</main>
+
+<div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
+<footer>
+<p>SmartCalc Solar Calculators — Compare solar ROI across all 50 states.</p>
+<p><a href="../">💰 SmartCalc</a> · <a href="https://alexchalu.github.io/toolpulse/">🔧 ToolPulse</a> · <a href="https://alexchalu.github.io/healthcalcs/">🏥 HealthCalcs</a></p>
+</footer>
+
+<script>
+function filterStates(){const q=document.getElementById('search').value.toLowerCase();document.querySelectorAll('.state-card').forEach(c=>{c.style.display=c.dataset.name.includes(q)?'':'none'})}
+const b=document.getElementById('themeBtn');const s=localStorage.getItem('sc-theme');
+if(s==='light'){document.documentElement.setAttribute('data-theme','light');b.textContent='☀️'}
+b.addEventListener('click',()=>{const l=document.documentElement.getAttribute('data-theme')==='light';document.documentElement.setAttribute('data-theme',l?'dark':'light');b.textContent=l?'🌙':'☀️';localStorage.setItem('sc-theme',l?'dark':'light')});
+</script>
+</body>
+</html>
