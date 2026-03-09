@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tennessee Student Loan Repayment Calculator — SmartCalc</title>
+<meta name="description" content="Calculate student loan payments in Tennessee. Average debt: $27,000. Compare repayment plans, find Tennessee forgiveness programs, and estimate your monthly payments.">
+<meta name="keywords" content="Tennessee student loan calculator, Tennessee student debt, Tennessee loan repayment, Tennessee student loan forgiveness, TN student loans">
+<link rel="canonical" href="https://alexchalu.github.io/smartcalc/student-loans-tennessee.html">
+<meta property="og:title" content="Tennessee Student Loan Repayment Calculator — SmartCalc">
+<meta property="og:description" content="Calculate student loan payments in Tennessee. Average debt: $27,000. Compare repayment plans and find forgiveness programs.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3112605892426625" crossorigin="anonymous"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Tennessee Student Loan Repayment Calculator","description":"Calculate student loan payments in Tennessee. Average debt: $27,000. Compare repayment plans and forgiveness programs.","url":"https://alexchalu.github.io/smartcalc/student-loans-tennessee.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<style>
+:root{--bg:#0a0e1a;--surface:#111827;--surface2:#1f2937;--border:#374151;--text:#f3f4f6;--muted:#9ca3af;--accent:#10b981;--accent2:#059669;--glow:rgba(16,185,129,0.12);--radius:12px}
+[data-theme="light"]{--bg:#f9fafb;--surface:#fff;--surface2:#f3f4f6;--border:#e5e7eb;--text:#1f2937;--muted:#6b7280}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+header{background:var(--surface);border-bottom:1px solid var(--border);padding:1rem 1.5rem;position:sticky;top:0;z-index:100}
+.hi{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:1rem}
+.logo{font-size:1.4rem;font-weight:800;color:var(--accent);text-decoration:none}
+.tag{color:var(--muted);font-size:.85rem;flex:1}
+.tb{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:.4rem .7rem;font-size:1rem;cursor:pointer}
+main{max-width:900px;margin:0 auto;padding:2rem 1.5rem}
+h1{font-size:1.75rem;margin-bottom:.5rem}
+.sub{color:var(--muted);margin-bottom:2rem}
+.calc{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:2rem}
+.field{margin-bottom:1.25rem}
+.label{display:block;font-weight:600;margin-bottom:.5rem;font-size:.9rem}
+input[type="number"],select{width:100%;padding:.8rem 1rem;background:var(--surface2);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:.95rem;outline:none}
+input:focus,select:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--glow)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem}
+.btn{display:inline-flex;padding:.75rem 1.5rem;background:var(--accent);color:#fff;border:none;border-radius:8px;font-size:.95rem;font-weight:600;cursor:pointer;width:100%;justify-content:center}
+.btn:hover{background:var(--accent2)}
+.results{margin-top:2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem}
+.stat{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:1rem;text-align:center}
+.stat .val{font-size:1.4rem;font-weight:800;color:var(--accent)}
+.stat .lbl{font-size:.8rem;color:var(--muted)}
+.comparison{margin-top:2rem}
+.comparison h3{font-size:1.1rem;margin-bottom:1rem}
+table{width:100%;border-collapse:collapse;font-size:.9rem}
+th,td{padding:.6rem .8rem;border:1px solid var(--border);text-align:left}
+th{background:var(--surface2);font-weight:600;font-size:.8rem;color:var(--muted)}
+td{background:var(--surface)}
+.highlight{background:var(--glow) !important;font-weight:600}
+.info-box{margin-top:2rem;padding:1.25rem;background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius);border-left:4px solid var(--accent)}
+.info-box h3{font-size:1rem;margin-bottom:.5rem;color:var(--accent)}
+.info-box p,.info-box li{font-size:.9rem;color:var(--muted);line-height:1.7}
+.info-box ul{margin:.5rem 0;padding-left:1.5rem}
+.state-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin:2rem 0}
+.ss{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;text-align:center}
+.ss .num{font-size:1.6rem;font-weight:800;color:var(--accent)}
+.ss .desc{font-size:.8rem;color:var(--muted);margin-top:.25rem}
+.faq{margin-top:3rem;padding:2rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)}
+.faq h2{font-size:1.2rem;margin-bottom:1rem}
+.faq h3{font-size:1rem;margin:1rem 0 .5rem;color:var(--accent)}
+.faq p{color:var(--muted);font-size:.9rem;line-height:1.7}
+.ad{max-width:900px;margin:1.5rem auto;padding:0 1.5rem}
+.more{margin-top:2rem}
+.more h2{font-size:1.2rem;margin-bottom:1rem}
+.more-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.75rem}
+.more-grid a{display:block;padding:.75rem 1rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;color:var(--accent);text-decoration:none;font-size:.9rem;font-weight:500}
+.more-grid a:hover{border-color:var(--accent);background:var(--glow)}
+footer{text-align:center;padding:2rem;color:var(--muted);font-size:.85rem;border-top:1px solid var(--border);margin-top:3rem}
+footer a{color:var(--accent);text-decoration:none}
+@media(max-width:640px){.row,.row3{grid-template-columns:1fr}.results{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<header><div class="hi"><a href="index.html" class="logo">SmartCalc</a><span class="tag">Tennessee Student Loans</span><button class="tb" onclick="document.documentElement.dataset.theme=document.documentElement.dataset.theme==='light'?'':'light'">🌓</button></div></header>
+
+<main>
+<h1>🎓 Tennessee Student Loan Repayment Calculator</h1>
+<p class="sub">Calculate your student loan payments with Tennessee-specific data. Average student debt in Tennessee: <strong>$27,000</strong>.</p>
+
+<div class="state-stats">
+<div class="ss"><div class="num">$27,000</div><div class="desc">Avg Student Debt in TN</div></div>
+<div class="ss"><div class="num">$46,350</div><div class="desc">Avg Starting Salary</div></div>
+<div class="ss"><div class="num">89%</div><div class="desc">Cost of Living Index</div></div>
+<div class="ss"><div class="num">7.6%</div><div class="desc">Avg Debt-to-Income</div></div>
+</div>
+
+<div class="ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script></div>
+
+<div class="calc">
+<div class="row">
+<div class="field"><label class="label">Total Loan Balance ($)</label><input type="number" id="balance" value="27000" min="1000" step="500"></div>
+<div class="field"><label class="label">Interest Rate (%)</label><input type="number" id="rate" value="5.5" min="0" max="15" step="0.01"></div>
+</div>
+<div class="row3">
+<div class="field"><label class="label">Repayment Plan</label><select id="plan">
+<option value="standard">Standard (10 yr)</option>
+<option value="extended">Extended (25 yr)</option>
+<option value="graduated">Graduated (10 yr)</option>
+<option value="ibr">IBR Plan</option>
+<option value="paye">PAYE Plan</option>
+<option value="repaye">SAVE/REPAYE Plan</option>
+</select></div>
+<div class="field"><label class="label">Annual Income ($)</label><input type="number" id="income" value="46350" min="0" step="1000"></div>
+<div class="field"><label class="label">Family Size</label><select id="family"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></div>
+</div>
+<div class="row">
+<div class="field"><label class="label">Extra Monthly Payment ($)</label><input type="number" id="extra" value="0" min="0" step="25"></div>
+<div class="field"><label class="label">Annual Salary Growth (%)</label><input type="number" id="salaryGrowth" value="3" min="0" max="10" step="0.5"></div>
+</div>
+<button class="btn" onclick="calculate()">Calculate Payments</button>
+
+<div class="results" id="results" style="display:none">
+<div class="stat"><div class="val" id="rMonthly">-</div><div class="lbl">Monthly Payment</div></div>
+<div class="stat"><div class="val" id="rTotal">-</div><div class="lbl">Total Paid</div></div>
+<div class="stat"><div class="val" id="rInterest">-</div><div class="lbl">Total Interest</div></div>
+<div class="stat"><div class="val" id="rPayoff">-</div><div class="lbl">Payoff Time</div></div>
+<div class="stat"><div class="val" id="rDTI">-</div><div class="lbl">Debt-to-Income</div></div>
+<div class="stat"><div class="val" id="rForgiven">-</div><div class="lbl">Forgiven Amount</div></div>
+</div>
+
+<div class="comparison" id="compDiv" style="display:none">
+<h3>📊 Repayment Plan Comparison</h3>
+<table id="compTable">
+<thead><tr><th>Plan</th><th>Monthly</th><th>Total Paid</th><th>Interest</th><th>Payoff</th><th>Forgiven</th></tr></thead>
+<tbody id="compBody"></tbody>
+</table>
+</div>
+</div>
+
+<div class="info-box">
+<h3>🏛️ Tennessee Student Loan Forgiveness Programs</h3>
+<p><strong>Tennessee Graduate Nursing Loan Forgiveness & Minority Teaching Fellows.</strong></p>
+<ul>
+<li><strong>Federal PSLF:</strong> Work for a qualifying Tennessee government or nonprofit employer for 10 years → remaining balance forgiven (tax-free)</li>
+<li><strong>Income-Driven Forgiveness:</strong> After 20-25 years of IDR payments, remaining balance forgiven</li>
+<li><strong>Teacher Loan Forgiveness:</strong> Up to $17,500 forgiven after 5 years teaching in low-income Tennessee schools</li>
+<li><strong>State Programs:</strong> Tennessee Graduate Nursing Loan Forgiveness & Minority Teaching Fellows</li>
+</ul>
+</div>
+
+<div class="ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script></div>
+
+<div class="faq">
+<h2>📋 Student Loans in Tennessee: What You Need to Know</h2>
+<h3>How much student debt does the average Tennessee graduate have?</h3>
+<p>The average student loan debt for Tennessee graduates is approximately <strong>$27,000</strong>, which is below the national average of ~$29,400. With an average starting salary of $46,350 and a cost of living index of 89%, Tennessee graduates benefit from lower living costs that can help accelerate repayment.</p>
+
+<h3>What repayment plan is best for Tennessee graduates?</h3>
+<p>For most Tennessee graduates, the standard 10-year plan offers the best balance of manageable payments and minimized interest. Use the calculator above to compare all options with your specific numbers.</p>
+
+<h3>Can I get my student loans forgiven in Tennessee?</h3>
+<p>Yes! Besides federal programs (PSLF, Teacher Forgiveness), Tennessee offers state-specific programs: <strong>Tennessee Graduate Nursing Loan Forgiveness & Minority Teaching Fellows.</strong> Check eligibility requirements as they vary by profession and location within the state.</p>
+
+<h3>How does Tennessee's cost of living affect repayment?</h3>
+<p>Tennessee's cost of living index is 89% of the national average. This lower cost means more disposable income available for aggressive loan repayment. Consider making extra payments to save on interest.</p>
+</div>
+
+<div class="more">
+<h2>More Student Loan Calculators by State</h2>
+<div class="more-grid" id="moreStates"></div>
+</div>
+
+<div class="more" style="margin-top:1.5rem">
+<h2>Related SmartCalc Tools</h2>
+<div class="more-grid">
+<a href="student-loan-calculator.html">📚 General Student Loan Calculator</a>
+<a href="index.html">🏠 All SmartCalc Tools</a>
+</div>
+</div>
+</main>
+
+<footer>© 2026 <a href="index.html">SmartCalc</a> — Free Tennessee Student Loan Calculator</footer>
+
+<script>
+const povertyLine={1:15060,2:20440,3:25820,4:31200};
+function calcPlan(bal,rate,plan,income,family,extra,salGrowth){
+  const r=rate/100/12;let b=bal,paid=0,months=0,forgiven=0;
+  const poverty=povertyLine[family]||15060;
+  const maxMonths=plan==='extended'?300:plan==='ibr'||plan==='paye'||plan==='repaye'?plan==='paye'?240:300:120;
+  let curIncome=income;
+  while(b>0.01&&months<maxMonths){
+    months++;let pmt;
+    if(plan==='standard'){pmt=bal*(r/(1-Math.pow(1+r,-120)));}
+    else if(plan==='extended'){pmt=bal*(r/(1-Math.pow(1+r,-300)));}
+    else if(plan==='graduated'){const yr=Math.floor(months/24);pmt=bal*(r/(1-Math.pow(1+r,-120)))*Math.pow(1.08,yr);}
+    else{const disc=Math.max(0,curIncome-poverty*1.5);pmt=plan==='paye'||plan==='repaye'?disc*0.10/12:disc*0.15/12;const stdPmt=bal*(r/(1-Math.pow(1+r,-120)));if(plan!=='repaye')pmt=Math.min(pmt,stdPmt);pmt=Math.max(pmt,0);}
+    pmt+=extra;const interest=b*r;if(pmt<interest&&(plan==='ibr'||plan==='paye'||plan==='repaye'))pmt=interest;
+    pmt=Math.min(pmt,b+b*r);b=b+b*r-pmt;paid+=pmt;
+    if(months%12===0)curIncome*=(1+salGrowth/100);
+  }
+  if(b>0.01){forgiven=b;b=0;}
+  return{monthly:(paid/months),total:paid,interest:paid-bal,months,forgiven,payoff:months>=12?Math.floor(months/12)+'y '+(months%12)+'m':months+'m'};
+}
+function calculate(){
+  const bal=+document.getElementById('balance').value;
+  const rate=+document.getElementById('rate').value;
+  const plan=document.getElementById('plan').value;
+  const income=+document.getElementById('income').value;
+  const family=+document.getElementById('family').value;
+  const extra=+document.getElementById('extra').value;
+  const sg=+document.getElementById('salaryGrowth').value;
+  const r=calcPlan(bal,rate,plan,income,family,extra,sg);
+  document.getElementById('results').style.display='grid';
+  document.getElementById('rMonthly').textContent='$'+Math.round(r.monthly).toLocaleString();
+  document.getElementById('rTotal').textContent='$'+Math.round(r.total).toLocaleString();
+  document.getElementById('rInterest').textContent='$'+Math.round(r.interest).toLocaleString();
+  document.getElementById('rPayoff').textContent=r.payoff;
+  document.getElementById('rDTI').textContent=((r.monthly*12/income)*100).toFixed(1)+'%';
+  document.getElementById('rForgiven').textContent=r.forgiven>0?'$'+Math.round(r.forgiven).toLocaleString():'$0';
+  // comparison
+  const plans=['standard','extended','graduated','ibr','paye','repaye'];
+  const labels=['Standard (10yr)','Extended (25yr)','Graduated','IBR','PAYE','SAVE/REPAYE'];
+  let html='';
+  plans.forEach((p,i)=>{
+    const c=calcPlan(bal,rate,p,income,family,extra,sg);
+    const cls=p===plan?' class="highlight"':'';
+    html+='<tr'+cls+'><td>'+labels[i]+'</td><td>$'+Math.round(c.monthly).toLocaleString()+'</td><td>$'+Math.round(c.total).toLocaleString()+'</td><td>$'+Math.round(c.interest).toLocaleString()+'</td><td>'+c.payoff+'</td><td>'+(c.forgiven>0?'$'+Math.round(c.forgiven).toLocaleString():'—')+'</td></tr>';
+  });
+  document.getElementById('compBody').innerHTML=html;
+  document.getElementById('compDiv').style.display='block';
+}
+// nearby states
+const allStates=[{"abbr":"AL","name":"Alabama","debt":37338},{"abbr":"AK","name":"Alaska","debt":31955},{"abbr":"AZ","name":"Arizona","debt":25409},{"abbr":"AR","name":"Arkansas","debt":33452},{"abbr":"CA","name":"California","debt":22585},{"abbr":"CO","name":"Colorado","debt":27820},{"abbr":"CT","name":"Connecticut","debt":38650},{"abbr":"DE","name":"Delaware","debt":39750},{"abbr":"FL","name":"Florida","debt":24947},{"abbr":"GA","name":"Georgia","debt":30984},{"abbr":"HI","name":"Hawaii","debt":24554},{"abbr":"ID","name":"Idaho","debt":28040},{"abbr":"IL","name":"Illinois","debt":29855},{"abbr":"IN","name":"Indiana","debt":30340},{"abbr":"IA","name":"Iowa","debt":30045},{"abbr":"KS","name":"Kansas","debt":28920},{"abbr":"KY","name":"Kentucky","debt":29840},{"abbr":"LA","name":"Louisiana","debt":27230},{"abbr":"ME","name":"Maine","debt":32450},{"abbr":"MD","name":"Maryland","debt":30950},{"abbr":"MA","name":"Massachusetts","debt":33250},{"abbr":"MI","name":"Michigan","debt":33150},{"abbr":"MN","name":"Minnesota","debt":33800},{"abbr":"MS","name":"Mississippi","debt":31738},{"abbr":"MO","name":"Missouri","debt":29290},{"abbr":"MT","name":"Montana","debt":27610},{"abbr":"NE","name":"Nebraska","debt":27190},{"abbr":"NV","name":"Nevada","debt":22960},{"abbr":"NH","name":"New Hampshire","debt":39950},{"abbr":"NJ","name":"New Jersey","debt":35447},{"abbr":"NM","name":"New Mexico","debt":22460},{"abbr":"NY","name":"New York","debt":31850},{"abbr":"NC","name":"North Carolina","debt":29380},{"abbr":"ND","name":"North Dakota","debt":31830},{"abbr":"OH","name":"Ohio","debt":30730},{"abbr":"OK","name":"Oklahoma","debt":27410},{"abbr":"OR","name":"Oregon","debt":29790},{"abbr":"PA","name":"Pennsylvania","debt":39027},{"abbr":"RI","name":"Rhode Island","debt":36500},{"abbr":"SC","name":"South Carolina","debt":35490},{"abbr":"SD","name":"South Dakota","debt":31250},{"abbr":"TN","name":"Tennessee","debt":27000},{"abbr":"TX","name":"Texas","debt":28240},{"abbr":"UT","name":"Utah","debt":19750},{"abbr":"VT","name":"Vermont","debt":36710},{"abbr":"VA","name":"Virginia","debt":30390},{"abbr":"WA","name":"Washington","debt":26630},{"abbr":"WV","name":"West Virginia","debt":29290},{"abbr":"WI","name":"Wisconsin","debt":31705},{"abbr":"WY","name":"Wyoming","debt":24350}];
+const curState='TN';
+const el=document.getElementById('moreStates');
+allStates.filter(s=>s.abbr!==curState).sort(()=>Math.random()-.5).slice(0,8).forEach(s=>{
+  const a=document.createElement('a');
+  a.href='student-loans-'+s.name.toLowerCase().replace(/\s+/g,'-')+'.html';
+  a.textContent='🎓 '+s.name+' ($'+s.debt.toLocaleString()+')';
+  el.appendChild(a);
+});
+calculate();
+</script>
+</body>
+</html>
