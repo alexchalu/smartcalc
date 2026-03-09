@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Down Payment Calculator — Free Online | SmartCalc</title>
+    <meta name="description" content="Calculate how much down payment you need for a home. Compare 3%, 5%, 10%, and 20% down payment options and see how they affect your monthly payment.">
+    <meta name="keywords" content="down payment calculator, how much down payment, home down payment, down payment for house, mortgage down payment options">
+    <link rel="canonical" href="https://alexchalu.github.io/smartcalc/down-payment-calculator.html">
+    <meta property="og:title" content="Down Payment Calculator — SmartCalc">
+    <meta property="og:description" content="Calculate how much down payment you need for a home. Compare 3%, 5%, 10%, and 20% down payment options and see how they affect your monthly payment.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💰</text></svg>">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3112605892426625" crossorigin="anonymous"></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebApplication","name":"Down Payment Calculator","description":"Calculate how much down payment you need for a home. Compare 3%, 5%, 10%, and 20% down payment options and see how they affect your monthly payment.","url":"https://alexchalu.github.io/smartcalc/down-payment-calculator.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+    </script>
+    <style>
+        :root{--bg:#0a0e1a;--surface:#111827;--surface2:#1f2937;--border:#374151;--text:#f3f4f6;--muted:#9ca3af;--accent:#10b981;--accent2:#059669;--glow:rgba(16,185,129,0.12);--radius:12px}
+        [data-theme="light"]{--bg:#f9fafb;--surface:#fff;--surface2:#f3f4f6;--border:#e5e7eb;--text:#1f2937;--muted:#6b7280}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+        header{background:var(--surface);border-bottom:1px solid var(--border);padding:1rem 1.5rem;position:sticky;top:0;z-index:100}
+        .hi{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:1rem}
+        .logo{font-size:1.4rem;font-weight:800;color:var(--accent);text-decoration:none}
+        .tag{color:var(--muted);font-size:.85rem;flex:1}
+        .tb{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:.4rem .7rem;font-size:1rem;cursor:pointer}
+        main{max-width:900px;margin:0 auto;padding:2rem 1.5rem}
+        h1{font-size:1.75rem;margin-bottom:.5rem}
+        .sub{color:var(--muted);margin-bottom:2rem}
+        .calc{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:2rem}
+        .field{margin-bottom:1.25rem}
+        .label{display:block;font-weight:600;margin-bottom:.5rem;font-size:.9rem}
+        input[type="number"],select,input[type="text"]{width:100%;padding:.8rem 1rem;background:var(--surface2);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:.95rem;outline:none}
+        input:focus,select:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--glow)}
+        .row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+        .row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem}
+        .btn{display:inline-flex;padding:.75rem 1.5rem;background:var(--accent);color:#fff;border:none;border-radius:8px;font-size:.95rem;font-weight:600;cursor:pointer}
+        .btn:hover{background:var(--accent2)}
+        .results{margin-top:2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem}
+        .stat{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:1rem;text-align:center}
+        .stat .val{font-size:1.5rem;font-weight:800;color:var(--accent)}
+        .stat .lbl{font-size:.8rem;color:var(--muted)}
+        .ad{max-width:900px;margin:1.5rem auto;padding:0 1.5rem}
+        .faq{margin-top:3rem;padding:2rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)}
+        .faq h2{font-size:1.2rem;margin-bottom:1rem}
+        .faq h3{font-size:1rem;margin:1rem 0 .5rem;color:var(--accent)}
+        .faq p{color:var(--muted);font-size:.9rem;line-height:1.7}
+        .compare{margin-top:2rem;overflow-x:auto}
+        .compare table{width:100%;border-collapse:collapse}
+        .compare th,.compare td{padding:.75rem 1rem;text-align:left;border-bottom:1px solid var(--border);font-size:.9rem}
+        .compare th{background:var(--surface2);font-weight:600;color:var(--accent)}
+        .compare tr:hover{background:var(--surface2)}
+        .more{margin-top:3rem}
+        .more h2{font-size:1.2rem;margin-bottom:1rem}
+        .mgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.75rem}
+        .mcard{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:1rem;text-decoration:none;color:var(--text);transition:.2s}
+        .mcard:hover{border-color:var(--accent)}
+        .mcard h4{font-size:.9rem}
+        .mcard p{font-size:.75rem;color:var(--muted)}
+        footer{text-align:center;padding:2rem;color:var(--muted);font-size:.85rem;border-top:1px solid var(--border);margin-top:3rem}
+        footer a{color:var(--accent);text-decoration:none}
+        @media(max-width:600px){.row,.row3{grid-template-columns:1fr}.tag{display:none}.results{grid-template-columns:1fr 1fr}}
+    </style>
+</head>
+<body>
+    <header><div class="hi"><a href="index.html" class="logo">💰 SmartCalc</a><p class="tag">Free financial calculators</p><button class="tb" id="tb">🌙</button></div></header>
+    <div class="ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+    <main>
+        <nav style="margin-bottom:1rem"><a href="index.html" style="color:var(--accent);font-weight:600;text-decoration:none">← All Calculators</a></nav>
+        <h1>Down Payment Calculator</h1>
+        <p class="sub">Compare down payment options side-by-side. See how different down payment amounts affect your monthly payment, PMI, and total cost.</p>
+        <div class="calc">
+            <div class="row">
+                <div class="field"><label class="label">Home Price</label><input type="number" id="price" value="400000"></div>
+                <div class="field"><label class="label">Interest Rate (%)</label><input type="number" id="rate" value="6.5" step="0.125"></div>
+            </div>
+            <div class="field"><label class="label">Monthly Savings for Down Payment</label><input type="number" id="savings" value="2000"></div>
+            <button class="btn" onclick="calc()">Compare Down Payments</button>
+            <div class="compare" id="out" style="margin-top:1.5rem"></div>
+        </div>
+        <div class="faq">
+            <h2>Down Payment Guide</h2>
+            <h3>How Much Down Payment Do You Need?</h3>
+            <p>While 20% is the traditional recommendation (to avoid PMI), many buyers put down less. Conventional loans allow as little as 3%, FHA loans 3.5%, and VA/USDA loans 0%. The right amount depends on your savings, monthly budget, and how much PMI costs.</p>
+            <h3>Saving for a Down Payment</h3>
+            <p>Set up automatic transfers to a high-yield savings account. Consider down payment assistance programs in your state. Some employers offer home-buying benefits. First-time buyers may qualify for special programs allowing 3% down with reduced PMI.</p>
+        </div>
+    </main>
+
+    <div class="ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+    <div class="more" style="max-width:900px;margin:2rem auto;padding:0 1.5rem">
+        <h2>Related Calculators</h2>
+        <div class="mgrid">
+            
+<a class="mcard" href="mortgage-calculator.html"><h4>🏠 Mortgage Calculator</h4><p>Monthly payment & amortization</p></a>
+<a class="mcard" href="fha-loan-calculator.html"><h4>🏘️ FHA Loan Calculator</h4><p>Low down payment FHA loans</p></a>
+<a class="mcard" href="va-loan-calculator.html"><h4>🎖️ VA Loan Calculator</h4><p>Zero down VA home loans</p></a>
+<a class="mcard" href="mortgage-refinance-calculator.html"><h4>🔄 Refinance Calculator</h4><p>Should you refinance?</p></a>
+<a class="mcard" href="arm-vs-fixed-calculator.html"><h4>📊 ARM vs Fixed</h4><p>Compare loan types</p></a>
+<a class="mcard" href="pmi-calculator.html"><h4>🛡️ PMI Calculator</h4><p>Private mortgage insurance costs</p></a>
+<a class="mcard" href="closing-costs-calculator.html"><h4>📋 Closing Costs</h4><p>Estimate total closing costs</p></a>
+<a class="mcard" href="down-payment-calculator.html"><h4>💵 Down Payment</h4><p>How much to put down</p></a>
+<a class="mcard" href="home-affordability-calculator.html"><h4>🏡 Affordability</h4><p>How much home can you afford</p></a>
+<a class="mcard" href="rent-vs-buy-calculator.html"><h4>🔑 Rent vs Buy</h4><p>Compare renting to buying</p></a>
+        </div>
+    </div>
+    <footer>
+        <p>© 2026 <a href="index.html">SmartCalc</a> — Free Financial Calculators</p>
+        <p style="margin-top:.5rem">
+            <a href="mortgage-calculator.html">Mortgage</a> · <a href="loan-calculator.html">Loan</a> · <a href="investment-calculator.html">Investment</a> · <a href="retirement-calculator.html">Retirement</a> · <a href="tax-calculator.html">Tax</a>
+        </p>
+    </footer>
+    <script>
+    const tb=document.getElementById('tb');
+    tb?.addEventListener('click',()=>{const t=document.documentElement.getAttribute('data-theme')==='light'?'':'light';document.documentElement.setAttribute('data-theme',t);tb.textContent=t==='light'?'🌙':'☀️';localStorage.setItem('theme',t)});
+    if(localStorage.getItem('theme')==='light'){document.documentElement.setAttribute('data-theme','light');if(tb)tb.textContent='🌙';}
+    </script>
+</body></html>
+<script>
+function fmt(n){return n>=1e6?'$'+(n/1e6).toFixed(2)+'M':n>=1e3?'$'+n.toLocaleString('en-US',{maximumFractionDigits:0}):'$'+n.toFixed(2)}
+function calc(){
+    const price=+document.getElementById('price').value;
+    const r=(+document.getElementById('rate').value/100)/12;
+    const n=360;
+    const save=+document.getElementById('savings').value;
+    const options=[3,5,10,15,20];
+    let html='<table><tr><th>Down %</th><th>Down Payment</th><th>Loan</th><th>Monthly P&I</th><th>PMI/mo</th><th>Total Monthly</th><th>Save Time</th></tr>';
+    options.forEach(pct=>{
+        const down=price*pct/100;
+        const loan=price-down;
+        const pmt=loan*(r*Math.pow(1+r,n))/(Math.pow(1+r,n)-1);
+        const pmi=pct<20?(loan*0.007/12):0;
+        const total=pmt+pmi;
+        const months=save>0?Math.ceil(down/save):0;
+        const yrs=Math.floor(months/12);
+        const mos=months%12;
+        html+='<tr'+(pct===20?' style="background:var(--glow)"':'')+'><td><strong>'+pct+'%</strong></td><td>'+fmt(down)+'</td><td>'+fmt(loan)+'</td><td>'+fmt(pmt)+'</td><td>'+(pmi>0?fmt(pmi):'None')+'</td><td>'+fmt(total)+'</td><td>'+yrs+'yr '+mos+'mo</td></tr>';
+    });
+    html+='</table>';
+    document.getElementById('out').innerHTML=html;
+}
+calc();
+</script>
