@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michigan Life Insurance Calculator — Estimate Your Premium | SmartCalc</title>
+    <meta name="description" content="Free Michigan life insurance calculator. Estimate term life and whole life insurance premiums based on your age, health, coverage amount, and Michigan-specific factors.">
+    <meta name="keywords" content="Michigan life insurance, MI life insurance calculator, life insurance rates Michigan, term life insurance Michigan, whole life insurance Michigan">
+    <link rel="canonical" href="https://alexchalu.github.io/smartcalc/life-insurance/michigan.html">
+    <meta property="og:title" content="Michigan Life Insurance Calculator">
+    <meta property="og:description" content="Estimate life insurance premiums in Michigan. Compare term vs whole life policies.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3112605892426625" crossorigin="anonymous"></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebApplication","name":"Michigan Life Insurance Calculator","description":"Estimate life insurance premiums in Michigan","url":"https://alexchalu.github.io/smartcalc/life-insurance/michigan.html","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+    </script>
+    <style>
+        :root{--bg:#0a0e1a;--surface:#111827;--surface2:#1f2937;--border:#374151;--text:#f3f4f6;--muted:#9ca3af;--accent:#10b981;--accent2:#059669;--glow:rgba(16,185,129,0.12);--radius:12px}
+        [data-theme="light"]{--bg:#f9fafb;--surface:#ffffff;--surface2:#f3f4f6;--border:#e5e7eb;--text:#1f2937;--muted:#6b7280}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+        header{background:var(--surface);border-bottom:1px solid var(--border);padding:1.25rem 1.5rem;position:sticky;top:0;z-index:100}
+        .hi{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:1rem}
+        .logo{font-size:1.5rem;font-weight:800;color:var(--accent);text-decoration:none}
+        .tag{color:var(--muted);font-size:.875rem;flex:1}
+        .tb{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:.5rem .75rem;font-size:1.1rem;cursor:pointer}
+        main{max-width:900px;margin:0 auto;padding:2rem 1.5rem}
+        h1{font-size:1.8rem;margin-bottom:.5rem;text-align:center}
+        .sub{text-align:center;color:var(--muted);margin-bottom:2rem}
+        .calc{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;margin-bottom:2rem}
+        .row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+        .row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;margin-bottom:1rem}
+        label{display:block;font-size:.85rem;color:var(--muted);margin-bottom:.35rem;font-weight:600}
+        select,input{width:100%;padding:.75rem;background:var(--surface2);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:1rem}
+        select:focus,input:focus{outline:none;border-color:var(--accent)}
+        .btn{width:100%;padding:.9rem;background:var(--accent);color:#fff;border:none;border-radius:8px;font-size:1.05rem;font-weight:700;cursor:pointer;margin-top:.5rem}
+        .btn:hover{background:var(--accent2)}
+        .results{display:none;margin-top:1.5rem}
+        .result-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.5rem}
+        .rcard{background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;text-align:center}
+        .rcard .label{font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
+        .rcard .value{font-size:1.8rem;font-weight:800;color:var(--accent);margin:.25rem 0}
+        .rcard .note{font-size:.75rem;color:var(--muted)}
+        .compare{margin-top:1.5rem}
+        .compare h3{font-size:1.1rem;margin-bottom:1rem}
+        table{width:100%;border-collapse:collapse}
+        th,td{padding:.65rem .75rem;text-align:left;border-bottom:1px solid var(--border);font-size:.85rem}
+        th{background:var(--surface2);color:var(--muted);font-weight:600;text-transform:uppercase;font-size:.75rem}
+        td{color:var(--text)}
+        .highlight{color:var(--accent);font-weight:700}
+        .info{margin-top:2.5rem;padding:2rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)}
+        .info h2{font-size:1.2rem;margin-bottom:1rem}
+        .info p,.info li{color:var(--muted);font-size:.9rem;line-height:1.7;margin-bottom:.75rem}
+        .info ul{padding-left:1.5rem}
+        .faq{margin-top:2rem;padding:2rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)}
+        .faq h2{font-size:1.2rem;margin-bottom:1rem}
+        .faq h3{font-size:1rem;margin:1.25rem 0 .5rem;color:var(--accent)}
+        .faq p{color:var(--muted);font-size:.9rem;line-height:1.7}
+        .states{margin-top:2.5rem}
+        .states h2{font-size:1.2rem;margin-bottom:1rem;text-align:center}
+        .state-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:.5rem}
+        .state-grid a{display:block;padding:.5rem .75rem;background:var(--surface);border:1px solid var(--border);border-radius:6px;text-decoration:none;color:var(--text);font-size:.85rem;transition:.2s}
+        .state-grid a:hover{border-color:var(--accent);background:var(--surface2)}
+        .state-grid a .rate{color:var(--accent);font-weight:600;float:right}
+        .ad{max-width:900px;margin:1.5rem auto;padding:0 1.5rem}
+        footer{text-align:center;padding:2rem;color:var(--muted);font-size:.85rem;border-top:1px solid var(--border);margin-top:3rem}
+        footer a{color:var(--accent);text-decoration:none}
+        @media(max-width:600px){.row,.row3,.result-grid{grid-template-columns:1fr}}
+    </style>
+</head>
+<body>
+    <header><div class="hi">
+        <a href="../" class="logo">🛡️ SmartCalc</a>
+        <p class="tag">Michigan Life Insurance Calculator</p>
+        <button class="tb" id="themeBtn" aria-label="Toggle theme">🌙</button>
+    </div></header>
+    <main>
+        <h1>🛡️ Michigan Life Insurance Calculator</h1>
+        <p class="sub">Estimate term life & whole life insurance premiums for Michigan (MI) residents. Average annual premium: <strong>$1,670</strong></p>
+
+        <div class="ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
+        <div class="calc">
+            <div class="row">
+                <div><label>Your Age</label><input type="number" id="age" value="35" min="18" max="85"></div>
+                <div><label>Gender</label><select id="gender"><option value="male">Male</option><option value="female">Female</option></select></div>
+            </div>
+            <div class="row">
+                <div><label>Health Class</label><select id="health"><option value="preferred-plus">Preferred Plus (Excellent)</option><option value="preferred">Preferred (Very Good)</option><option value="standard-plus" selected>Standard Plus (Good)</option><option value="standard">Standard (Average)</option><option value="substandard">Substandard (Below Average)</option></select></div>
+                <div><label>Tobacco Use</label><select id="tobacco"><option value="no" selected>Non-Smoker</option><option value="yes">Smoker</option></select></div>
+            </div>
+            <div class="row">
+                <div><label>Coverage Amount ($)</label><select id="coverage"><option value="100000">$100,000</option><option value="250000">$250,000</option><option value="500000" selected>$500,000</option><option value="750000">$750,000</option><option value="1000000">$1,000,000</option><option value="2000000">$2,000,000</option><option value="5000000">$5,000,000</option></select></div>
+                <div><label>Policy Type</label><select id="ptype"><option value="term10">Term — 10 Year</option><option value="term20" selected>Term — 20 Year</option><option value="term30">Term — 30 Year</option><option value="whole">Whole Life</option><option value="universal">Universal Life</option></select></div>
+            </div>
+            <button class="btn" onclick="calculate()">Calculate My Premium</button>
+            <div class="results" id="results">
+                <div class="result-grid">
+                    <div class="rcard"><div class="label">Estimated Monthly</div><div class="value" id="monthly">—</div><div class="note">per month</div></div>
+                    <div class="rcard"><div class="label">Estimated Annual</div><div class="value" id="annual">—</div><div class="note">per year (save ~8%)</div></div>
+                    <div class="rcard"><div class="label">Coverage Amount</div><div class="value" id="coverageAmt">—</div><div class="note">death benefit</div></div>
+                    <div class="rcard"><div class="label">Cost per $1K Coverage</div><div class="value" id="perThousand">—</div><div class="note">monthly per $1,000</div></div>
+                </div>
+                <div class="compare">
+                    <h3>📊 Policy Comparison for Michigan</h3>
+                    <table><thead><tr><th>Policy Type</th><th>Monthly</th><th>Annual</th><th>Total Cost</th><th>Cash Value</th></tr></thead><tbody id="compareBody"></tbody></table>
+                </div>
+            </div>
+        </div>
+
+        <div class="ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
+        <div class="info">
+            <h2>📋 Life Insurance in Michigan</h2>
+            <p><strong>Michigan</strong> has a population of 10.0M with a median household income of $63,202. The average annual life insurance premium in Michigan is <strong>$1,670</strong>, and residents tend to pay higher premiums due to lower life expectancy (77.6 years).</p>
+            <h2 style="margin-top:1.5rem">Types of Life Insurance Available in Michigan</h2>
+            <ul>
+                <li><strong>Term Life Insurance:</strong> Most affordable option. Covers you for 10, 20, or 30 years. No cash value — pure protection. Best for young families and mortgage coverage.</li>
+                <li><strong>Whole Life Insurance:</strong> Permanent coverage that builds cash value. Higher premiums but guaranteed death benefit for life. Good for estate planning.</li>
+                <li><strong>Universal Life Insurance:</strong> Flexible premiums and adjustable death benefit. Builds cash value with interest. Good for those wanting permanent coverage with flexibility.</li>
+                <li><strong>Variable Life Insurance:</strong> Cash value invested in sub-accounts (stocks/bonds). Higher risk but potential for greater returns. Available from Michigan licensed carriers.</li>
+            </ul>
+            <h2 style="margin-top:1.5rem">Factors Affecting Michigan Life Insurance Rates</h2>
+            <ul>
+                <li><strong>Age:</strong> The #1 factor. Rates increase ~8-10% per year after age 30</li>
+                <li><strong>Health:</strong> Medical history, BMI, blood pressure, cholesterol all impact rates</li>
+                <li><strong>Tobacco Use:</strong> Smokers typically pay 2-3x more than non-smokers</li>
+                <li><strong>Gender:</strong> Women generally pay 15-20% less due to longer life expectancy</li>
+                <li><strong>Coverage Amount:</strong> Higher coverage = higher premiums (but cost per $1K decreases)</li>
+                <li><strong>Cost of Living:</strong> Michigan's cost of living index (0.90) affects coverage needs</li>
+            </ul>
+        </div>
+
+        <div class="faq">
+            <h2>❓ Michigan Life Insurance FAQ</h2>
+            <h3>How much life insurance do I need in Michigan?</h3>
+            <p>A common rule is 10-15x your annual income. With Michigan's median income of $63,202, that suggests $632,020 to $948,030 in coverage. Factor in mortgage, debts, children's education, and spouse's income needs.</p>
+            <h3>Is life insurance regulated in Michigan?</h3>
+            <p>Yes, life insurance in Michigan is regulated by the Michigan Department of Insurance. All policies must meet state minimum standards, and insurers must be licensed to sell in MI.</p>
+            <h3>What's the difference between term and whole life?</h3>
+            <p>Term life is temporary (10-30 years) and much cheaper — ideal for covering specific obligations like a mortgage or raising children. Whole life is permanent with cash value that grows tax-deferred, but costs 5-15x more.</p>
+            <h3>Can I get life insurance without a medical exam in Michigan?</h3>
+            <p>Yes, several insurers offer no-exam policies in Michigan. These are typically more expensive (20-40% higher) and have lower maximum coverage amounts ($500K-$1M vs $10M+ for fully underwritten).</p>
+            <h3>When should Michigan residents buy life insurance?</h3>
+            <p>The best time is as young and healthy as possible. A 25-year-old in Michigan pays roughly half what a 35-year-old pays for the same coverage. Life events like marriage, buying a home, or having children are key triggers.</p>
+        </div>
+
+        <div class="states">
+            <h2>🗺️ Life Insurance Calculators by State</h2>
+            <div class="state-grid" id="stateGrid"></div>
+        </div>
+    </main>
+
+    <div class="ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
+    <footer>&copy; 2026 SmartCalc. Free Michigan life insurance calculator. <a href="../">More Calculators</a></footer>
+
+    <script>
+    const STATE_AVG = 1670;
+    const STATE_LE = 77.6;
+    const STATE_CI = 0.9;
+    const stateData = {"alabama": {"name": "Alabama", "abbr": "AL", "avg": 1680}, "alaska": {"name": "Alaska", "abbr": "AK", "avg": 1890}, "arizona": {"name": "Arizona", "abbr": "AZ", "avg": 1620}, "arkansas": {"name": "Arkansas", "abbr": "AR", "avg": 1710}, "california": {"name": "California", "abbr": "CA", "avg": 1540}, "colorado": {"name": "Colorado", "abbr": "CO", "avg": 1480}, "connecticut": {"name": "Connecticut", "abbr": "CT", "avg": 1560}, "delaware": {"name": "Delaware", "abbr": "DE", "avg": 1650}, "florida": {"name": "Florida", "abbr": "FL", "avg": 1720}, "georgia": {"name": "Georgia", "abbr": "GA", "avg": 1690}, "hawaii": {"name": "Hawaii", "abbr": "HI", "avg": 1420}, "idaho": {"name": "Idaho", "abbr": "ID", "avg": 1510}, "illinois": {"name": "Illinois", "abbr": "IL", "avg": 1580}, "indiana": {"name": "Indiana", "abbr": "IN", "avg": 1640}, "iowa": {"name": "Iowa", "abbr": "IA", "avg": 1520}, "kansas": {"name": "Kansas", "abbr": "KS", "avg": 1560}, "kentucky": {"name": "Kentucky", "abbr": "KY", "avg": 1750}, "louisiana": {"name": "Louisiana", "abbr": "LA", "avg": 1810}, "maine": {"name": "Maine", "abbr": "ME", "avg": 1530}, "maryland": {"name": "Maryland", "abbr": "MD", "avg": 1590}, "massachusetts": {"name": "Massachusetts", "abbr": "MA", "avg": 1460}, "michigan": {"name": "Michigan", "abbr": "MI", "avg": 1670}, "minnesota": {"name": "Minnesota", "abbr": "MN", "avg": 1440}, "mississippi": {"name": "Mississippi", "abbr": "MS", "avg": 1850}, "missouri": {"name": "Missouri", "abbr": "MO", "avg": 1620}, "montana": {"name": "Montana", "abbr": "MT", "avg": 1540}, "nebraska": {"name": "Nebraska", "abbr": "NE", "avg": 1510}, "nevada": {"name": "Nevada", "abbr": "NV", "avg": 1630}, "new-hampshire": {"name": "New Hampshire", "abbr": "NH", "avg": 1490}, "new-jersey": {"name": "New Jersey", "abbr": "NJ", "avg": 1610}, "new-mexico": {"name": "New Mexico", "abbr": "NM", "avg": 1680}, "new-york": {"name": "New York", "abbr": "NY", "avg": 1570}, "north-carolina": {"name": "North Carolina", "abbr": "NC", "avg": 1600}, "north-dakota": {"name": "North Dakota", "abbr": "ND", "avg": 1470}, "ohio": {"name": "Ohio", "abbr": "OH", "avg": 1610}, "oklahoma": {"name": "Oklahoma", "abbr": "OK", "avg": 1740}, "oregon": {"name": "Oregon", "abbr": "OR", "avg": 1500}, "pennsylvania": {"name": "Pennsylvania", "abbr": "PA", "avg": 1590}, "rhode-island": {"name": "Rhode Island", "abbr": "RI", "avg": 1550}, "south-carolina": {"name": "South Carolina", "abbr": "SC", "avg": 1700}, "south-dakota": {"name": "South Dakota", "abbr": "SD", "avg": 1490}, "tennessee": {"name": "Tennessee", "abbr": "TN", "avg": 1720}, "texas": {"name": "Texas", "abbr": "TX", "avg": 1700}, "utah": {"name": "Utah", "abbr": "UT", "avg": 1380}, "vermont": {"name": "Vermont", "abbr": "VT", "avg": 1510}, "virginia": {"name": "Virginia", "abbr": "VA", "avg": 1560}, "washington": {"name": "Washington", "abbr": "WA", "avg": 1470}, "west-virginia": {"name": "West Virginia", "abbr": "WV", "avg": 1820}, "wisconsin": {"name": "Wisconsin", "abbr": "WI", "avg": 1510}, "wyoming": {"name": "Wyoming", "abbr": "WY", "avg": 1540}};
+
+    // Build state grid
+    const grid = document.getElementById('stateGrid');
+    Object.entries(stateData).forEach(([slug,d]) => {
+        const a = document.createElement('a');
+        a.href = slug + '.html';
+        a.innerHTML = d.name + ' <span class="rate">$' + d.avg.toLocaleString() + '/yr</span>';
+        grid.appendChild(a);
+    });
+
+    function calculate() {
+        const age = parseInt(document.getElementById('age').value);
+        const gender = document.getElementById('gender').value;
+        const health = document.getElementById('health').value;
+        const tobacco = document.getElementById('tobacco').value;
+        const coverage = parseInt(document.getElementById('coverage').value);
+        const ptype = document.getElementById('ptype').value;
+
+        // Base rate per $1000 coverage (monthly) for 35yo male standard-plus nonsmoker 20yr term
+        let baseRate = 0.045;
+
+        // Age adjustment
+        if (age < 25) baseRate *= 0.55;
+        else if (age < 30) baseRate *= 0.70;
+        else if (age < 35) baseRate *= 0.85;
+        else if (age < 40) baseRate *= 1.0;
+        else if (age < 45) baseRate *= 1.35;
+        else if (age < 50) baseRate *= 1.85;
+        else if (age < 55) baseRate *= 2.60;
+        else if (age < 60) baseRate *= 3.80;
+        else if (age < 65) baseRate *= 5.50;
+        else if (age < 70) baseRate *= 8.20;
+        else if (age < 75) baseRate *= 12.5;
+        else baseRate *= 18.0;
+
+        // Gender
+        if (gender === 'female') baseRate *= 0.82;
+
+        // Health class
+        const healthMult = {'preferred-plus':0.70,'preferred':0.85,'standard-plus':1.0,'standard':1.25,'substandard':1.80};
+        baseRate *= healthMult[health] || 1.0;
+
+        // Tobacco
+        if (tobacco === 'yes') baseRate *= 2.5;
+
+        // Policy type multiplier
+        const typeMult = {'term10':0.75,'term20':1.0,'term30':1.35,'whole':6.5,'universal':5.0};
+        baseRate *= typeMult[ptype] || 1.0;
+
+        // State adjustment (life expectancy & cost of living)
+        const leAdj = 1 + (78.5 - STATE_LE) * 0.015;
+        baseRate *= leAdj;
+        baseRate *= (0.85 + STATE_CI * 0.15);
+
+        const monthly = baseRate * (coverage / 1000);
+        const annual = monthly * 12 * 0.92; // 8% discount for annual
+
+        document.getElementById('monthly').textContent = '$' + monthly.toFixed(0);
+        document.getElementById('annual').textContent = '$' + annual.toFixed(0);
+        document.getElementById('coverageAmt').textContent = '$' + coverage.toLocaleString();
+        document.getElementById('perThousand').textContent = '$' + (monthly / (coverage/1000)).toFixed(3);
+
+        // Comparison table
+        const types = [['Term 10','term10',10],['Term 20','term20',20],['Term 30','term30',30],['Whole Life','whole',99],['Universal','universal',99]];
+        const tbody = document.getElementById('compareBody');
+        tbody.innerHTML = '';
+        types.forEach(([label, key, years]) => {
+            let r = 0.045;
+            // Same age/gender/health/tobacco adjustments
+            if (age < 25) r *= 0.55;
+            else if (age < 30) r *= 0.70;
+            else if (age < 35) r *= 0.85;
+            else if (age < 40) r *= 1.0;
+            else if (age < 45) r *= 1.35;
+            else if (age < 50) r *= 1.85;
+            else if (age < 55) r *= 2.60;
+            else if (age < 60) r *= 3.80;
+            else if (age < 65) r *= 5.50;
+            else if (age < 70) r *= 8.20;
+            else if (age < 75) r *= 12.5;
+            else r *= 18.0;
+            if (gender === 'female') r *= 0.82;
+            r *= healthMult[health] || 1.0;
+            if (tobacco === 'yes') r *= 2.5;
+            r *= typeMult[key] || 1.0;
+            r *= leAdj;
+            r *= (0.85 + STATE_CI * 0.15);
+            const m = r * (coverage / 1000);
+            const a = m * 12 * 0.92;
+            const totalYears = years === 99 ? 30 : years;
+            const total = a * totalYears;
+            const cashValue = (key === 'whole') ? '$' + Math.round(total * 0.45).toLocaleString() : (key === 'universal') ? '$' + Math.round(total * 0.35).toLocaleString() : 'None';
+            const isCurrent = key === ptype;
+            const tr = document.createElement('tr');
+            tr.innerHTML = '<td>' + (isCurrent ? '<strong>'+label+'</strong>' : label) + '</td>' +
+                '<td' + (isCurrent?' class="highlight"':'') + '>$' + m.toFixed(0) + '</td>' +
+                '<td>$' + a.toFixed(0) + '</td>' +
+                '<td>$' + Math.round(total).toLocaleString() + '</td>' +
+                '<td>' + cashValue + '</td>';
+            tbody.appendChild(tr);
+        });
+        document.getElementById('results').style.display = 'block';
+    }
+
+    // Auto-calculate on load
+    calculate();
+
+    // Theme toggle
+    const tb=document.getElementById('themeBtn');
+    tb.onclick=()=>{const t=document.body.dataset.theme==='light'?'':'light';document.body.dataset.theme=t;tb.textContent=t?'🌙':'☀️';localStorage.setItem('theme',t)};
+    if(localStorage.getItem('theme')==='light'){document.body.dataset.theme='light';tb.textContent='🌙'};
+    </script>
+</body>
+</html>
