@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Property Tax Appeal Calculator by State 2026 | SmartCalc</title>
+<meta name="description" content="Free property tax appeal calculators for all 50 states + DC. Estimate your savings, check appeal deadlines, and get step-by-step appeal guidance.">
+<link rel="canonical" href="https://alexchalu.github.io/smartcalc/property-tax-appeal/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Property Tax Appeal Calculator by State","description":"Calculate potential property tax savings from appeals in all 50 US states","url":"https://alexchalu.github.io/smartcalc/property-tax-appeal/","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f0f4f8;color:#1a202c;line-height:1.6}
+.header{background:linear-gradient(135deg,#1e3a5f 0%,#2d5a87 100%);color:#fff;padding:30px 20px;text-align:center}
+.header h1{font-size:2rem;margin-bottom:8px}
+.header p{opacity:0.9;font-size:1rem;max-width:700px;margin:0 auto}
+.nav{background:#fff;padding:10px 20px;border-bottom:1px solid #e2e8f0;font-size:0.85rem}
+.nav a{color:#2d5a87;text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:20px}
+.ad-slot{background:#f7fafc;border:1px dashed #cbd5e0;padding:15px;text-align:center;color:#a0aec0;margin:20px 0;border-radius:8px;font-size:0.85rem}
+.card{background:#fff;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,0.08);padding:25px;margin-bottom:20px}
+.card h2{color:#1e3a5f;margin-bottom:15px}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px;margin:15px 0}
+.stat-card{text-align:center;padding:20px;background:linear-gradient(135deg,#f0f9ff,#e0f2fe);border-radius:12px;border:1px solid #bee3f8}
+.stat-card .number{font-size:1.8rem;font-weight:700;color:#2d5a87}
+.stat-card .desc{font-size:0.85rem;color:#4a5568;margin-top:5px}
+.search-box{width:100%;padding:12px 15px;border:2px solid #e2e8f0;border-radius:8px;font-size:1rem;margin-bottom:15px}
+.search-box:focus{border-color:#2d5a87;outline:none}
+table{width:100%;border-collapse:collapse}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid #e2e8f0;font-size:0.9rem}
+th{background:#f7fafc;font-weight:600;color:#4a5568;cursor:pointer;user-select:none;position:sticky;top:0}
+th:hover{background:#edf2f7}
+tr:hover{background:#f7fafc}
+td a{color:#2d5a87;text-decoration:none;font-weight:600}
+td a:hover{text-decoration:underline}
+.highlight-row{background:#f0fff4}
+.table-wrap{overflow-x:auto;max-height:600px;overflow-y:auto}
+.featured{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;margin:15px 0}
+.featured a{display:block;padding:20px;background:#f7fafc;border-radius:10px;text-decoration:none;color:#1a202c;border:2px solid #e2e8f0;transition:all 0.2s}
+.featured a:hover{border-color:#2d5a87;transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,0.1)}
+.featured a strong{color:#2d5a87;font-size:1.1rem}
+.featured a span{display:block;color:#718096;font-size:0.85rem;margin-top:5px}
+footer{text-align:center;padding:30px;color:#718096;font-size:0.85rem}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>🏠 Property Tax Appeal Calculator by State</h1>
+<p>Find out how much you could save by appealing your property tax assessment. All 50 states + DC with deadlines, success rates, and step-by-step guidance.</p>
+</div>
+<div class="nav">
+<a href="../index.html">SmartCalc</a> &gt; Property Tax Appeal Calculators
+</div>
+<div class="container">
+
+<div class="ad-slot"><!-- Ad Slot 1 --></div>
+
+<div class="card">
+<h2>🏆 Why Appeal Your Property Taxes?</h2>
+<div class="stats-grid">
+<div class="stat-card"><div class="number">30-60%</div><div class="desc">Average Success Rate</div></div>
+<div class="stat-card"><div class="number">$1,000+</div><div class="desc">Average Annual Savings</div></div>
+<div class="stat-card"><div class="number">5-10x</div><div class="desc">ROI on Appeal Costs</div></div>
+<div class="stat-card"><div class="number">Free</div><div class="desc">Most Appeals Cost Nothing to File</div></div>
+</div>
+</div>
+
+<div class="card">
+<h2>🔥 Featured States (Highest Savings Potential)</h2>
+<div class="featured">
+<a href="tx.html"><strong>🤠 Texas</strong><span>1.80% rate • 60% success rate • $5,404/yr avg tax</span></a>
+<a href="nj.html"><strong>🏖️ New Jersey</strong><span>2.49% rate • 55% success rate • $9,995/yr avg tax</span></a>
+<a href="il.html"><strong>🏙️ Illinois</strong><span>2.27% rate • 58% success rate • $5,428/yr avg tax</span></a>
+<a href="ca.html"><strong>☀️ California</strong><span>0.74% rate • 55% success rate • $5,818/yr avg tax</span></a>
+<a href="ny.html"><strong>🗽 New York</strong><span>1.72% rate • 54% success rate • $6,607/yr avg tax</span></a>
+<a href="fl.html"><strong>🌴 Florida</strong><span>0.86% rate • 52% success rate • $3,374/yr avg tax</span></a>
+</div>
+</div>
+
+<div class="card">
+<h2>📊 All States — Property Tax Appeal Data</h2>
+<input type="text" class="search-box" id="search" placeholder="🔍 Search by state name..." oninput="filterTable()">
+<div class="table-wrap">
+<table id="stateTable">
+<thead><tr>
+<th onclick="sortTable(0)">State ↕</th>
+<th onclick="sortTable(1)">Tax Rate ↕</th>
+<th onclick="sortTable(2)">Avg Home ↕</th>
+<th onclick="sortTable(3)">Avg Tax ↕</th>
+<th onclick="sortTable(4)">10% Appeal Savings ↕</th>
+<th onclick="sortTable(5)">Success Rate ↕</th>
+<th>Deadline</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><a href="al.html">Alabama</a></td>
+<td>0.41%</td>
+<td>$172,800</td>
+<td>$708</td>
+<td>$71</td>
+<td>40%</td>
+<td>within 30 days of notice</td>
+</tr>
+<tr>
+<td><a href="ak.html">Alaska</a></td>
+<td>1.19%</td>
+<td>$293,700</td>
+<td>$3,495</td>
+<td>$350</td>
+<td>45%</td>
+<td>within 30 days of assessment</td>
+</tr>
+<tr>
+<td><a href="az.html">Arizona</a></td>
+<td>0.62%</td>
+<td>$349,400</td>
+<td>$2,166</td>
+<td>$217</td>
+<td>42%</td>
+<td>within 60 days</td>
+</tr>
+<tr>
+<td><a href="ar.html">Arkansas</a></td>
+<td>0.62%</td>
+<td>$148,900</td>
+<td>$923</td>
+<td>$92</td>
+<td>38%</td>
+<td>first Monday in June</td>
+</tr>
+<tr>
+<td><a href="ca.html">California</a></td>
+<td>0.74%</td>
+<td>$786,200</td>
+<td>$5,818</td>
+<td>$582</td>
+<td>55%</td>
+<td>September 15 or November 30</td>
+</tr>
+<tr>
+<td><a href="co.html">Colorado</a></td>
+<td>0.51%</td>
+<td>$521,900</td>
+<td>$2,662</td>
+<td>$266</td>
+<td>50%</td>
+<td>June 1</td>
+</tr>
+<tr>
+<td><a href="ct.html">Connecticut</a></td>
+<td>2.15%</td>
+<td>$352,100</td>
+<td>$7,570</td>
+<td>$757</td>
+<td>48%</td>
+<td>February 20</td>
+</tr>
+<tr>
+<td><a href="de.html">Delaware</a></td>
+<td>0.57%</td>
+<td>$305,200</td>
+<td>$1,740</td>
+<td>$174</td>
+<td>40%</td>
+<td>varies by county</td>
+</tr>
+<tr>
+<td><a href="fl.html">Florida</a></td>
+<td>0.86%</td>
+<td>$392,300</td>
+<td>$3,374</td>
+<td>$337</td>
+<td>52%</td>
+<td>25 days after TRIM notice</td>
+</tr>
+<tr>
+<td><a href="ga.html">Georgia</a></td>
+<td>0.92%</td>
+<td>$291,700</td>
+<td>$2,684</td>
+<td>$268</td>
+<td>45%</td>
+<td>45 days of assessment notice</td>
+</tr>
+<tr>
+<td><a href="hi.html">Hawaii</a></td>
+<td>0.28%</td>
+<td>$835,600</td>
+<td>$2,340</td>
+<td>$234</td>
+<td>35%</td>
+<td>April 9</td>
+</tr>
+<tr>
+<td><a href="id.html">Idaho</a></td>
+<td>0.63%</td>
+<td>$383,000</td>
+<td>$2,413</td>
+<td>$241</td>
+<td>44%</td>
+<td>fourth Monday in June</td>
+</tr>
+<tr>
+<td><a href="il.html">Illinois</a></td>
+<td>2.27%</td>
+<td>$239,100</td>
+<td>$5,428</td>
+<td>$543</td>
+<td>58%</td>
+<td>30 days of publication</td>
+</tr>
+<tr>
+<td><a href="in.html">Indiana</a></td>
+<td>0.85%</td>
+<td>$194,900</td>
+<td>$1,657</td>
+<td>$166</td>
+<td>42%</td>
+<td>June 15 or 45 days of notice</td>
+</tr>
+<tr>
+<td><a href="ia.html">Iowa</a></td>
+<td>1.57%</td>
+<td>$178,700</td>
+<td>$2,806</td>
+<td>$281</td>
+<td>40%</td>
+<td>April 25 to May 5</td>
+</tr>
+<tr>
+<td><a href="ks.html">Kansas</a></td>
+<td>1.41%</td>
+<td>$195,000</td>
+<td>$2,750</td>
+<td>$275</td>
+<td>43%</td>
+<td>30 days of valuation notice</td>
+</tr>
+<tr>
+<td><a href="ky.html">Kentucky</a></td>
+<td>0.86%</td>
+<td>$177,100</td>
+<td>$1,523</td>
+<td>$152</td>
+<td>38%</td>
+<td>January 1 through tax bill date</td>
+</tr>
+<tr>
+<td><a href="la.html">Louisiana</a></td>
+<td>0.55%</td>
+<td>$198,800</td>
+<td>$1,093</td>
+<td>$109</td>
+<td>40%</td>
+<td>15 days after public notice</td>
+</tr>
+<tr>
+<td><a href="me.html">Maine</a></td>
+<td>1.36%</td>
+<td>$311,400</td>
+<td>$4,235</td>
+<td>$424</td>
+<td>42%</td>
+<td>185 days after commitment</td>
+</tr>
+<tr>
+<td><a href="md.html">Maryland</a></td>
+<td>1.09%</td>
+<td>$380,100</td>
+<td>$4,143</td>
+<td>$414</td>
+<td>48%</td>
+<td>45 days of notice</td>
+</tr>
+<tr>
+<td><a href="ma.html">Massachusetts</a></td>
+<td>1.23%</td>
+<td>$596,400</td>
+<td>$7,336</td>
+<td>$734</td>
+<td>50%</td>
+<td>February 1 (most towns)</td>
+</tr>
+<tr>
+<td><a href="mi.html">Michigan</a></td>
+<td>1.54%</td>
+<td>$218,100</td>
+<td>$3,359</td>
+<td>$336</td>
+<td>52%</td>
+<td>March Board of Review meeting</td>
+</tr>
+<tr>
+<td><a href="mn.html">Minnesota</a></td>
+<td>1.12%</td>
+<td>$310,800</td>
+<td>$3,481</td>
+<td>$348</td>
+<td>45%</td>
+<td>April 30</td>
+</tr>
+<tr>
+<td><a href="ms.html">Mississippi</a></td>
+<td>0.81%</td>
+<td>$140,200</td>
+<td>$1,136</td>
+<td>$114</td>
+<td>36%</td>
+<td>first Monday in April</td>
+</tr>
+<tr>
+<td><a href="mo.html">Missouri</a></td>
+<td>0.97%</td>
+<td>$207,900</td>
+<td>$2,017</td>
+<td>$202</td>
+<td>40%</td>
+<td>second Monday in July</td>
+</tr>
+<tr>
+<td><a href="mt.html">Montana</a></td>
+<td>0.74%</td>
+<td>$366,400</td>
+<td>$2,711</td>
+<td>$271</td>
+<td>42%</td>
+<td>first Monday in June</td>
+</tr>
+<tr>
+<td><a href="ne.html">Nebraska</a></td>
+<td>1.73%</td>
+<td>$209,700</td>
+<td>$3,628</td>
+<td>$363</td>
+<td>45%</td>
+<td>June 30</td>
+</tr>
+<tr>
+<td><a href="nv.html">Nevada</a></td>
+<td>0.6%</td>
+<td>$397,200</td>
+<td>$2,383</td>
+<td>$238</td>
+<td>40%</td>
+<td>January 15</td>
+</tr>
+<tr>
+<td><a href="nh.html">New Hampshire</a></td>
+<td>2.18%</td>
+<td>$383,100</td>
+<td>$8,352</td>
+<td>$835</td>
+<td>48%</td>
+<td>March 1 (or September 1)</td>
+</tr>
+<tr>
+<td><a href="nj.html">New Jersey</a></td>
+<td>2.49%</td>
+<td>$401,400</td>
+<td>$9,995</td>
+<td>$1,000</td>
+<td>55%</td>
+<td>April 1 (most counties)</td>
+</tr>
+<tr>
+<td><a href="nm.html">New Mexico</a></td>
+<td>0.8%</td>
+<td>$259,800</td>
+<td>$2,078</td>
+<td>$208</td>
+<td>38%</td>
+<td>within 30 days of notice</td>
+</tr>
+<tr>
+<td><a href="ny.html">New York</a></td>
+<td>1.72%</td>
+<td>$384,100</td>
+<td>$6,607</td>
+<td>$661</td>
+<td>54%</td>
+<td>Grievance Day (third Tuesday in May)</td>
+</tr>
+<tr>
+<td><a href="nc.html">North Carolina</a></td>
+<td>0.84%</td>
+<td>$289,500</td>
+<td>$2,432</td>
+<td>$243</td>
+<td>42%</td>
+<td>within 30 days of notice</td>
+</tr>
+<tr>
+<td><a href="nd.html">North Dakota</a></td>
+<td>0.98%</td>
+<td>$232,500</td>
+<td>$2,279</td>
+<td>$228</td>
+<td>38%</td>
+<td>April meeting</td>
+</tr>
+<tr>
+<td><a href="oh.html">Ohio</a></td>
+<td>1.56%</td>
+<td>$197,200</td>
+<td>$3,076</td>
+<td>$308</td>
+<td>50%</td>
+<td>March 31</td>
+</tr>
+<tr>
+<td><a href="ok.html">Oklahoma</a></td>
+<td>0.9%</td>
+<td>$172,500</td>
+<td>$1,553</td>
+<td>$155</td>
+<td>40%</td>
+<td>varies by county</td>
+</tr>
+<tr>
+<td><a href="or.html">Oregon</a></td>
+<td>0.97%</td>
+<td>$438,100</td>
+<td>$4,250</td>
+<td>$425</td>
+<td>48%</td>
+<td>January 15 to December 31</td>
+</tr>
+<tr>
+<td><a href="pa.html">Pennsylvania</a></td>
+<td>1.58%</td>
+<td>$254,100</td>
+<td>$4,015</td>
+<td>$402</td>
+<td>50%</td>
+<td>varies by county (often August 1)</td>
+</tr>
+<tr>
+<td><a href="ri.html">Rhode Island</a></td>
+<td>1.63%</td>
+<td>$394,300</td>
+<td>$6,427</td>
+<td>$643</td>
+<td>44%</td>
+<td>90 days after tax bill</td>
+</tr>
+<tr>
+<td><a href="sc.html">South Carolina</a></td>
+<td>0.57%</td>
+<td>$243,900</td>
+<td>$1,390</td>
+<td>$139</td>
+<td>38%</td>
+<td>within 90 days of notice</td>
+</tr>
+<tr>
+<td><a href="sd.html">South Dakota</a></td>
+<td>1.28%</td>
+<td>$250,300</td>
+<td>$3,204</td>
+<td>$320</td>
+<td>42%</td>
+<td>third Monday in March</td>
+</tr>
+<tr>
+<td><a href="tn.html">Tennessee</a></td>
+<td>0.71%</td>
+<td>$267,900</td>
+<td>$1,902</td>
+<td>$190</td>
+<td>40%</td>
+<td>June 1 to June 30</td>
+</tr>
+<tr>
+<td><a href="tx.html">Texas</a></td>
+<td>1.8%</td>
+<td>$300,200</td>
+<td>$5,404</td>
+<td>$540</td>
+<td>60%</td>
+<td>May 15 (or 30 days after notice)</td>
+</tr>
+<tr>
+<td><a href="ut.html">Utah</a></td>
+<td>0.63%</td>
+<td>$460,300</td>
+<td>$2,900</td>
+<td>$290</td>
+<td>44%</td>
+<td>September 15</td>
+</tr>
+<tr>
+<td><a href="vt.html">Vermont</a></td>
+<td>1.9%</td>
+<td>$292,700</td>
+<td>$5,561</td>
+<td>$556</td>
+<td>42%</td>
+<td>varies by town</td>
+</tr>
+<tr>
+<td><a href="va.html">Virginia</a></td>
+<td>0.82%</td>
+<td>$370,100</td>
+<td>$3,035</td>
+<td>$304</td>
+<td>44%</td>
+<td>varies by locality</td>
+</tr>
+<tr>
+<td><a href="wa.html">Washington</a></td>
+<td>1.03%</td>
+<td>$563,900</td>
+<td>$5,808</td>
+<td>$581</td>
+<td>48%</td>
+<td>July 1 (or 60 days of notice)</td>
+</tr>
+<tr>
+<td><a href="wv.html">West Virginia</a></td>
+<td>0.58%</td>
+<td>$128,600</td>
+<td>$746</td>
+<td>$75</td>
+<td>36%</td>
+<td>February 1 to February 20</td>
+</tr>
+<tr>
+<td><a href="wi.html">Wisconsin</a></td>
+<td>1.76%</td>
+<td>$247,000</td>
+<td>$4,347</td>
+<td>$435</td>
+<td>46%</td>
+<td>Board of Review meeting (usually May)</td>
+</tr>
+<tr>
+<td><a href="wy.html">Wyoming</a></td>
+<td>0.61%</td>
+<td>$306,600</td>
+<td>$1,870</td>
+<td>$187</td>
+<td>38%</td>
+<td>first Monday in June</td>
+</tr>
+<tr>
+<td><a href="dc.html">District of Columbia</a></td>
+<td>0.56%</td>
+<td>$701,700</td>
+<td>$3,930</td>
+<td>$393</td>
+<td>50%</td>
+<td>April 1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="ad-slot"><!-- Ad Slot 2 --></div>
+
+<div class="card">
+<h2>🔗 Related Calculator Suites</h2>
+<div class="featured">
+<a href="../mortgage/"><strong>🏠 Mortgage Calculators</strong><span>All 50 states with rates & amortization</span></a>
+<a href="../estate-tax/"><strong>🏛️ Estate Tax Calculators</strong><span>Federal + state estate & inheritance tax</span></a>
+<a href="../paycheck/"><strong>💰 Paycheck Calculators</strong><span>Take-home pay by state</span></a>
+<a href="../solar/"><strong>☀️ Solar ROI Calculators</strong><span>Solar panel savings by state</span></a>
+</div>
+</div>
+
+</div>
+<footer><p>&copy; 2026 SmartCalc. Free property tax appeal calculators for all 50 US states.</p></footer>
+
+<script>
+function filterTable() {
+  const q = document.getElementById('search').value.toLowerCase();
+  const rows = document.querySelectorAll('#stateTable tbody tr');
+  rows.forEach(r => { r.style.display = r.textContent.toLowerCase().includes(q) ? '' : 'none'; });
+}
+function sortTable(n) {
+  const table = document.getElementById('stateTable');
+  const rows = Array.from(table.tBodies[0].rows);
+  const asc = table.getAttribute('data-sort') !== String(n);
+  table.setAttribute('data-sort', asc ? String(n) : '-1');
+  rows.sort((a, b) => {
+    let av = a.cells[n].textContent.replace(/[$,%]/g, '');
+    let bv = b.cells[n].textContent.replace(/[$,%]/g, '');
+    if (!isNaN(parseFloat(av))) return asc ? parseFloat(av) - parseFloat(bv) : parseFloat(bv) - parseFloat(av);
+    return asc ? av.localeCompare(bv) : bv.localeCompare(av);
+  });
+  rows.forEach(r => table.tBodies[0].appendChild(r));
+}
+</script>
+</body>
+</html>

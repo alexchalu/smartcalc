@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Illinois Property Tax Appeal Calculator 2026 | SmartCalc</title>
+<meta name="description" content="Free Illinois property tax appeal calculator. Estimate your potential savings, check if your assessment is too high, and get step-by-step appeal guidance for IL homeowners.">
+<meta name="keywords" content="Illinois property tax appeal, IL property tax reduction, Illinois assessment appeal, lower property taxes Illinois">
+<link rel="canonical" href="https://alexchalu.github.io/smartcalc/property-tax-appeal/il.html">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Illinois Property Tax Appeal Calculator","description":"Calculate potential property tax savings from a successful appeal in Illinois","url":"https://alexchalu.github.io/smartcalc/property-tax-appeal/il.html","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f0f4f8;color:#1a202c;line-height:1.6}
+.header{background:linear-gradient(135deg,#1e3a5f 0%,#2d5a87 100%);color:#fff;padding:20px;text-align:center}
+.header h1{font-size:1.8rem;margin-bottom:5px}
+.header p{opacity:0.9;font-size:0.95rem}
+.nav{background:#fff;padding:10px 20px;border-bottom:1px solid #e2e8f0;font-size:0.85rem}
+.nav a{color:#2d5a87;text-decoration:none}
+.nav a:hover{text-decoration:underline}
+.container{max-width:900px;margin:0 auto;padding:20px}
+.ad-slot{background:#f7fafc;border:1px dashed #cbd5e0;padding:15px;text-align:center;color:#a0aec0;margin:20px 0;border-radius:8px;font-size:0.85rem}
+.card{background:#fff;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,0.08);padding:25px;margin-bottom:20px}
+.card h2{color:#1e3a5f;margin-bottom:15px;font-size:1.3rem}
+.card h3{color:#2d5a87;margin:15px 0 10px;font-size:1.1rem}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+@media(max-width:600px){.form-grid{grid-template-columns:1fr}}
+label{display:block;font-weight:600;margin-bottom:5px;font-size:0.9rem;color:#4a5568}
+input,select{width:100%;padding:10px;border:2px solid #e2e8f0;border-radius:8px;font-size:1rem;transition:border-color 0.2s}
+input:focus,select:focus{border-color:#2d5a87;outline:none}
+.btn{background:linear-gradient(135deg,#2d5a87,#1e3a5f);color:#fff;border:none;padding:12px 30px;border-radius:8px;font-size:1rem;cursor:pointer;width:100%;margin-top:15px;font-weight:600}
+.btn:hover{opacity:0.9}
+.results{display:none;margin-top:20px}
+.result-box{background:linear-gradient(135deg,#f0f9ff,#e0f2fe);border:2px solid #2d5a87;border-radius:12px;padding:20px;margin-bottom:15px}
+.result-box h3{color:#1e3a5f;margin-bottom:10px}
+.result-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;margin-top:15px}
+.result-item{text-align:center;padding:15px;background:#fff;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.1)}
+.result-item .value{font-size:1.8rem;font-weight:700;color:#2d5a87}
+.result-item .label{font-size:0.8rem;color:#718096;margin-top:5px}
+.savings-table{width:100%;border-collapse:collapse;margin-top:15px}
+.savings-table th,.savings-table td{padding:10px;text-align:left;border-bottom:1px solid #e2e8f0}
+.savings-table th{background:#f7fafc;font-weight:600;color:#4a5568;font-size:0.85rem}
+.savings-table td{font-size:0.95rem}
+.highlight{background:#f0fff4;font-weight:600;color:#22543d}
+.steps{counter-reset:step}
+.steps li{counter-increment:step;list-style:none;padding:15px 15px 15px 60px;position:relative;margin-bottom:10px;background:#f7fafc;border-radius:8px}
+.steps li::before{content:counter(step);position:absolute;left:15px;top:15px;background:#2d5a87;color:#fff;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.9rem}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px;margin:15px 0}
+.stat-card{text-align:center;padding:15px;background:#f7fafc;border-radius:8px;border:1px solid #e2e8f0}
+.stat-card .number{font-size:1.5rem;font-weight:700;color:#2d5a87}
+.stat-card .desc{font-size:0.8rem;color:#718096;margin-top:5px}
+.warning{background:#fffbeb;border:1px solid #f59e0b;border-radius:8px;padding:15px;margin:15px 0}
+.warning strong{color:#92400e}
+.faq-item{margin-bottom:15px;border-bottom:1px solid #e2e8f0;padding-bottom:15px}
+.faq-item:last-child{border-bottom:none}
+.faq-item h4{color:#2d5a87;margin-bottom:5px;font-size:0.95rem}
+.faq-item p{color:#4a5568;font-size:0.9rem}
+.cross-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:15px}
+.cross-links a{display:inline-block;padding:8px 15px;background:#edf2f7;border-radius:20px;color:#2d5a87;text-decoration:none;font-size:0.85rem;font-weight:500}
+.cross-links a:hover{background:#2d5a87;color:#fff}
+footer{text-align:center;padding:30px;color:#718096;font-size:0.85rem}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>🏠 Illinois Property Tax Appeal Calculator</h1>
+<p>Estimate your savings from a successful property tax appeal in IL</p>
+</div>
+<div class="nav">
+<a href="../index.html">SmartCalc</a> &gt; <a href="index.html">Property Tax Appeal</a> &gt; Illinois
+</div>
+<div class="container">
+
+<div class="ad-slot"><!-- Ad Slot 1 --></div>
+
+<div class="card">
+<h2>📊 Illinois Property Tax Overview</h2>
+<div class="stats-grid">
+<div class="stat-card"><div class="number">2.27%</div><div class="desc">Effective Tax Rate</div></div>
+<div class="stat-card"><div class="number">$5,428</div><div class="desc">Avg Annual Tax</div></div>
+<div class="stat-card"><div class="number">6%</div><div class="desc">Appeal Rate</div></div>
+<div class="stat-card"><div class="number">58%</div><div class="desc">Success Rate</div></div>
+</div>
+<div class="warning">
+<strong>⏰ Illinois Appeal Deadline:</strong> 30 days of publication. Missing the deadline means waiting until the next assessment cycle.
+</div>
+</div>
+
+<div class="card">
+<h2>🧮 Calculate Your Appeal Savings</h2>
+<div class="form-grid">
+<div>
+<label for="homeValue">Current Assessed Value ($)</label>
+<input type="number" id="homeValue" value="239100" min="0" step="1000">
+</div>
+<div>
+<label for="marketValue">Estimated Market Value ($)</label>
+<input type="number" id="marketValue" value="215190" min="0" step="1000">
+</div>
+<div>
+<label for="taxRate">Your Tax Rate (%)</label>
+<input type="number" id="taxRate" value="2.27" min="0" step="0.01">
+</div>
+<div>
+<label for="appealCost">Estimated Appeal Cost ($)</label>
+<input type="number" id="appealCost" value="250" min="0" step="50">
+</div>
+<div>
+<label for="comps">Comparable Sales (lower value)</label>
+<input type="number" id="comps" value="210408" min="0" step="1000">
+</div>
+<div>
+<label for="scenario">Appeal Scenario</label>
+<select id="scenario">
+<option value="conservative">Conservative (5% reduction)</option>
+<option value="moderate" selected>Moderate (10% reduction)</option>
+<option value="aggressive">Aggressive (20% reduction)</option>
+<option value="custom">Custom (use market value)</option>
+</select>
+</div>
+</div>
+<button class="btn" onclick="calculate()">Calculate Appeal Savings</button>
+
+<div class="results" id="results">
+<div class="result-box">
+<h3>💰 Potential Annual Savings</h3>
+<div class="result-grid">
+<div class="result-item"><div class="value" id="annualSavings">$0</div><div class="label">Annual Tax Savings</div></div>
+<div class="result-item"><div class="value" id="monthSavings">$0</div><div class="label">Monthly Savings</div></div>
+<div class="result-item"><div class="value" id="fiveYearSavings">$0</div><div class="label">5-Year Total Savings</div></div>
+<div class="result-item"><div class="value" id="roi">0%</div><div class="label">ROI on Appeal Cost</div></div>
+</div>
+</div>
+
+<h3>📈 Savings by Reduction Scenario</h3>
+<table class="savings-table">
+<thead><tr><th>Reduction</th><th>New Assessment</th><th>Annual Tax</th><th>Annual Savings</th><th>5-Year Savings</th></tr></thead>
+<tbody id="scenarioTable"></tbody>
+</table>
+
+<div class="result-box" style="margin-top:20px">
+<h3>🎯 Appeal Recommendation</h3>
+<p id="recommendation"></p>
+</div>
+</div>
+</div>
+
+<div class="ad-slot"><!-- Ad Slot 2 --></div>
+
+<div class="card">
+<h2>📋 How to Appeal Property Taxes in Illinois</h2>
+<ol class="steps">
+<li><strong>Review Your Assessment Notice</strong> — Check the assessed value on your Illinois property tax notice. Compare it to recent sales of similar homes in your area.</li>
+<li><strong>Research Comparable Sales</strong> — Find 3-5 recent sales of similar properties within 0.5 miles. Focus on homes with similar size, age, condition, and features.</li>
+<li><strong>Document Property Issues</strong> — Note any problems that reduce your home's value: needed repairs, environmental issues, noise, easements, or functional obsolescence.</li>
+<li><strong>File Your Appeal by the Deadline</strong> — In Illinois, you must file 30 days of publication. Contact your county assessor's office for exact procedures.</li>
+<li><strong>Present Your Case</strong> — Attend the hearing with your evidence: comparable sales data, photos of property issues, independent appraisal if available.</li>
+<li><strong>Consider Further Appeal</strong> — If denied, Illinois allows further appeal to a higher board or court.</li>
+</ol>
+</div>
+
+<div class="card">
+<h2>💡 Illinois Property Tax Appeal Tips</h2>
+<div class="stats-grid">
+<div class="stat-card"><div class="number">📸</div><div class="desc">Take photos of any property defects or issues</div></div>
+<div class="stat-card"><div class="number">🏘️</div><div class="desc">Get 3-5 comparable sales within 6 months</div></div>
+<div class="stat-card"><div class="number">📄</div><div class="desc">Consider a professional appraisal ($300-$500)</div></div>
+<div class="stat-card"><div class="number">⏰</div><div class="desc">Never miss the filing deadline</div></div>
+</div>
+
+
+<div class="warning"><strong>🏆 Illinois Tip:</strong> Illinois has one of the highest property tax rates in the nation. Cook County properties are especially over-assessed — appeal rates in Chicago exceed 10%. Always appeal!</div>
+
+
+
+</div>
+
+<div class="card">
+<h2>❓ Illinois Property Tax Appeal FAQ</h2>
+<div class="faq-item">
+<h4>What is the property tax rate in Illinois?</h4>
+<p>The average effective property tax rate in Illinois is 2.27%. On a home valued at $239,100, that's approximately $5,428 per year. Rates vary by county and municipality.</p>
+</div>
+<div class="faq-item">
+<h4>When is the deadline to appeal property taxes in Illinois?</h4>
+<p>In Illinois, the appeal deadline is 30 days of publication. Check with your local assessor's office for exact dates, as they can vary by county.</p>
+</div>
+<div class="faq-item">
+<h4>How often are properties reassessed in Illinois?</h4>
+<p>Illinois reassessment cycles vary by jurisdiction — typically every 1-5 years.</p>
+</div>
+<div class="faq-item">
+<h4>Do I need a lawyer to appeal in Illinois?</h4>
+<p>No, you can appeal on your own. However, for high-value properties or complex cases, a property tax attorney or consultant may increase your chances. Many work on contingency (typically 30-50% of first year's savings).</p>
+</div>
+<div class="faq-item">
+<h4>What evidence do I need for a Illinois property tax appeal?</h4>
+<p>The strongest evidence includes: comparable sales (3-5 recent sales of similar homes), an independent appraisal, photos of property defects, and documentation of any issues affecting value (noise, flooding, environmental contamination).</p>
+</div>
+<div class="faq-item">
+<h4>What are the chances of winning a property tax appeal in Illinois?</h4>
+<p>In Illinois, approximately 58% of property tax appeals result in a reduction. Nationally, success rates range from 30-60% depending on the jurisdiction and evidence quality.</p>
+</div>
+</div>
+
+<div class="ad-slot"><!-- Ad Slot 3 --></div>
+
+<div class="card">
+<h2>🔗 Related Calculators</h2>
+<div class="cross-links">
+<a href="../mortgage/il.html">IL Mortgage Calculator</a>
+<a href="../estate-tax/il.html">IL Estate Tax Calculator</a>
+<a href="../paycheck/il.html">IL Paycheck Calculator</a>
+<a href="../solar/il.html">IL Solar ROI Calculator</a>
+<a href="../auto-loan/il.html">IL Auto Loan Calculator</a>
+<a href="index.html">All States</a>
+</div>
+</div>
+
+</div>
+
+<footer>
+<p>&copy; 2026 SmartCalc. Free Illinois property tax appeal calculator. For informational purposes only — consult a tax professional for specific advice.</p>
+</footer>
+
+<script>
+function calculate() {
+  const hv = parseFloat(document.getElementById('homeValue').value) || 0;
+  const mv = parseFloat(document.getElementById('marketValue').value) || 0;
+  const tr = parseFloat(document.getElementById('taxRate').value) || 0;
+  const ac = parseFloat(document.getElementById('appealCost').value) || 0;
+  const scenario = document.getElementById('scenario').value;
+  
+  let reduction;
+  switch(scenario) {
+    case 'conservative': reduction = 0.05; break;
+    case 'moderate': reduction = 0.10; break;
+    case 'aggressive': reduction = 0.20; break;
+    case 'custom': reduction = Math.max(0, (hv - mv) / hv); break;
+  }
+  
+  const currentTax = hv * tr / 100;
+  const newAssessment = hv * (1 - reduction);
+  const newTax = newAssessment * tr / 100;
+  const annualSav = currentTax - newTax;
+  const monthSav = annualSav / 12;
+  const fiveYear = annualSav * 5;
+  const roi = ac > 0 ? ((annualSav - ac) / ac * 100) : 0;
+  
+  document.getElementById('annualSavings').textContent = '$' + Math.round(annualSav).toLocaleString();
+  document.getElementById('monthSavings').textContent = '$' + Math.round(monthSav).toLocaleString();
+  document.getElementById('fiveYearSavings').textContent = '$' + Math.round(fiveYear).toLocaleString();
+  document.getElementById('roi').textContent = Math.round(roi) + '%';
+  
+  // Scenario table
+  const scenarios = [
+    { name: '5% Reduction', pct: 0.05 },
+    { name: '10% Reduction', pct: 0.10 },
+    { name: '15% Reduction', pct: 0.15 },
+    { name: '20% Reduction', pct: 0.20 },
+    { name: '25% Reduction', pct: 0.25 },
+    { name: '30% Reduction', pct: 0.30 }
+  ];
+  
+  let tableHTML = '';
+  scenarios.forEach(s => {
+    const newA = hv * (1 - s.pct);
+    const newT = newA * tr / 100;
+    const sav = currentTax - newT;
+    const isSelected = Math.abs(s.pct - reduction) < 0.001;
+    tableHTML += '<tr' + (isSelected ? ' class="highlight"' : '') + '>';
+    tableHTML += '<td>' + s.name + '</td>';
+    tableHTML += '<td>$' + Math.round(newA).toLocaleString() + '</td>';
+    tableHTML += '<td>$' + Math.round(newT).toLocaleString() + '</td>';
+    tableHTML += '<td>$' + Math.round(sav).toLocaleString() + '/yr</td>';
+    tableHTML += '<td>$' + Math.round(sav * 5).toLocaleString() + '</td>';
+    tableHTML += '</tr>';
+  });
+  document.getElementById('scenarioTable').innerHTML = tableHTML;
+  
+  // Recommendation
+  let rec = '';
+  if (annualSav > ac * 2) {
+    rec = '✅ <strong>Strongly recommended.</strong> Your potential annual savings of $' + Math.round(annualSav).toLocaleString() + ' far exceed the appeal cost of $' + ac.toLocaleString() + '. Over 5 years, you could save $' + Math.round(fiveYear).toLocaleString() + '. File your appeal before the Illinois deadline (30 days of publication).';
+  } else if (annualSav > ac) {
+    rec = '🟡 <strong>Worth considering.</strong> Your potential savings ($' + Math.round(annualSav).toLocaleString() + '/yr) exceed the appeal cost, but the margin is moderate. Consider whether you have strong comparable sales evidence.';
+  } else {
+    rec = '⚠️ <strong>May not be worth it.</strong> Your potential savings ($' + Math.round(annualSav).toLocaleString() + '/yr) are close to or less than the appeal cost. Unless you have very strong evidence of overassessment, the effort may not be justified.';
+  }
+  document.getElementById('recommendation').innerHTML = rec;
+  
+  document.getElementById('results').style.display = 'block';
+  document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+}
+
+// Auto-calculate on load
+window.addEventListener('load', calculate);
+</script>
+</body>
+</html>
