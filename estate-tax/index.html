@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Estate Tax Calculator by State 2026 - All 50 States | SmartCalc</title>
+<meta name="description" content="Free estate tax and inheritance tax calculators for all 50 US states in 2026. Compare state estate taxes, exemptions, and inheritance tax rates. Find which states have no estate tax.">
+<link rel="canonical" href="https://alexchalu.github.io/smartcalc/estate-tax/">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0a0a0a;color:#e0e0e0;line-height:1.6}
+.container{max-width:1000px;margin:0 auto;padding:20px}
+header{text-align:center;padding:30px 0;border-bottom:1px solid #222}
+h1{font-size:2rem;color:#fff;margin-bottom:8px}
+.subtitle{color:#888;font-size:1rem}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:24px 0}
+.stat{background:#111;border:1px solid #222;border-radius:12px;padding:20px;text-align:center}
+.stat-number{font-size:2rem;font-weight:700;color:#4ecdc4}
+.stat-label{color:#888;font-size:0.85rem;margin-top:4px}
+.search-box{margin:20px 0}
+.search-box input{width:100%;background:#111;border:1px solid #333;color:#fff;padding:14px 20px;border-radius:8px;font-size:1rem}
+.search-box input:focus{outline:none;border-color:#4ecdc4}
+table{width:100%;border-collapse:collapse;margin:20px 0}
+th{background:#111;color:#4ecdc4;padding:12px;text-align:left;border-bottom:2px solid #222;font-size:0.85rem;text-transform:uppercase;position:sticky;top:0}
+td{padding:12px;border-bottom:1px solid #1a1a1a;font-size:0.9rem}
+tr:hover{background:#111}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+.badge{display:inline-block;padding:3px 10px;border-radius:10px;font-size:0.75rem;font-weight:600;margin:2px}
+.badge-tax{background:#ff444420;color:#ff6b6b;border:1px solid #ff444440}
+.badge-notax{background:#00ff8820;color:#00ff88;border:1px solid #00ff8840}
+.badge-inherit{background:#ffaa0020;color:#ffaa00;border:1px solid #ffaa0040}
+.highlights{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin:24px 0}
+.highlight{background:#111;border:1px solid #222;border-radius:12px;padding:20px}
+.highlight h3{color:#4ecdc4;font-size:1rem;margin-bottom:8px}
+.highlight ul{list-style:none;padding:0}
+.highlight li{padding:4px 0;color:#ccc;font-size:0.9rem}
+.ad-slot{background:#0d0d0d;border:1px dashed #222;border-radius:8px;padding:20px;text-align:center;margin:20px 0;min-height:90px;color:#333;font-size:0.8rem}
+.cross-links{text-align:center;padding:24px;margin:20px 0}
+.cross-links a{margin:0 8px;font-size:0.9rem}
+footer{text-align:center;padding:20px;color:#555;font-size:0.8rem;border-top:1px solid #222;margin-top:30px}
+@media(max-width:600px){h1{font-size:1.5rem}table{font-size:0.8rem}td,th{padding:8px}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>Estate & Inheritance Tax Calculator — All 50 States</h1>
+<p class="subtitle">2026 Federal & State Estate Tax Guide</p>
+</header>
+
+<div class="stats">
+<div class="stat"><div class="stat-number">12</div><div class="stat-label">States with Estate Tax</div></div>
+<div class="stat"><div class="stat-number">5</div><div class="stat-label">States with Inheritance Tax</div></div>
+<div class="stat"><div class="stat-number">34</div><div class="stat-label">States with No Tax</div></div>
+<div class="stat"><div class="stat-number">$13.61M</div><div class="stat-label">Federal Exemption 2026</div></div>
+</div>
+
+<div class="ad-slot">Ad Space</div>
+
+<div class="highlights">
+<div class="highlight">
+<h3>⚠️ States with Estate Tax</h3>
+<ul><li><a href="connecticut.html">Connecticut</a> — 11.6%-12% (exempt: $13.6M)</li><li><a href="hawaii.html">Hawaii</a> — 10%-20% (exempt: $5.5M)</li><li><a href="illinois.html">Illinois</a> — 0.8%-16% (exempt: $4.0M)</li><li><a href="maine.html">Maine</a> — 8%-12% (exempt: $6.8M)</li><li><a href="maryland.html">Maryland</a> — 0.8%-16% (exempt: $5.0M)</li><li><a href="massachusetts.html">Massachusetts</a> — 0.8%-16% (exempt: $2.0M)</li><li><a href="minnesota.html">Minnesota</a> — 13%-16% (exempt: $3.0M)</li><li><a href="new-york.html">New York</a> — 3.06%-16% (exempt: $6.9M)</li><li><a href="oregon.html">Oregon</a> — 10%-16% (exempt: $1.0M)</li><li><a href="rhode-island.html">Rhode Island</a> — 0.8%-16% (exempt: $1.8M)</li><li><a href="vermont.html">Vermont</a> — 16% (exempt: $5.0M)</li><li><a href="washington.html">Washington</a> — 10%-20% (exempt: $2.2M)</li></ul>
+</div>
+<div class="highlight">
+<h3>⚠️ States with Inheritance Tax</h3>
+<ul><li><a href="kentucky.html">Kentucky</a> — 4%-16%</li><li><a href="maryland.html">Maryland</a> — 10%</li><li><a href="nebraska.html">Nebraska</a> — 1%-18%</li><li><a href="new-jersey.html">New Jersey</a> — 11%-16%</li><li><a href="pennsylvania.html">Pennsylvania</a> — 4.5%-15%</li></ul>
+</div>
+<div class="highlight">
+<h3>✅ Best States for Estate Planning (No Tax)</h3>
+<ul>
+<li><a href="florida.html">Florida</a> — No estate/inheritance/income tax</li>
+<li><a href="texas.html">Texas</a> — No estate/inheritance/income tax</li>
+<li><a href="nevada.html">Nevada</a> — No estate/inheritance/income tax</li>
+<li><a href="wyoming.html">Wyoming</a> — Dynasty trust friendly</li>
+<li><a href="south-dakota.html">South Dakota</a> — Trust-friendly state</li>
+</ul>
+</div>
+</div>
+
+<div class="search-box"><input type="text" id="search" placeholder="🔍 Search states..." oninput="filterTable()"></div>
+
+<table id="stateTable">
+<thead><tr><th>State</th><th>Tax Status</th><th>Estate Exemption</th><th>Avg Home Value</th></tr></thead>
+<tbody><tr>
+<td><a href="alabama.html">Alabama</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$172,800</td>
+</tr>
+<tr>
+<td><a href="alaska.html">Alaska</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$298,800</td>
+</tr>
+<tr>
+<td><a href="arizona.html">Arizona</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$375,200</td>
+</tr>
+<tr>
+<td><a href="arkansas.html">Arkansas</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$145,700</td>
+</tr>
+<tr>
+<td><a href="california.html">California</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$746,800</td>
+</tr>
+<tr>
+<td><a href="colorado.html">Colorado</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$501,100</td>
+</tr>
+<tr>
+<td><a href="connecticut.html">Connecticut</a></td>
+<td><span class="badge badge-tax">Estate: 11.6%-12%</span></td>
+<td>$13,610,000</td>
+<td>$363,100</td>
+</tr>
+<tr>
+<td><a href="delaware.html">Delaware</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$297,400</td>
+</tr>
+<tr>
+<td><a href="florida.html">Florida</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$392,300</td>
+</tr>
+<tr>
+<td><a href="georgia.html">Georgia</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$291,700</td>
+</tr>
+<tr>
+<td><a href="hawaii.html">Hawaii</a></td>
+<td><span class="badge badge-tax">Estate: 10%-20%</span></td>
+<td>$5,490,000</td>
+<td>$839,600</td>
+</tr>
+<tr>
+<td><a href="idaho.html">Idaho</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$390,200</td>
+</tr>
+<tr>
+<td><a href="illinois.html">Illinois</a></td>
+<td><span class="badge badge-tax">Estate: 0.8%-16%</span></td>
+<td>$4,000,000</td>
+<td>$244,600</td>
+</tr>
+<tr>
+<td><a href="indiana.html">Indiana</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$197,700</td>
+</tr>
+<tr>
+<td><a href="iowa.html">Iowa</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$174,000</td>
+</tr>
+<tr>
+<td><a href="kansas.html">Kansas</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$194,200</td>
+</tr>
+<tr>
+<td><a href="kentucky.html">Kentucky</a></td>
+<td><span class="badge badge-inherit">Inherit: 4%-16%</span></td>
+<td>—</td>
+<td>$177,100</td>
+</tr>
+<tr>
+<td><a href="louisiana.html">Louisiana</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$189,200</td>
+</tr>
+<tr>
+<td><a href="maine.html">Maine</a></td>
+<td><span class="badge badge-tax">Estate: 8%-12%</span></td>
+<td>$6,800,000</td>
+<td>$292,700</td>
+</tr>
+<tr>
+<td><a href="maryland.html">Maryland</a></td>
+<td><span class="badge badge-tax">Estate: 0.8%-16%</span> <span class="badge badge-inherit">Inherit: 10%</span></td>
+<td>$5,000,000</td>
+<td>$383,100</td>
+</tr>
+<tr>
+<td><a href="massachusetts.html">Massachusetts</a></td>
+<td><span class="badge badge-tax">Estate: 0.8%-16%</span></td>
+<td>$2,000,000</td>
+<td>$576,900</td>
+</tr>
+<tr>
+<td><a href="michigan.html">Michigan</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$218,400</td>
+</tr>
+<tr>
+<td><a href="minnesota.html">Minnesota</a></td>
+<td><span class="badge badge-tax">Estate: 13%-16%</span></td>
+<td>$3,000,000</td>
+<td>$316,600</td>
+</tr>
+<tr>
+<td><a href="mississippi.html">Mississippi</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$141,600</td>
+</tr>
+<tr>
+<td><a href="missouri.html">Missouri</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$200,100</td>
+</tr>
+<tr>
+<td><a href="montana.html">Montana</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$382,700</td>
+</tr>
+<tr>
+<td><a href="nebraska.html">Nebraska</a></td>
+<td><span class="badge badge-inherit">Inherit: 1%-18%</span></td>
+<td>—</td>
+<td>$210,300</td>
+</tr>
+<tr>
+<td><a href="nevada.html">Nevada</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$406,200</td>
+</tr>
+<tr>
+<td><a href="new-hampshire.html">New Hampshire</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$387,400</td>
+</tr>
+<tr>
+<td><a href="new-jersey.html">New Jersey</a></td>
+<td><span class="badge badge-inherit">Inherit: 11%-16%</span></td>
+<td>—</td>
+<td>$431,500</td>
+</tr>
+<tr>
+<td><a href="new-mexico.html">New Mexico</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$254,900</td>
+</tr>
+<tr>
+<td><a href="new-york.html">New York</a></td>
+<td><span class="badge badge-tax">Estate: 3.06%-16%</span></td>
+<td>$6,940,000</td>
+<td>$383,500</td>
+</tr>
+<tr>
+<td><a href="north-carolina.html">North Carolina</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$280,600</td>
+</tr>
+<tr>
+<td><a href="north-dakota.html">North Dakota</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$234,900</td>
+</tr>
+<tr>
+<td><a href="ohio.html">Ohio</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$192,600</td>
+</tr>
+<tr>
+<td><a href="oklahoma.html">Oklahoma</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$169,100</td>
+</tr>
+<tr>
+<td><a href="oregon.html">Oregon</a></td>
+<td><span class="badge badge-tax">Estate: 10%-16%</span></td>
+<td>$1,000,000</td>
+<td>$478,200</td>
+</tr>
+<tr>
+<td><a href="pennsylvania.html">Pennsylvania</a></td>
+<td><span class="badge badge-inherit">Inherit: 4.5%-15%</span></td>
+<td>—</td>
+<td>$254,400</td>
+</tr>
+<tr>
+<td><a href="rhode-island.html">Rhode Island</a></td>
+<td><span class="badge badge-tax">Estate: 0.8%-16%</span></td>
+<td>$1,774,583</td>
+<td>$395,800</td>
+</tr>
+<tr>
+<td><a href="south-carolina.html">South Carolina</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$237,800</td>
+</tr>
+<tr>
+<td><a href="south-dakota.html">South Dakota</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$259,200</td>
+</tr>
+<tr>
+<td><a href="tennessee.html">Tennessee</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$267,400</td>
+</tr>
+<tr>
+<td><a href="texas.html">Texas</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$294,000</td>
+</tr>
+<tr>
+<td><a href="utah.html">Utah</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$457,000</td>
+</tr>
+<tr>
+<td><a href="vermont.html">Vermont</a></td>
+<td><span class="badge badge-tax">Estate: 16%</span></td>
+<td>$5,000,000</td>
+<td>$286,100</td>
+</tr>
+<tr>
+<td><a href="virginia.html">Virginia</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$368,300</td>
+</tr>
+<tr>
+<td><a href="washington.html">Washington</a></td>
+<td><span class="badge badge-tax">Estate: 10%-20%</span></td>
+<td>$2,193,000</td>
+<td>$559,000</td>
+</tr>
+<tr>
+<td><a href="west-virginia.html">West Virginia</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$128,700</td>
+</tr>
+<tr>
+<td><a href="wisconsin.html">Wisconsin</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$245,300</td>
+</tr>
+<tr>
+<td><a href="wyoming.html">Wyoming</a></td>
+<td><span class="badge badge-notax">No Tax</span></td>
+<td>—</td>
+<td>$303,600</td>
+</tr></tbody>
+</table>
+
+<div class="ad-slot">Ad Space</div>
+
+<div class="cross-links">
+<a href="../">SmartCalc Home</a> |
+<a href="../mortgage/">Mortgage Calculators</a> |
+<a href="../life-insurance/">Life Insurance</a> |
+<a href="../crypto-tax/">Crypto Tax</a>
+</div>
+
+<footer><p>© 2026 SmartCalc — Estate Tax Calculator by State. For informational purposes only.</p></footer>
+</div>
+<script>
+function filterTable(){const q=document.getElementById('search').value.toLowerCase();document.querySelectorAll('#stateTable tbody tr').forEach(r=>{r.style.display=r.textContent.toLowerCase().includes(q)?'':'none'});}
+</script>
+</body>
+</html>

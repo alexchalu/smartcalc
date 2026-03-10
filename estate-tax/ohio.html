@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ohio Estate Tax Calculator 2026 - Inheritance Tax by State | SmartCalc</title>
+<meta name="description" content="Free Ohio estate tax calculator for 2026. Calculate federal and Ohio estate taxes, inheritance tax, and plan your estate. Ohio has no state estate or inheritance tax.">
+<meta name="keywords" content="Ohio estate tax, Ohio inheritance tax, OH estate tax calculator, estate planning Ohio, death tax Ohio, estate tax exemption Ohio">
+<link rel="canonical" href="https://alexchalu.github.io/smartcalc/estate-tax/ohio.html">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Ohio Estate Tax Calculator","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://alexchalu.github.io/smartcalc/estate-tax/ohio.html","description":"Calculate estate and inheritance taxes for Ohio","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0a0a0a;color:#e0e0e0;line-height:1.6}
+.container{max-width:900px;margin:0 auto;padding:20px}
+header{text-align:center;padding:30px 0;border-bottom:1px solid #222}
+h1{font-size:1.8rem;color:#fff;margin-bottom:8px}
+.subtitle{color:#888;font-size:0.95rem}
+.badge{display:inline-block;padding:4px 12px;border-radius:12px;font-size:0.8rem;font-weight:600;margin:8px 4px}
+.badge-tax{background:#ff444420;color:#ff6b6b;border:1px solid #ff444440}
+.badge-notax{background:#00ff8820;color:#00ff88;border:1px solid #00ff8840}
+.badge-inherit{background:#ffaa0020;color:#ffaa00;border:1px solid #ffaa0040}
+.state-info{background:#111;border:1px solid #222;border-radius:12px;padding:20px;margin:20px 0}
+.state-info h2{color:#4ecdc4;font-size:1.2rem;margin-bottom:12px}
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.info-item{background:#0a0a0a;padding:12px;border-radius:8px;border:1px solid #1a1a1a}
+.info-label{color:#888;font-size:0.8rem;text-transform:uppercase}
+.info-value{color:#fff;font-size:1.1rem;font-weight:600;margin-top:4px}
+.calculator{background:#111;border:1px solid #222;border-radius:12px;padding:24px;margin:20px 0}
+.calculator h2{color:#4ecdc4;font-size:1.3rem;margin-bottom:16px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-group{display:flex;flex-direction:column}
+.form-group.full{grid-column:1/-1}
+label{color:#ccc;font-size:0.85rem;margin-bottom:6px;font-weight:500}
+input,select{background:#0a0a0a;border:1px solid #333;color:#fff;padding:10px 14px;border-radius:8px;font-size:1rem}
+input:focus,select:focus{outline:none;border-color:#4ecdc4}
+.btn{background:linear-gradient(135deg,#4ecdc4,#44a08d);color:#000;border:none;padding:14px 28px;border-radius:8px;font-size:1rem;font-weight:700;cursor:pointer;width:100%;margin-top:16px;transition:transform 0.2s}
+.btn:hover{transform:translateY(-2px)}
+.results{display:none;margin:20px 0}
+.results.show{display:block}
+.result-card{background:#111;border:1px solid #222;border-radius:12px;padding:20px;margin:12px 0}
+.result-card h3{color:#4ecdc4;font-size:1.1rem;margin-bottom:12px}
+.result-row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #1a1a1a}
+.result-row:last-child{border:none}
+.result-label{color:#999}
+.result-value{color:#fff;font-weight:600}
+.result-value.tax{color:#ff6b6b}
+.result-value.green{color:#00ff88}
+.result-total{font-size:1.3rem;color:#ff6b6b;margin-top:8px}
+.strategies{background:#111;border:1px solid #222;border-radius:12px;padding:24px;margin:20px 0}
+.strategies h2{color:#4ecdc4;font-size:1.2rem;margin-bottom:16px}
+.strategy{padding:12px 0;border-bottom:1px solid #1a1a1a}
+.strategy:last-child{border:none}
+.strategy h4{color:#fff;margin-bottom:4px}
+.strategy p{color:#999;font-size:0.9rem}
+.faq{background:#111;border:1px solid #222;border-radius:12px;padding:24px;margin:20px 0}
+.faq h2{color:#4ecdc4;font-size:1.2rem;margin-bottom:16px}
+.faq-item{padding:12px 0;border-bottom:1px solid #1a1a1a}
+.faq-item:last-child{border:none}
+.faq-item h4{color:#fff;font-size:0.95rem;margin-bottom:6px;cursor:pointer}
+.faq-item p{color:#999;font-size:0.9rem}
+.cross-links{text-align:center;padding:24px;margin:20px 0}
+.cross-links a{color:#4ecdc4;text-decoration:none;margin:0 8px;font-size:0.9rem}
+.cross-links a:hover{text-decoration:underline}
+.ad-slot{background:#0d0d0d;border:1px dashed #222;border-radius:8px;padding:20px;text-align:center;margin:20px 0;min-height:90px;color:#333;font-size:0.8rem}
+footer{text-align:center;padding:20px;color:#555;font-size:0.8rem;border-top:1px solid #222;margin-top:30px}
+@media(max-width:600px){.form-grid{grid-template-columns:1fr}.info-grid{grid-template-columns:1fr}h1{font-size:1.4rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>Ohio Estate & Inheritance Tax Calculator 2026</h1>
+<p class="subtitle">Calculate federal and state estate taxes for Ohio (OH)</p>
+<span class="badge badge-notax">✅ No State Estate Tax</span>
+
+</header>
+
+<div class="ad-slot">Ad Space</div>
+
+<div class="state-info">
+<h2>📋 Ohio Estate Tax Overview</h2>
+<div class="info-grid">
+<div class="info-item"><div class="info-label">Federal Exemption (2026)</div><div class="info-value">$13.61M</div></div>
+<div class="info-item"><div class="info-label">State Estate Tax</div><div class="info-value">None</div></div>
+<div class="info-item"><div class="info-label">State Inheritance Tax</div><div class="info-value">None</div></div>
+<div class="info-item"><div class="info-label">Avg Home Value</div><div class="info-value">$192,600</div></div>
+</div>
+<p style="margin-top:12px;color:#999;font-size:0.9rem">Ohio does not impose a state estate tax or inheritance tax. Ohio repealed its estate tax in 2013.</p>
+</div>
+
+<div class="calculator">
+<h2>🧮 Estate Tax Calculator</h2>
+<div class="form-grid">
+<div class="form-group"><label>Total Estate Value ($)</label><input type="number" id="estateValue" value="5000000" min="0" step="10000"></div>
+<div class="form-group"><label>Filing Status</label><select id="filingStatus"><option value="single">Single / Widowed</option><option value="married">Married (Portability)</option></select></div>
+<div class="form-group"><label>Charitable Bequests ($)</label><input type="number" id="charitable" value="0" min="0" step="1000"></div>
+<div class="form-group"><label>Debts & Expenses ($)</label><input type="number" id="debts" value="0" min="0" step="1000"></div>
+<div class="form-group"><label>Life Insurance (in estate) ($)</label><input type="number" id="lifeInsurance" value="0" min="0" step="1000"></div>
+<div class="form-group"><label>Prior Taxable Gifts ($)</label><input type="number" id="priorGifts" value="0" min="0" step="1000"></div>
+
+<div class="form-group full"><button class="btn" onclick="calculate()">Calculate Estate Tax</button></div>
+</div>
+</div>
+
+<div id="results" class="results">
+<div class="result-card">
+<h3>📊 Estate Tax Summary — Ohio</h3>
+<div id="resultRows"></div>
+<div id="totalTax" class="result-total"></div>
+</div>
+</div>
+
+<div class="ad-slot">Ad Space</div>
+
+<div class="strategies">
+<h2>🛡️ Estate Tax Reduction Strategies for Ohio</h2>
+<div class="strategy"><h4>1. Annual Gift Exclusion</h4><p>Gift up to $19,000 per person per year (2026) without using your lifetime exemption. A married couple can give $38,000 per person.</p></div>
+<div class="strategy"><h4>2. Irrevocable Life Insurance Trust (ILIT)</h4><p>Remove life insurance proceeds from your taxable estate by placing the policy in an ILIT. This can save 40% in estate taxes on the insurance proceeds.</p></div>
+<div class="strategy"><h4>3. Charitable Remainder Trust (CRT)</h4><p>Receive income during your lifetime, then pass the remainder to charity — reducing your taxable estate while generating income.</p></div>
+<div class="strategy"><h4>4. Grantor Retained Annuity Trust (GRAT)</h4><p>Transfer appreciating assets to heirs at reduced or zero gift tax cost. Ideal for assets expected to grow significantly.</p></div>
+<div class="strategy"><h4>5. Spousal Portability Election</h4><p>A surviving spouse can use the deceased spouse's unused federal exemption — effectively doubling the exemption to $27.22M for a married couple.</p></div>
+
+
+</div>
+
+<div class="faq">
+<h2>❓ Ohio Estate Tax FAQ</h2>
+<div class="faq-item"><h4>Does Ohio have an estate tax?</h4><p>No. Ohio does not impose a state estate tax. Only the federal estate tax applies to estates exceeding $13.61 million.</p></div>
+<div class="faq-item"><h4>Does Ohio have an inheritance tax?</h4><p>No. Ohio does not impose a state inheritance tax.</p></div>
+<div class="faq-item"><h4>What is the federal estate tax exemption for 2026?</h4><p>The federal estate tax exemption for 2026 is $13.61 million per individual ($27.22 million for married couples using portability). Estates below this threshold owe no federal estate tax. Note: This exemption is set to be cut roughly in half after 2025 under the Tax Cuts and Jobs Act sunset — check current law.</p></div>
+<div class="faq-item"><h4>What is the difference between estate tax and inheritance tax?</h4><p>Estate tax is paid by the estate before distribution. Inheritance tax is paid by the individual beneficiaries after they receive their inheritance. The rate often depends on the beneficiary's relationship to the deceased.</p></div>
+<div class="faq-item"><h4>How can I reduce my estate tax in Ohio?</h4><p>Common strategies include: annual gifting ($19K/year per person), charitable donations, irrevocable trusts (ILITs, GRATs, CRTs), spousal portability, and taking advantage of Ohio's favorable tax environment.</p></div>
+</div>
+
+<div class="ad-slot">Ad Space</div>
+
+<div class="cross-links">
+<a href="index.html">← All States</a> |
+<a href="../mortgage/">Mortgage Calculators</a> |
+<a href="../life-insurance/">Life Insurance</a> |
+<a href="../">SmartCalc Home</a>
+</div>
+
+<footer>
+<p>© 2026 SmartCalc — Ohio Estate Tax Calculator. For informational purposes only. Consult an estate planning attorney for advice.</p>
+</footer>
+</div>
+
+<script>
+const FEDERAL_EXEMPTION=13610000;
+const STATE_HAS_ESTATE=false;
+const STATE_EXEMPTION=0;
+const STATE_HAS_INHERIT=false;
+const STATE_CODE='OH';
+
+function fmt(n){return'$'+Math.round(n).toLocaleString()}
+
+function calcFederalTax(taxable){
+const brackets=[{max:10000,rate:.18},{max:20000,rate:.20},{max:40000,rate:.22},{max:60000,rate:.24},{max:80000,rate:.26},{max:100000,rate:.28},{max:150000,rate:.30},{max:250000,rate:.32},{max:500000,rate:.34},{max:750000,rate:.37},{max:1000000,rate:.39},{max:Infinity,rate:.40}];
+let tax=0,prev=0;
+for(const b of brackets){if(taxable<=prev)break;const amt=Math.min(taxable,b.max)-prev;tax+=amt*b.rate;prev=b.max;}
+return tax;
+}
+
+function calcStateTax(taxable){
+if(!STATE_HAS_ESTATE||taxable<=0)return 0;
+switch(STATE_CODE){
+case'CT':return taxable*0.12;
+case'HI':{const r=taxable<1e6?.10:taxable<2e6?.11:taxable<3e6?.12:taxable<3.5e6?.13:taxable<4e6?.14:taxable<5e6?.15:taxable<7e6?.16:taxable<9e6?.17:taxable<10e6?.18:taxable<12.5e6?.19:.20;return taxable*r;}
+case'IL':return taxable*0.08+Math.max(0,taxable-2e6)*0.08;
+case'ME':return taxable<=2e6?taxable*.08:taxable<=5e6?160000+(taxable-2e6)*.10:460000+(taxable-5e6)*.12;
+case'MD':return taxable*0.08+Math.max(0,taxable-4e6)*0.08;
+case'MA':{const r=taxable<1e6?.008:taxable<2e6?.04:taxable<4e6?.07:taxable<6e6?.11:.16;return taxable*r;}
+case'MN':return taxable*0.13+Math.max(0,taxable-1e6)*0.03;
+case'NY':{const r=taxable<500000?.0306:taxable<1e6?.05:taxable<1.5e6?.07:taxable<2.1e6?.09:taxable<2.6e6?.10:taxable<3.1e6?.11:taxable<3.6e6?.12:taxable<4.1e6?.13:taxable<5.1e6?.14:taxable<6.1e6?.15:.16;return taxable*r;}
+case'OR':return taxable<=1e6?taxable*.10:taxable<=2.5e6?100000+(taxable-1e6)*.13:295000+(taxable-2.5e6)*.16;
+case'RI':return taxable*0.008+Math.max(0,taxable-1e6)*0.072+Math.max(0,taxable-2e6)*0.08;
+case'VT':return taxable*0.16;
+case'WA':{const r=taxable<1e6?.10:taxable<2e6?.14:taxable<3e6?.15:taxable<4e6?.16:taxable<6e6?.18:.20;return taxable*r;}
+default:return taxable*0.12;
+}
+}
+
+function calcInheritanceTax(totalEstate,beneficiary){
+if(!STATE_HAS_INHERIT)return 0;
+switch(STATE_CODE){
+case'KY':{if(beneficiary==='immediate')return 0;if(beneficiary==='close')return 0;const exempt=beneficiary==='remote'?1000:500;return Math.max(0,(totalEstate-exempt)*(beneficiary==='remote'?0.08:0.14));}
+case'MD':{if(beneficiary==='immediate')return 0;return totalEstate*0.10;}
+case'NE':{if(beneficiary==='immediate')return Math.max(0,(totalEstate-100000)*0.01);if(beneficiary==='close'||beneficiary==='remote')return Math.max(0,(totalEstate-40000)*0.11);return Math.max(0,(totalEstate-25000)*0.18);}
+case'NJ':{if(beneficiary==='immediate')return 0;if(beneficiary==='close')return 0;if(beneficiary==='remote')return Math.max(0,(totalEstate-25000)*0.13);return Math.max(0,(totalEstate-500)*0.155);}
+case'PA':{if(beneficiary==='immediate')return totalEstate*0.045;if(beneficiary==='close')return totalEstate*0.12;return totalEstate*0.15;}
+default:return totalEstate*0.10;
+}
+}
+
+function calculate(){
+const ev=parseFloat(document.getElementById('estateValue').value)||0;
+const married=document.getElementById('filingStatus').value==='married';
+const charity=parseFloat(document.getElementById('charitable').value)||0;
+const debts=parseFloat(document.getElementById('debts').value)||0;
+const lifeIns=parseFloat(document.getElementById('lifeInsurance').value)||0;
+const priorGifts=parseFloat(document.getElementById('priorGifts').value)||0;
+const bene=document.getElementById('beneficiary')?document.getElementById('beneficiary').value:'immediate';
+
+const grossEstate=ev+lifeIns;
+const deductions=charity+debts;
+const taxableEstate=Math.max(0,grossEstate-deductions);
+
+const fedExemption=married?FEDERAL_EXEMPTION*2:FEDERAL_EXEMPTION;
+const fedTaxableAmt=Math.max(0,taxableEstate+priorGifts-fedExemption);
+const federalTax=calcFederalTax(fedTaxableAmt);
+
+let stateTax=0;
+if(STATE_HAS_ESTATE){
+const stateExempt=STATE_EXEMPTION;
+const stateTaxable=Math.max(0,taxableEstate-stateExempt);
+stateTax=calcStateTax(stateTaxable);
+}
+
+const inheritTax=calcInheritanceTax(taxableEstate,bene);
+const totalTax=federalTax+stateTax+inheritTax;
+const effectiveRate=taxableEstate>0?(totalTax/taxableEstate*100):0;
+const netToHeirs=taxableEstate-totalTax;
+
+let html='';
+html+='<div class="result-row"><span class="result-label">Gross Estate</span><span class="result-value">'+fmt(grossEstate)+'</span></div>';
+html+='<div class="result-row"><span class="result-label">Deductions (Charity + Debts)</span><span class="result-value green">-'+fmt(deductions)+'</span></div>';
+html+='<div class="result-row"><span class="result-label">Taxable Estate</span><span class="result-value">'+fmt(taxableEstate)+'</span></div>';
+html+='<div class="result-row"><span class="result-label">Federal Exemption</span><span class="result-value green">'+fmt(fedExemption)+'</span></div>';
+html+='<div class="result-row"><span class="result-label">Federal Estate Tax</span><span class="result-value tax">'+fmt(federalTax)+'</span></div>';
+if(STATE_HAS_ESTATE){
+html+='<div class="result-row"><span class="result-label">State Estate Tax (OH)</span><span class="result-value tax">'+fmt(stateTax)+'</span></div>';
+}
+if(STATE_HAS_INHERIT){
+html+='<div class="result-row"><span class="result-label">Inheritance Tax (OH)</span><span class="result-value tax">'+fmt(inheritTax)+'</span></div>';
+}
+html+='<div class="result-row"><span class="result-label">Total Tax</span><span class="result-value tax" style="font-size:1.2rem">'+fmt(totalTax)+'</span></div>';
+html+='<div class="result-row"><span class="result-label">Effective Tax Rate</span><span class="result-value tax">'+effectiveRate.toFixed(1)+'%</span></div>';
+html+='<div class="result-row"><span class="result-label">Net to Heirs</span><span class="result-value green" style="font-size:1.2rem">'+fmt(netToHeirs)+'</span></div>';
+
+document.getElementById('resultRows').innerHTML=html;
+document.getElementById('results').classList.add('show');
+}
+
+document.addEventListener('DOMContentLoaded',calculate);
+</script>
+</body>
+</html>
