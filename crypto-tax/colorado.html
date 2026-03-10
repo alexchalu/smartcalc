@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colorado Crypto Tax Calculator 2026 — Cryptocurrency Capital Gains Tax | SmartCalc</title>
+<meta name="description" content="Colorado crypto tax calculator for 2026. Calculate federal + state capital gains tax on Bitcoin, Ethereum, and other cryptocurrency. State rate: 4.4%. Short-term vs long-term gains.">
+<link rel="canonical" href="https://alexchalu.github.io/smartcalc/crypto-tax/colorado.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>₿</text></svg>">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3112605892426625" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Colorado Crypto Tax Calculator 2026","description":"Calculate cryptocurrency capital gains tax for Colorado residents","url":"https://alexchalu.github.io/smartcalc/crypto-tax/colorado.html","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<style>
+:root{--bg:#0a0e1a;--surface:#111827;--surface2:#1f2937;--border:#374151;--text:#f3f4f6;--muted:#9ca3af;--accent:#f59e0b;--accent2:#d97706;--radius:12px;--red:#ef4444;--green:#10b981;--blue:#3b82f6}
+[data-theme="light"]{--bg:#f9fafb;--surface:#fff;--surface2:#f3f4f6;--border:#e5e7eb;--text:#1f2937;--muted:#6b7280}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+header{background:var(--surface);border-bottom:1px solid var(--border);padding:1rem 1.5rem;position:sticky;top:0;z-index:100}
+.hi{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:1rem}
+.logo{font-size:1.4rem;font-weight:800;color:var(--accent);text-decoration:none}
+.tag{color:var(--muted);font-size:.85rem;flex:1}
+.tb{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:.4rem .7rem;font-size:1rem;cursor:pointer}
+main{max-width:900px;margin:0 auto;padding:2rem 1.5rem}
+h1{font-size:1.6rem;margin-bottom:.5rem}
+h2{font-size:1.25rem;margin:2rem 0 1rem;color:var(--accent)}
+.sub{color:var(--muted);margin-bottom:1.5rem}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.5rem}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+label{display:block;font-size:.9rem;color:var(--muted);margin-bottom:.3rem}
+select,input[type=number]{width:100%;padding:.6rem .8rem;background:var(--surface2);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:1rem}
+select{cursor:pointer}
+.results{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin-top:1.5rem}
+.result-card{background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;text-align:center}
+.result-card .val{font-size:1.6rem;font-weight:800;color:var(--accent)}
+.result-card .lbl{font-size:.8rem;color:var(--muted);margin-top:.3rem}
+.note{background:var(--surface2);border-left:4px solid var(--accent);padding:1rem;border-radius:0 8px 8px 0;margin:1rem 0;font-size:.9rem}
+.note.good{border-left-color:var(--green)}
+.note.warning{border-left-color:var(--red)}
+table{width:100%;border-collapse:collapse;margin:1rem 0}
+th,td{padding:.6rem .8rem;text-align:left;border-bottom:1px solid var(--border);font-size:.9rem}
+th{color:var(--accent);font-weight:600}
+.ad{max-width:900px;margin:1.5rem auto;padding:0 1.5rem}
+.faq details{background:var(--surface);border:1px solid var(--border);border-radius:8px;margin-bottom:.5rem}
+.faq summary{padding:1rem;cursor:pointer;font-weight:600;font-size:.95rem}
+.faq details[open] summary{border-bottom:1px solid var(--border)}
+.faq .answer{padding:1rem;color:var(--muted);font-size:.9rem}
+.nav{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.nav a{padding:.4rem .8rem;background:var(--surface);border:1px solid var(--border);border-radius:6px;text-decoration:none;color:var(--text);font-size:.85rem}
+.nav a:hover{border-color:var(--accent)}
+footer{text-align:center;padding:2rem;color:var(--muted);font-size:.85rem;border-top:1px solid var(--border);margin-top:3rem}
+footer a{color:var(--accent);text-decoration:none}
+.tx-table{max-height:300px;overflow-y:auto}
+.state-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.5rem;margin-top:1.5rem}
+.state-grid a{display:flex;justify-content:space-between;align-items:center;padding:.6rem .85rem;background:var(--surface);border:1px solid var(--border);border-radius:6px;text-decoration:none;color:var(--text);font-size:.9rem;transition:.2s}
+.state-grid a:hover{border-color:var(--accent);background:var(--surface2)}
+.state-grid .rate{color:var(--accent);font-weight:600;font-size:.85rem}
+.search input{width:100%;padding:.8rem 1rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:1rem;outline:none}
+.search input:focus{border-color:var(--accent)}
+.highlights{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2rem}
+.highlight{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem}
+.highlight h3{font-size:1rem;margin-bottom:.75rem;color:var(--accent)}
+.highlight ul{list-style:none;padding:0;color:var(--muted);font-size:.9rem}
+.highlight li{margin-bottom:.35rem}
+.highlight li strong{color:var(--text)}
+.limits{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.5rem;margin-bottom:2rem}
+.limit-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;text-align:center}
+.limit-card .val{font-size:1.8rem;font-weight:800;color:var(--accent)}
+.limit-card .lbl{color:var(--muted);font-size:.85rem;margin-top:.3rem}
+@media(max-width:600px){.form-grid{grid-template-columns:1fr}.results{grid-template-columns:1fr 1fr}.highlights{grid-template-columns:1fr}.limits{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="hi">
+<a href="../" class="logo">₿ SmartCalc</a>
+<p class="tag">Colorado Crypto Tax Calculator</p>
+<button class="tb" id="themeBtn" aria-label="Toggle theme">🌙</button>
+</div></header>
+
+<div class="ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
+<main>
+<div class="nav"><a href="./">← All States</a><a href="../">SmartCalc Home</a></div>
+
+<h1>₿ Colorado Crypto Tax Calculator 2026</h1>
+<p class="sub">Calculate federal and state capital gains tax on cryptocurrency for Colorado (CO) residents. State tax rate: 4.4%. Flat tax rate.</p>
+
+<div class="note ">📊 Colorado taxes crypto gains at up to 4.4%. flat rate on gains.</div>
+
+<div class="card">
+<h2>📊 Crypto Tax Calculator</h2>
+<div class="form-grid">
+<div><label>Purchase Price (Cost Basis) $</label><input type="number" id="costBasis" value="10000" onchange="calc()"></div>
+<div><label>Sale Price (Proceeds) $</label><input type="number" id="salePrice" value="25000" onchange="calc()"></div>
+<div><label>Holding Period</label><select id="holdPeriod" onchange="calc()"><option value="short">Short-term (&lt; 1 year)</option><option value="long" selected>Long-term (≥ 1 year)</option></select></div>
+<div><label>Filing Status</label><select id="filing" onchange="calc()"><option value="single" selected>Single</option><option value="married">Married Filing Jointly</option><option value="head">Head of Household</option></select></div>
+<div><label>Annual Income (before crypto) $</label><input type="number" id="income" value="72000" onchange="calc()"></div>
+<div><label>Crypto Type</label><select id="cryptoType" onchange="calc()"><option value="bitcoin">Bitcoin (BTC)</option><option value="ethereum">Ethereum (ETH)</option><option value="solana">Solana (SOL)</option><option value="other">Other Cryptocurrency</option></select></div>
+</div>
+
+<div class="results" id="results"></div>
+</div>
+
+<div class="ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
+<div class="card">
+<h2>📋 Tax Breakdown</h2>
+<div class="tx-table"><table id="breakdownTable"><thead><tr><th>Tax Component</th><th>Rate</th><th>Amount</th></tr></thead><tbody id="breakdownBody"></tbody></table></div>
+</div>
+
+<div class="card">
+<h2>💡 Colorado Crypto Tax Rules</h2>
+<table>
+<tr><th>Tax Detail</th><th>Information</th></tr>
+<tr><td>State Tax Rate</td><td>4.4% (top marginal rate)</td></tr>
+<tr><td>Capital Gains Treatment</td><td>flat rate on gains</td></tr>
+<tr><td>Short-Term Federal Rate</td><td>10% - 37% (ordinary income rates)</td></tr>
+<tr><td>Long-Term Federal Rate</td><td>0%, 15%, or 20%</td></tr>
+<tr><td>Net Investment Income Tax</td><td>3.8% on income over $200K (single) / $250K (married)</td></tr>
+<tr><td>Median Household Income</td><td>$72,000</td></tr>
+</table>
+</div>
+
+<div class="card">
+<h2>📊 Taxable vs Non-Taxable Crypto Events</h2>
+<table>
+<tr><th>Event</th><th>Taxable?</th></tr>
+<tr><td>Selling crypto for USD/cash</td><td>Yes — capital gain/loss</td></tr>
+<tr><td>Trading one crypto for another</td><td>Yes — capital gain/loss</td></tr>
+<tr><td>Using crypto to buy goods/services</td><td>Yes — capital gain/loss</td></tr>
+<tr><td>Receiving crypto as payment/salary</td><td>Yes — ordinary income</td></tr>
+<tr><td>Mining crypto</td><td>Yes — ordinary income at fair market value</td></tr>
+<tr><td>Staking rewards</td><td>Yes — ordinary income when received</td></tr>
+<tr><td>Airdrops</td><td>Yes — ordinary income when received</td></tr>
+<tr><td>NFT sales</td><td>Yes — capital gain/loss</td></tr>
+<tr><td>DeFi yield farming</td><td>Yes — ordinary income + potential capital gains</td></tr>
+<tr><td>Buying crypto with USD</td><td>No — not a taxable event</td></tr>
+<tr><td>Transferring between your own wallets</td><td>No — not a taxable event</td></tr>
+<tr><td>Gifting crypto (under $18K)</td><td>No — but gift tax rules apply above $18K</td></tr>
+<tr><td>Donating crypto to charity</td><td>No — may qualify for tax deduction</td></tr>
+</table>
+</div>
+
+<div class="ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
+<div class="card">
+<h2>💰 Tax-Loss Harvesting Tips for Colorado</h2>
+<div class="note good">💡 You can offset crypto gains with crypto losses. If you sold crypto at a loss, you can deduct up to $3,000/year against ordinary income and carry forward unlimited losses to future years.</div>
+<table>
+<tr><th>Strategy</th><th>How It Works</th></tr>
+<tr><td>Harvest Losses</td><td>Sell losing positions before year-end to offset gains. No wash sale rule for crypto (as of 2025).</td></tr>
+<tr><td>Long-Term Holding</td><td>Hold crypto 1+ year for 0%, 15%, or 20% federal rate vs up to 37% short-term rate.</td></tr>
+<tr><td>Gift to Charity</td><td>Donate appreciated crypto to avoid capital gains and get a tax deduction.</td></tr>
+<tr><td>Use Specific ID</td><td>Choose which lots to sell (highest cost basis first) to minimize gains.</td></tr>
+<tr><td>Consider Relocation</td><td>States like FL, TX, NV, WY have 0% state income tax on crypto gains.</td></tr>
+</table>
+</div>
+
+<div class="card faq">
+<h2>❓ Colorado Crypto Tax FAQ</h2>
+<details><summary>How is cryptocurrency taxed in Colorado?</summary><div class="answer">In Colorado, cryptocurrency is treated as property for tax purposes (following IRS guidance). When you sell, trade, or use crypto, you trigger a taxable event. In addition to federal capital gains tax, Colorado taxes crypto gains at up to 4.4%. flat rate on gains.</div></details>
+<details><summary>What's the difference between short-term and long-term crypto gains?</summary><div class="answer">Short-term gains (held less than 1 year) are taxed at ordinary income rates — up to 37% federal + 4.4% state. Long-term gains (held 1 year or more) qualify for preferential rates: 0%, 15%, or 20% federal + 4.4% state. The difference can save you thousands of dollars.</div></details>
+<details><summary>Do I need to report crypto on my Colorado tax return?</summary><div class="answer">Yes. Colorado requires you to report all crypto gains and losses on your state tax return. You must also report on your federal return using Form 8949 and Schedule D.</div></details>
+<details><summary>How are crypto mining and staking rewards taxed in Colorado?</summary><div class="answer">Mining income and staking rewards are taxed as ordinary income at fair market value when received. This applies at both the federal level and the Colorado state level (up to 4.4%). When you later sell the mined/staked crypto, any additional gain is taxed as a capital gain.</div></details>
+<details><summary>Can I deduct crypto losses in Colorado?</summary><div class="answer">Yes. You can offset capital gains with capital losses. If your losses exceed your gains, you can deduct up to $3,000 per year against ordinary income ($1,500 if married filing separately). Remaining losses carry forward to future tax years indefinitely.</div></details>
+<details><summary>Is there a wash sale rule for crypto?</summary><div class="answer">As of 2025, the IRS wash sale rule does NOT apply to cryptocurrency (it only applies to securities). This means you can sell crypto at a loss and immediately repurchase it to harvest the tax loss. However, legislation to close this loophole has been proposed, so this may change.</div></details>
+</div>
+
+<div class="card">
+<h2>🗺️ Compare Other States</h2>
+<div class="state-grid">
+<a href="georgia.html"><span>Georgia</span><span class="rate">5.49%</span></a>
+<a href="ohio.html"><span>Ohio</span><span class="rate">3.5%</span></a>
+<a href="maine.html"><span>Maine</span><span class="rate">7.15%</span></a>
+<a href="pennsylvania.html"><span>Pennsylvania</span><span class="rate">3.07%</span></a>
+<a href="massachusetts.html"><span>Massachusetts</span><span class="rate">9%</span></a>
+<a href="nebraska.html"><span>Nebraska</span><span class="rate">6.64%</span></a>
+<a href="./"><span>View All 50 States →</span><span class="rate">Compare</span></a>
+</div>
+</div>
+
+</main>
+
+<footer>
+<a href="../">SmartCalc</a> · <a href="./">Crypto Tax by State</a> · <a href="https://alexchalu.github.io/toolpulse/">ToolPulse</a> · <a href="https://alexchalu.github.io/healthcalcs/">HealthCalcs</a><br>
+© 2026 SmartCalc. For informational purposes only — not tax advice. Consult a tax professional.
+</footer>
+
+<script>
+
+const t=document.getElementById('themeBtn');const h=document.documentElement;
+let d=localStorage.getItem('theme')||'dark';h.setAttribute('data-theme',d);t.textContent=d==='dark'?'🌙':'☀️';
+t.onclick=()=>{d=d==='dark'?'light':'dark';h.setAttribute('data-theme',d);localStorage.setItem('theme',d);t.textContent=d==='dark'?'🌙':'☀️'};
+
+
+function calc(){
+  const costBasis=+document.getElementById('costBasis').value||0;
+  const salePrice=+document.getElementById('salePrice').value||0;
+  const holdPeriod=document.getElementById('holdPeriod').value;
+  const filing=document.getElementById('filing').value;
+  const income=+document.getElementById('income').value||0;
+  const gain=salePrice-costBasis;
+  const isLoss=gain<0;
+  
+  // Federal long-term capital gains brackets (single)
+  let fedRate=0;
+  if(holdPeriod==='long'){
+    if(filing==='single'){
+      if(income+gain<=47025)fedRate=0;
+      else if(income+gain<=518900)fedRate=15;
+      else fedRate=20;
+    }else if(filing==='married'){
+      if(income+gain<=94050)fedRate=0;
+      else if(income+gain<=583750)fedRate=15;
+      else fedRate=20;
+    }else{
+      if(income+gain<=63000)fedRate=0;
+      else if(income+gain<=551350)fedRate=15;
+      else fedRate=20;
+    }
+  }else{
+    // Short-term = ordinary income rate
+    const totalIncome=income+Math.max(0,gain);
+    if(totalIncome<=11600)fedRate=10;
+    else if(totalIncome<=47150)fedRate=12;
+    else if(totalIncome<=100525)fedRate=22;
+    else if(totalIncome<=191950)fedRate=24;
+    else if(totalIncome<=243725)fedRate=32;
+    else if(totalIncome<=609350)fedRate=35;
+    else fedRate=37;
+  }
+  
+  // NIIT (3.8% on income > $200K single / $250K married)
+  const niitThreshold=filing==='married'?250000:200000;
+  const niitRate=(income+Math.max(0,gain))>niitThreshold?3.8:0;
+  
+  // State rate
+  const stateRate=4.4;
+  
+  const stateTax = isLoss ? 0 : Math.max(0, gain) * stateRate / 100;
+  
+  
+  const fedTax = isLoss ? 0 : Math.max(0, gain) * fedRate / 100;
+  const niitTax = isLoss ? 0 : Math.max(0, gain) * niitRate / 100;
+  const totalTax = fedTax + stateTax + niitTax;
+  const effectiveRate = gain > 0 ? (totalTax / gain * 100) : 0;
+  const netProfit = gain - totalTax;
+  const lossDeduction = isLoss ? Math.min(Math.abs(gain), 3000) : 0;
+  
+  const fmt = n => (n < 0 ? '-' : '') + '$' + Math.abs(Math.round(n)).toLocaleString();
+  
+  document.getElementById('results').innerHTML = `
+    <div class="result-card"><div class="val" style="color:${gain>=0?'var(--accent)':'var(--red)'}">${fmt(gain)}</div><div class="lbl">${gain>=0?'Capital Gain':'Capital Loss'}</div></div>
+    <div class="result-card"><div class="val">${fmt(fedTax)}</div><div class="lbl">Federal Tax (${fedRate}%)</div></div>
+    <div class="result-card"><div class="val">${fmt(stateTax)}</div><div class="lbl">Colorado Tax (4.4%)</div></div>
+    <div class="result-card"><div class="val" style="color:var(--red)">${fmt(totalTax)}</div><div class="lbl">Total Tax</div></div>
+    <div class="result-card"><div class="val" style="color:${netProfit>=0?'var(--green)':'var(--red)'}">${fmt(netProfit)}</div><div class="lbl">Net Profit After Tax</div></div>
+    <div class="result-card"><div class="val">${effectiveRate.toFixed(1)}%</div><div class="lbl">Effective Tax Rate</div></div>
+    ${isLoss?`<div class="result-card"><div class="val" style="color:var(--green)">${fmt(lossDeduction)}</div><div class="lbl">Annual Loss Deduction</div></div>`:''}
+    ${niitRate>0?`<div class="result-card"><div class="val">${fmt(niitTax)}</div><div class="lbl">NIIT (3.8%)</div></div>`:''}
+  `;
+  
+  // Breakdown table
+  const rows = [
+    ['Cost Basis', '', fmt(costBasis)],
+    ['Sale Proceeds', '', fmt(salePrice)],
+    ['Capital ' + (isLoss?'Loss':'Gain'), '', '<strong>' + fmt(gain) + '</strong>'],
+    ['Federal Capital Gains Tax', fedRate + '%', fmt(fedTax)],
+    ['Colorado State Tax', '4.4%', fmt(stateTax)],
+  ];
+  if(niitRate>0) rows.push(['Net Investment Income Tax', '3.8%', fmt(niitTax)]);
+  rows.push(['<strong>Total Tax</strong>', effectiveRate.toFixed(1) + '%', '<strong>' + fmt(totalTax) + '</strong>']);
+  rows.push(['<strong>Net Profit</strong>', '', '<strong style="color:' + (netProfit>=0?'var(--green)':'var(--red)') + '">' + fmt(netProfit) + '</strong>']);
+  if(isLoss) rows.push(['Annual Loss Deduction (max $3,000)', '', fmt(lossDeduction)]);
+  
+  document.getElementById('breakdownBody').innerHTML = rows.map(r => '<tr><td>'+r[0]+'</td><td>'+r[1]+'</td><td>'+r[2]+'</td></tr>').join('');
+}
+
+calc();
+</script>
+</body>
+</html>

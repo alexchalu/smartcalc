@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crypto Tax Calculator by State 2026 — Cryptocurrency Capital Gains Tax | SmartCalc</title>
+<meta name="description" content="Compare cryptocurrency capital gains tax across all 50 states. Calculate Bitcoin, Ethereum, and crypto tax for 2026. Federal + state tax rates, short-term vs long-term gains.">
+<link rel="canonical" href="https://alexchalu.github.io/smartcalc/crypto-tax/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>₿</text></svg>">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3112605892426625" crossorigin="anonymous"></script>
+<style>
+:root{--bg:#0a0e1a;--surface:#111827;--surface2:#1f2937;--border:#374151;--text:#f3f4f6;--muted:#9ca3af;--accent:#f59e0b;--accent2:#d97706;--radius:12px;--red:#ef4444;--green:#10b981;--blue:#3b82f6}
+[data-theme="light"]{--bg:#f9fafb;--surface:#fff;--surface2:#f3f4f6;--border:#e5e7eb;--text:#1f2937;--muted:#6b7280}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+header{background:var(--surface);border-bottom:1px solid var(--border);padding:1rem 1.5rem;position:sticky;top:0;z-index:100}
+.hi{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:1rem}
+.logo{font-size:1.4rem;font-weight:800;color:var(--accent);text-decoration:none}
+.tag{color:var(--muted);font-size:.85rem;flex:1}
+.tb{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:.4rem .7rem;font-size:1rem;cursor:pointer}
+main{max-width:900px;margin:0 auto;padding:2rem 1.5rem}
+h1{font-size:1.6rem;margin-bottom:.5rem}
+h2{font-size:1.25rem;margin:2rem 0 1rem;color:var(--accent)}
+.sub{color:var(--muted);margin-bottom:1.5rem}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.5rem}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+label{display:block;font-size:.9rem;color:var(--muted);margin-bottom:.3rem}
+select,input[type=number]{width:100%;padding:.6rem .8rem;background:var(--surface2);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:1rem}
+select{cursor:pointer}
+.results{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin-top:1.5rem}
+.result-card{background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;text-align:center}
+.result-card .val{font-size:1.6rem;font-weight:800;color:var(--accent)}
+.result-card .lbl{font-size:.8rem;color:var(--muted);margin-top:.3rem}
+.note{background:var(--surface2);border-left:4px solid var(--accent);padding:1rem;border-radius:0 8px 8px 0;margin:1rem 0;font-size:.9rem}
+.note.good{border-left-color:var(--green)}
+.note.warning{border-left-color:var(--red)}
+table{width:100%;border-collapse:collapse;margin:1rem 0}
+th,td{padding:.6rem .8rem;text-align:left;border-bottom:1px solid var(--border);font-size:.9rem}
+th{color:var(--accent);font-weight:600}
+.ad{max-width:900px;margin:1.5rem auto;padding:0 1.5rem}
+.faq details{background:var(--surface);border:1px solid var(--border);border-radius:8px;margin-bottom:.5rem}
+.faq summary{padding:1rem;cursor:pointer;font-weight:600;font-size:.95rem}
+.faq details[open] summary{border-bottom:1px solid var(--border)}
+.faq .answer{padding:1rem;color:var(--muted);font-size:.9rem}
+.nav{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.nav a{padding:.4rem .8rem;background:var(--surface);border:1px solid var(--border);border-radius:6px;text-decoration:none;color:var(--text);font-size:.85rem}
+.nav a:hover{border-color:var(--accent)}
+footer{text-align:center;padding:2rem;color:var(--muted);font-size:.85rem;border-top:1px solid var(--border);margin-top:3rem}
+footer a{color:var(--accent);text-decoration:none}
+.tx-table{max-height:300px;overflow-y:auto}
+.state-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.5rem;margin-top:1.5rem}
+.state-grid a{display:flex;justify-content:space-between;align-items:center;padding:.6rem .85rem;background:var(--surface);border:1px solid var(--border);border-radius:6px;text-decoration:none;color:var(--text);font-size:.9rem;transition:.2s}
+.state-grid a:hover{border-color:var(--accent);background:var(--surface2)}
+.state-grid .rate{color:var(--accent);font-weight:600;font-size:.85rem}
+.search input{width:100%;padding:.8rem 1rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:1rem;outline:none}
+.search input:focus{border-color:var(--accent)}
+.highlights{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2rem}
+.highlight{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem}
+.highlight h3{font-size:1rem;margin-bottom:.75rem;color:var(--accent)}
+.highlight ul{list-style:none;padding:0;color:var(--muted);font-size:.9rem}
+.highlight li{margin-bottom:.35rem}
+.highlight li strong{color:var(--text)}
+.limits{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.5rem;margin-bottom:2rem}
+.limit-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;text-align:center}
+.limit-card .val{font-size:1.8rem;font-weight:800;color:var(--accent)}
+.limit-card .lbl{color:var(--muted);font-size:.85rem;margin-top:.3rem}
+@media(max-width:600px){.form-grid{grid-template-columns:1fr}.results{grid-template-columns:1fr 1fr}.highlights{grid-template-columns:1fr}.limits{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="hi">
+<a href="../" class="logo">₿ SmartCalc</a>
+<p class="tag">Crypto Tax Calculators by State</p>
+<button class="tb" id="themeBtn" aria-label="Toggle theme">🌙</button>
+</div></header>
+
+<div class="ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
+<main>
+<h1>₿ Crypto Tax Calculator by State — 2026</h1>
+<p class="sub">Compare cryptocurrency capital gains tax across all 50 states. Each calculator shows federal + state tax on Bitcoin, Ethereum, and other crypto gains with short-term vs long-term holding period analysis.</p>
+
+<div class="limits">
+<div class="limit-card"><div class="val">0-20%</div><div class="lbl">Federal Long-Term Rate</div></div>
+<div class="limit-card"><div class="val">10-37%</div><div class="lbl">Federal Short-Term Rate</div></div>
+<div class="limit-card"><div class="val">0-13.3%</div><div class="lbl">State Tax Range</div></div>
+</div>
+
+<div class="highlights">
+<div class="highlight">
+<h3>🏝️ No State Tax on Crypto (8 States)</h3>
+<ul><li><strong>Alaska</strong> — No state income tax</li><li><strong>Florida</strong> — No state income tax</li><li><strong>Nevada</strong> — No state income tax</li><li><strong>New Hampshire</strong> — Eliminated interest/dividend tax</li><li><strong>South Dakota</strong> — No state income tax</li><li><strong>Tennessee</strong> — No state income tax</li><li><strong>Texas</strong> — No state income tax</li><li><strong>Wyoming</strong> — No state income tax</li></ul>
+</div>
+<div class="highlight">
+<h3>⚠️ Highest State Tax on Crypto</h3>
+<ul><li><strong>California</strong> — 13.3% top rate</li><li><strong>Hawaii</strong> — 11% top rate</li><li><strong>New York</strong> — 10.9% top rate</li><li><strong>New Jersey</strong> — 10.75% top rate</li><li><strong>Oregon</strong> — 9.9% top rate</li><li><strong>Minnesota</strong> — 9.85% top rate</li><li><strong>Massachusetts</strong> — 9% top rate</li><li><strong>Vermont</strong> — 8.75% top rate</li></ul>
+</div>
+<div class="highlight">
+<h3>💡 2026 Key Changes</h3>
+<ul>
+<li><strong>Form 1099-DA</strong> — Crypto exchanges must report transactions</li>
+<li><strong>Wash Sale</strong> — Still no wash sale rule for crypto</li>
+<li><strong>MA Surtax</strong> — 4% extra on income &gt; $1M</li>
+<li><strong>WA Tax</strong> — 7% on gains over $270K</li>
+<li><strong>$3,000</strong> — Annual loss deduction limit unchanged</li>
+</ul>
+</div>
+<div class="highlight">
+<h3>📊 Tax-Friendly States for Crypto</h3>
+<ul>
+<li><strong>Florida</strong> — No income tax, no estate tax</li>
+<li><strong>Texas</strong> — No income tax, growing crypto hub</li>
+<li><strong>Wyoming</strong> — No income tax, most crypto-friendly laws</li>
+<li><strong>Nevada</strong> — No income tax, no franchise tax</li>
+<li><strong>Pennsylvania</strong> — Only 3.07% flat rate</li>
+</ul>
+</div>
+</div>
+
+<h2>🗺️ All 50 States — Crypto Tax Rates</h2>
+<div class="search"><input type="text" id="stateSearch" placeholder="Search states..." oninput="filterStates()"></div>
+
+<div class="state-grid" id="stateGrid">
+<a href="alabama.html" data-name="alabama"><span>Alabama (AL)</span><span class="rate">5%</span></a>
+<a href="alaska.html" data-name="alaska"><span>Alaska (AK)</span><span class="rate">0%</span></a>
+<a href="arizona.html" data-name="arizona"><span>Arizona (AZ)</span><span class="rate">2.5%</span></a>
+<a href="arkansas.html" data-name="arkansas"><span>Arkansas (AR)</span><span class="rate">4.4%</span></a>
+<a href="california.html" data-name="california"><span>California (CA)</span><span class="rate">13.3%</span></a>
+<a href="colorado.html" data-name="colorado"><span>Colorado (CO)</span><span class="rate">4.4%</span></a>
+<a href="connecticut.html" data-name="connecticut"><span>Connecticut (CT)</span><span class="rate">6.99%</span></a>
+<a href="delaware.html" data-name="delaware"><span>Delaware (DE)</span><span class="rate">6.6%</span></a>
+<a href="florida.html" data-name="florida"><span>Florida (FL)</span><span class="rate">0%</span></a>
+<a href="georgia.html" data-name="georgia"><span>Georgia (GA)</span><span class="rate">5.49%</span></a>
+<a href="hawaii.html" data-name="hawaii"><span>Hawaii (HI)</span><span class="rate">11%</span></a>
+<a href="idaho.html" data-name="idaho"><span>Idaho (ID)</span><span class="rate">5.8%</span></a>
+<a href="illinois.html" data-name="illinois"><span>Illinois (IL)</span><span class="rate">4.95%</span></a>
+<a href="indiana.html" data-name="indiana"><span>Indiana (IN)</span><span class="rate">3.05%</span></a>
+<a href="iowa.html" data-name="iowa"><span>Iowa (IA)</span><span class="rate">5.7%</span></a>
+<a href="kansas.html" data-name="kansas"><span>Kansas (KS)</span><span class="rate">5.7%</span></a>
+<a href="kentucky.html" data-name="kentucky"><span>Kentucky (KY)</span><span class="rate">4%</span></a>
+<a href="louisiana.html" data-name="louisiana"><span>Louisiana (LA)</span><span class="rate">4.25%</span></a>
+<a href="maine.html" data-name="maine"><span>Maine (ME)</span><span class="rate">7.15%</span></a>
+<a href="maryland.html" data-name="maryland"><span>Maryland (MD)</span><span class="rate">5.75%</span></a>
+<a href="massachusetts.html" data-name="massachusetts"><span>Massachusetts (MA)</span><span class="rate">9%</span></a>
+<a href="michigan.html" data-name="michigan"><span>Michigan (MI)</span><span class="rate">4.25%</span></a>
+<a href="minnesota.html" data-name="minnesota"><span>Minnesota (MN)</span><span class="rate">9.85%</span></a>
+<a href="mississippi.html" data-name="mississippi"><span>Mississippi (MS)</span><span class="rate">5%</span></a>
+<a href="missouri.html" data-name="missouri"><span>Missouri (MO)</span><span class="rate">4.8%</span></a>
+<a href="montana.html" data-name="montana"><span>Montana (MT)</span><span class="rate">6.75%</span></a>
+<a href="nebraska.html" data-name="nebraska"><span>Nebraska (NE)</span><span class="rate">6.64%</span></a>
+<a href="nevada.html" data-name="nevada"><span>Nevada (NV)</span><span class="rate">0%</span></a>
+<a href="new-hampshire.html" data-name="new hampshire"><span>New Hampshire (NH)</span><span class="rate">0%</span></a>
+<a href="new-jersey.html" data-name="new jersey"><span>New Jersey (NJ)</span><span class="rate">10.75%</span></a>
+<a href="new-mexico.html" data-name="new mexico"><span>New Mexico (NM)</span><span class="rate">5.9%</span></a>
+<a href="new-york.html" data-name="new york"><span>New York (NY)</span><span class="rate">10.9%</span></a>
+<a href="north-carolina.html" data-name="north carolina"><span>North Carolina (NC)</span><span class="rate">4.5%</span></a>
+<a href="north-dakota.html" data-name="north dakota"><span>North Dakota (ND)</span><span class="rate">2.5%</span></a>
+<a href="ohio.html" data-name="ohio"><span>Ohio (OH)</span><span class="rate">3.5%</span></a>
+<a href="oklahoma.html" data-name="oklahoma"><span>Oklahoma (OK)</span><span class="rate">4.75%</span></a>
+<a href="oregon.html" data-name="oregon"><span>Oregon (OR)</span><span class="rate">9.9%</span></a>
+<a href="pennsylvania.html" data-name="pennsylvania"><span>Pennsylvania (PA)</span><span class="rate">3.07%</span></a>
+<a href="rhode-island.html" data-name="rhode island"><span>Rhode Island (RI)</span><span class="rate">5.99%</span></a>
+<a href="south-carolina.html" data-name="south carolina"><span>South Carolina (SC)</span><span class="rate">6.4%</span></a>
+<a href="south-dakota.html" data-name="south dakota"><span>South Dakota (SD)</span><span class="rate">0%</span></a>
+<a href="tennessee.html" data-name="tennessee"><span>Tennessee (TN)</span><span class="rate">0%</span></a>
+<a href="texas.html" data-name="texas"><span>Texas (TX)</span><span class="rate">0%</span></a>
+<a href="utah.html" data-name="utah"><span>Utah (UT)</span><span class="rate">4.65%</span></a>
+<a href="vermont.html" data-name="vermont"><span>Vermont (VT)</span><span class="rate">8.75%</span></a>
+<a href="virginia.html" data-name="virginia"><span>Virginia (VA)</span><span class="rate">5.75%</span></a>
+<a href="washington.html" data-name="washington"><span>Washington (WA)</span><span class="rate">7%</span></a>
+<a href="west-virginia.html" data-name="west virginia"><span>West Virginia (WV)</span><span class="rate">5.12%</span></a>
+<a href="wisconsin.html" data-name="wisconsin"><span>Wisconsin (WI)</span><span class="rate">7.65%</span></a>
+<a href="wyoming.html" data-name="wyoming"><span>Wyoming (WY)</span><span class="rate">0%</span></a>
+</div>
+</main>
+
+<div class="ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
+<footer>
+<a href="../">SmartCalc</a> · <a href="https://alexchalu.github.io/toolpulse/">ToolPulse</a> · <a href="https://alexchalu.github.io/healthcalcs/">HealthCalcs</a><br>
+© 2026 SmartCalc. For informational purposes only — not tax advice. Consult a tax professional.
+</footer>
+
+<script>
+
+const t=document.getElementById('themeBtn');const h=document.documentElement;
+let d=localStorage.getItem('theme')||'dark';h.setAttribute('data-theme',d);t.textContent=d==='dark'?'🌙':'☀️';
+t.onclick=()=>{d=d==='dark'?'light':'dark';h.setAttribute('data-theme',d);localStorage.setItem('theme',d);t.textContent=d==='dark'?'🌙':'☀️'};
+
+function filterStates(){
+  const q=document.getElementById('stateSearch').value.toLowerCase();
+  document.querySelectorAll('#stateGrid a').forEach(a=>{
+    a.style.display=a.dataset.name.includes(q)?'':'none';
+  });
+}
+</script>
+</body>
+</html>
